@@ -307,7 +307,3 @@ Definition wcsspn_i386 : program := fun _ a => match a with
 
 | _ => None
 end.
-
-Definition haslength (m: V_MEM32) (p:V_MEM32) (n: nat): Prop :=
-  True.
-
