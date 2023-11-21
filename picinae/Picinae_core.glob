@@ -1,0 +1,2068 @@
+DIGEST 6a0f5e482c2f30b1ac2588492937fa57
+FPicinae.Picinae_core
+R2612:2617 Coq.NArith.NArith <> <> lib
+R2635:2640 Coq.ZArith.ZArith <> <> lib
+R2658:2661 Coq.Lists.List <> <> lib
+R2679:2699 Coq.Structures.Equalities <> <> lib
+rec 2951:2955 <> EqDec
+proj 2971:2974 <> iseq
+binder 2957:2957 <> A:1
+R2989:2989 Picinae.Picinae_core <> A:1 var
+binder 2985:2985 <> a:3
+binder 2987:2987 <> b:4
+R2993:2993 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R2997:2999 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3004:3004 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R2995:2995 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2994:2994 Picinae.Picinae_core <> a:3 var
+R2996:2996 Picinae.Picinae_core <> b:4 var
+R3001:3002 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3000:3000 Picinae.Picinae_core <> a:3 var
+R3003:3003 Picinae.Picinae_core <> b:4 var
+R3019:3022 Picinae.Picinae_core <> iseq meth
+R3019:3022 Picinae.Picinae_core <> iseq meth
+inst 3072:3077 <> NEqDec
+R3081:3085 Picinae.Picinae_core <> EqDec class
+R3087:3087 Coq.Numbers.BinNums <> N ind
+R3094:3097 Picinae.Picinae_core <> iseq meth
+R3102:3109 Coq.NArith.BinNat N eq_dec def
+R3136:3139 Picinae.Picinae_core <> iseq meth
+not 3123:3123 <> :::x_'=='_x
+def 3355:3360 <> update
+binder 3363:3363 <> A:6
+binder 3365:3365 <> B:7
+R3377:3381 Picinae.Picinae_core <> EqDec class
+R3383:3383 Picinae.Picinae_core <> A:6 var
+R3390:3391 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3389:3389 Picinae.Picinae_core <> A:6 var
+R3392:3392 Picinae.Picinae_core <> B:7 var
+binder 3387:3387 <> f:8
+R3398:3398 Picinae.Picinae_core <> A:6 var
+binder 3396:3396 <> x:9
+R3404:3404 Picinae.Picinae_core <> B:7 var
+binder 3402:3402 <> y:10
+R3411:3411 Picinae.Picinae_core <> A:6 var
+binder 3408:3409 <> x0:11
+R3416:3416 Picinae.Picinae_core <> B:7 var
+R3428:3431 Picinae.Picinae_core <> :::x_'=='_x not
+R3426:3427 Picinae.Picinae_core <> x0:11 var
+R3432:3432 Picinae.Picinae_core <> x:9 var
+R3446:3446 Picinae.Picinae_core <> f:8 var
+R3448:3449 Picinae.Picinae_core <> x0:11 var
+R3439:3439 Picinae.Picinae_core <> y:10 var
+R3525:3530 Picinae.Picinae_core <> update def
+not 3506:3506 <> :::x_'['_x_':='_x_']'
+def 3687:3694 <> bitwidth
+R3699:3699 Coq.Numbers.BinNums <> N ind
+def 3713:3716 <> addr
+R3721:3721 Coq.Numbers.BinNums <> N ind
+ind 3806:3811 <> avalue
+constr 3832:3834 <> VaN
+constr 3857:3859 <> VaM
+binder 3814:3814 <> A:12
+R3839:3839 Picinae.Picinae_core <> A:12 var
+binder 3837:3837 <> n:15
+R3845:3852 Picinae.Picinae_core <> bitwidth def
+binder 3843:3843 <> w:16
+R3868:3869 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3864:3867 Picinae.Picinae_core <> addr def
+R3870:3870 Picinae.Picinae_core <> A:12 var
+binder 3862:3862 <> m:17
+R3876:3883 Picinae.Picinae_core <> bitwidth def
+binder 3874:3874 <> w:18
+R3897:3902 Picinae.Picinae_core <> avalue ind
+R3897:3902 Picinae.Picinae_core <> avalue ind
+def 3937:3941 <> value
+R3946:3951 Picinae.Picinae_core <> avalue ind
+R3953:3953 Coq.Numbers.BinNums <> N ind
+def 4008:4011 <> msub
+binder 4013:4013 <> w:19
+binder 4015:4015 <> x:20
+binder 4017:4017 <> y:21
+R4022:4022 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R4044:4049 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R4024:4027 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R4043:4043 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R4023:4023 Picinae.Picinae_core <> x:20 var
+R4031:4033 Coq.NArith.BinNat <> ::N_scope:x_'-'_x not
+R4029:4029 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R4030:4030 Picinae.Picinae_core <> w:19 var
+R4035:4039 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R4034:4034 Picinae.Picinae_core <> y:21 var
+R4041:4041 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R4042:4042 Picinae.Picinae_core <> w:19 var
+R4051:4051 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R4052:4052 Picinae.Picinae_core <> w:19 var
+def 4143:4152 <> canonicalZ
+binder 4154:4154 <> w:22
+binder 4156:4156 <> z:23
+R4186:4188 Coq.ZArith.BinInt <> ::Z_scope:x_'-'_x not
+R4162:4162 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R4177:4182 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R4164:4166 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R4163:4163 Picinae.Picinae_core <> z:23 var
+R4168:4168 Coq.ZArith.BinInt <> ::Z_scope:x_'^'_x not
+R4169:4174 Coq.ZArith.BinInt Z pred def
+R4176:4176 Picinae.Picinae_core <> w:22 var
+R4184:4184 Coq.ZArith.BinInt <> ::Z_scope:x_'^'_x not
+R4185:4185 Picinae.Picinae_core <> w:22 var
+R4190:4190 Coq.ZArith.BinInt <> ::Z_scope:x_'^'_x not
+R4191:4196 Coq.ZArith.BinInt Z pred def
+R4198:4198 Picinae.Picinae_core <> w:22 var
+def 4215:4217 <> toZ
+R4222:4229 Picinae.Picinae_core <> bitwidth def
+binder 4220:4220 <> w:24
+R4235:4235 Coq.Numbers.BinNums <> N ind
+binder 4233:4233 <> n:25
+R4240:4240 Coq.Numbers.BinNums <> Z ind
+R4245:4254 Picinae.Picinae_core <> canonicalZ def
+R4257:4262 Coq.ZArith.BinInt Z of_N def
+R4264:4264 Picinae.Picinae_core <> w:24 var
+R4268:4273 Coq.ZArith.BinInt Z of_N def
+R4275:4275 Picinae.Picinae_core <> n:25 var
+def 4347:4349 <> ofZ
+R4354:4361 Picinae.Picinae_core <> bitwidth def
+binder 4352:4352 <> w:26
+R4367:4367 Coq.Numbers.BinNums <> Z ind
+binder 4365:4365 <> z:27
+R4373:4378 Coq.ZArith.BinInt Z to_N def
+R4382:4387 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R4398:4398 Coq.ZArith.BinInt <> ::Z_scope:x_'mod'_x not
+R4381:4381 Picinae.Picinae_core <> z:27 var
+R4389:4389 Coq.ZArith.BinInt <> ::Z_scope:x_'^'_x not
+R4390:4395 Coq.ZArith.BinInt Z of_N def
+R4397:4397 Picinae.Picinae_core <> w:26 var
+def 4762:4773 <> signed_range
+binder 4775:4775 <> w:28
+binder 4777:4777 <> z:29
+R4807:4810 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<'_x not
+R4812:4814 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<'_x not
+R4785:4786 Coq.ZArith.BinInt <> ::Z_scope:'-'_x not
+R4806:4806 Coq.ZArith.BinInt <> ::Z_scope:'-'_x not
+R4788:4788 Coq.ZArith.BinInt <> ::Z_scope:x_'^'_x not
+R4789:4794 Coq.ZArith.BinInt Z pred def
+R4797:4802 Coq.ZArith.BinInt Z of_N def
+R4804:4804 Picinae.Picinae_core <> w:28 var
+R4811:4811 Picinae.Picinae_core <> z:29 var
+R4811:4811 Picinae.Picinae_core <> z:29 var
+R4816:4816 Coq.ZArith.BinInt <> ::Z_scope:x_'^'_x not
+R4817:4822 Coq.ZArith.BinInt Z of_N def
+R4825:4830 Coq.NArith.BinNat N pred def
+R4832:4832 Picinae.Picinae_core <> w:28 var
+def 5033:5037 <> sbop1
+binder 5039:5041 <> bop:30
+binder 5043:5043 <> w:31
+binder 5045:5046 <> n1:32
+binder 5048:5049 <> n2:33
+R5054:5056 Picinae.Picinae_core <> ofZ def
+R5058:5058 Picinae.Picinae_core <> w:31 var
+R5061:5063 Picinae.Picinae_core <> bop:30 var
+R5066:5068 Picinae.Picinae_core <> toZ def
+R5070:5070 Picinae.Picinae_core <> w:31 var
+R5072:5073 Picinae.Picinae_core <> n1:32 var
+R5077:5082 Coq.ZArith.BinInt Z of_N def
+R5084:5085 Picinae.Picinae_core <> n2:33 var
+def 5101:5105 <> sbop2
+binder 5107:5109 <> bop:34
+binder 5111:5111 <> w:35
+binder 5113:5114 <> n1:36
+binder 5116:5117 <> n2:37
+R5122:5124 Picinae.Picinae_core <> ofZ def
+R5126:5126 Picinae.Picinae_core <> w:35 var
+R5129:5131 Picinae.Picinae_core <> bop:34 var
+R5134:5136 Picinae.Picinae_core <> toZ def
+R5138:5138 Picinae.Picinae_core <> w:35 var
+R5140:5141 Picinae.Picinae_core <> n1:36 var
+R5145:5147 Picinae.Picinae_core <> toZ def
+R5149:5149 Picinae.Picinae_core <> w:35 var
+R5151:5152 Picinae.Picinae_core <> n2:37 var
+def 5239:5245 <> ashiftr
+binder 5247:5247 <> w:38
+R5252:5256 Picinae.Picinae_core <> sbop1 def
+R5258:5265 Coq.ZArith.BinInt Z shiftr def
+R5267:5267 Picinae.Picinae_core <> w:38 var
+def 5347:5353 <> towidth
+binder 5355:5355 <> w:39
+binder 5357:5357 <> n:40
+R5361:5365 Picinae.Picinae_core <> value def
+R5370:5372 Picinae.Picinae_core <> VaN constr
+R5388:5388 Picinae.Picinae_core <> w:39 var
+R5376:5381 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R5385:5385 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R5375:5375 Picinae.Picinae_core <> n:40 var
+R5383:5383 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R5384:5384 Picinae.Picinae_core <> w:39 var
+R5408:5414 Picinae.Picinae_core <> towidth def
+def 5492:5496 <> tobit
+binder 5498:5498 <> b:41
+R5502:5506 Picinae.Picinae_core <> value def
+R5511:5513 Picinae.Picinae_core <> VaN constr
+R5516:5520 Coq.NArith.BinNat N b2n def
+R5522:5522 Picinae.Picinae_core <> b:41 var
+R5545:5549 Picinae.Picinae_core <> tobit def
+def 5611:5613 <> slt
+binder 5615:5615 <> w:42
+binder 5617:5618 <> n1:43
+binder 5620:5621 <> n2:44
+R5626:5630 Coq.ZArith.BinInt Z ltb def
+R5633:5635 Picinae.Picinae_core <> toZ def
+R5637:5637 Picinae.Picinae_core <> w:42 var
+R5639:5640 Picinae.Picinae_core <> n1:43 var
+R5644:5646 Picinae.Picinae_core <> toZ def
+R5648:5648 Picinae.Picinae_core <> w:42 var
+R5650:5651 Picinae.Picinae_core <> n2:44 var
+def 5714:5716 <> sle
+binder 5718:5718 <> w:45
+binder 5720:5721 <> n1:46
+binder 5723:5724 <> n2:47
+R5729:5733 Coq.ZArith.BinInt Z leb def
+R5736:5738 Picinae.Picinae_core <> toZ def
+R5740:5740 Picinae.Picinae_core <> w:45 var
+R5742:5743 Picinae.Picinae_core <> n1:46 var
+R5747:5749 Picinae.Picinae_core <> toZ def
+R5751:5751 Picinae.Picinae_core <> w:45 var
+R5753:5754 Picinae.Picinae_core <> n2:47 var
+def 5845:5849 <> xbits
+binder 5851:5851 <> n:48
+binder 5853:5853 <> i:49
+binder 5855:5855 <> j:50
+R5860:5860 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R5873:5878 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R5861:5868 Coq.NArith.BinNat N shiftr def
+R5870:5870 Picinae.Picinae_core <> n:48 var
+R5872:5872 Picinae.Picinae_core <> i:49 var
+R5880:5881 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R5887:5887 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R5883:5885 Coq.NArith.BinNat <> ::N_scope:x_'-'_x not
+R5882:5882 Picinae.Picinae_core <> j:50 var
+R5886:5886 Picinae.Picinae_core <> i:49 var
+R5900:5904 Picinae.Picinae_core <> xbits def
+def 6017:6021 <> scast
+binder 6023:6023 <> w:51
+binder 6025:6026 <> w':52
+binder 6028:6028 <> n:53
+R6033:6035 Picinae.Picinae_core <> ofZ def
+R6037:6038 Picinae.Picinae_core <> w':52 var
+R6041:6043 Picinae.Picinae_core <> toZ def
+R6045:6045 Picinae.Picinae_core <> w:51 var
+R6047:6047 Picinae.Picinae_core <> n:53 var
+ind 6080:6089 <> endianness
+constr 6101:6104 <> BigE
+constr 6108:6114 <> LittleE
+ind 6154:6162 <> binop_typ
+constr 6176:6182 <> OP_PLUS
+constr 6209:6216 <> OP_MINUS
+constr 6262:6269 <> OP_TIMES
+constr 6302:6310 <> OP_DIVIDE
+constr 6346:6355 <> OP_SDIVIDE
+constr 6389:6394 <> OP_MOD
+constr 6421:6427 <> OP_SMOD
+constr 6452:6460 <> OP_LSHIFT
+constr 6481:6489 <> OP_RSHIFT
+constr 6524:6533 <> OP_ARSHIFT
+constr 6568:6573 <> OP_AND
+constr 6595:6599 <> OP_OR
+constr 6620:6625 <> OP_XOR
+constr 6647:6651 <> OP_EQ
+constr 6668:6673 <> OP_NEQ
+constr 6694:6698 <> OP_LT
+constr 6727:6731 <> OP_LE
+constr 6772:6777 <> OP_SLT
+constr 6804:6809 <> OP_SLE
+ind 6883:6890 <> unop_typ
+constr 6904:6909 <> OP_NEG
+constr 6943:6948 <> OP_NOT
+constr 6970:6980 <> OP_POPCOUNT
+ind 7046:7053 <> cast_typ
+constr 7067:7074 <> CAST_LOW
+constr 7120:7128 <> CAST_HIGH
+constr 7175:7185 <> CAST_SIGNED
+constr 7225:7237 <> CAST_UNSIGNED
+def 7317:7326 <> eval_binop
+R7333:7341 Picinae.Picinae_core <> binop_typ ind
+binder 7329:7331 <> bop:62
+R7347:7354 Picinae.Picinae_core <> bitwidth def
+binder 7345:7345 <> w:63
+R7364:7364 Coq.Numbers.BinNums <> N ind
+binder 7358:7359 <> n1:64
+binder 7361:7362 <> n2:65
+R7369:7373 Picinae.Picinae_core <> value def
+R7386:7388 Picinae.Picinae_core <> bop:62 var
+R7399:7405 Picinae.Picinae_core <> OP_PLUS constr
+R7410:7416 Picinae.Picinae_core <> towidth def
+R7418:7418 Picinae.Picinae_core <> w:63 var
+R7423:7423 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R7421:7422 Picinae.Picinae_core <> n1:64 var
+R7424:7425 Picinae.Picinae_core <> n2:65 var
+R7432:7439 Picinae.Picinae_core <> OP_MINUS constr
+R7444:7446 Picinae.Picinae_core <> VaN constr
+R7463:7463 Picinae.Picinae_core <> w:63 var
+R7449:7452 Picinae.Picinae_core <> msub def
+R7454:7454 Picinae.Picinae_core <> w:63 var
+R7456:7457 Picinae.Picinae_core <> n1:64 var
+R7459:7460 Picinae.Picinae_core <> n2:65 var
+R7469:7476 Picinae.Picinae_core <> OP_TIMES constr
+R7481:7487 Picinae.Picinae_core <> towidth def
+R7489:7489 Picinae.Picinae_core <> w:63 var
+R7494:7494 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R7492:7493 Picinae.Picinae_core <> n1:64 var
+R7495:7496 Picinae.Picinae_core <> n2:65 var
+R7503:7511 Picinae.Picinae_core <> OP_DIVIDE constr
+R7516:7518 Picinae.Picinae_core <> VaN constr
+R7528:7528 Picinae.Picinae_core <> w:63 var
+R7523:7523 Coq.NArith.BinNat <> ::N_scope:x_'/'_x not
+R7521:7522 Picinae.Picinae_core <> n1:64 var
+R7524:7525 Picinae.Picinae_core <> n2:65 var
+R7534:7543 Picinae.Picinae_core <> OP_SDIVIDE constr
+R7548:7550 Picinae.Picinae_core <> VaN constr
+R7575:7575 Picinae.Picinae_core <> w:63 var
+R7553:7557 Picinae.Picinae_core <> sbop2 def
+R7559:7564 Coq.ZArith.BinInt Z quot def
+R7566:7566 Picinae.Picinae_core <> w:63 var
+R7568:7569 Picinae.Picinae_core <> n1:64 var
+R7571:7572 Picinae.Picinae_core <> n2:65 var
+R7581:7586 Picinae.Picinae_core <> OP_MOD constr
+R7591:7593 Picinae.Picinae_core <> VaN constr
+R7612:7612 Picinae.Picinae_core <> w:63 var
+R7596:7603 Coq.NArith.BinNat N modulo def
+R7605:7606 Picinae.Picinae_core <> n1:64 var
+R7608:7609 Picinae.Picinae_core <> n2:65 var
+R7618:7624 Picinae.Picinae_core <> OP_SMOD constr
+R7629:7631 Picinae.Picinae_core <> VaN constr
+R7655:7655 Picinae.Picinae_core <> w:63 var
+R7634:7638 Picinae.Picinae_core <> sbop2 def
+R7640:7644 Coq.ZArith.BinInt Z rem def
+R7646:7646 Picinae.Picinae_core <> w:63 var
+R7648:7649 Picinae.Picinae_core <> n1:64 var
+R7651:7652 Picinae.Picinae_core <> n2:65 var
+R7661:7669 Picinae.Picinae_core <> OP_LSHIFT constr
+R7674:7680 Picinae.Picinae_core <> towidth def
+R7682:7682 Picinae.Picinae_core <> w:63 var
+R7685:7692 Coq.NArith.BinNat N shiftl def
+R7694:7695 Picinae.Picinae_core <> n1:64 var
+R7697:7698 Picinae.Picinae_core <> n2:65 var
+R7705:7713 Picinae.Picinae_core <> OP_RSHIFT constr
+R7718:7720 Picinae.Picinae_core <> VaN constr
+R7739:7739 Picinae.Picinae_core <> w:63 var
+R7723:7730 Coq.NArith.BinNat N shiftr def
+R7732:7733 Picinae.Picinae_core <> n1:64 var
+R7735:7736 Picinae.Picinae_core <> n2:65 var
+R7745:7754 Picinae.Picinae_core <> OP_ARSHIFT constr
+R7759:7761 Picinae.Picinae_core <> VaN constr
+R7781:7781 Picinae.Picinae_core <> w:63 var
+R7764:7770 Picinae.Picinae_core <> ashiftr def
+R7772:7772 Picinae.Picinae_core <> w:63 var
+R7774:7775 Picinae.Picinae_core <> n1:64 var
+R7777:7778 Picinae.Picinae_core <> n2:65 var
+R7787:7792 Picinae.Picinae_core <> OP_AND constr
+R7797:7799 Picinae.Picinae_core <> VaN constr
+R7816:7816 Picinae.Picinae_core <> w:63 var
+R7802:7807 Coq.NArith.BinNat N land def
+R7809:7810 Picinae.Picinae_core <> n1:64 var
+R7812:7813 Picinae.Picinae_core <> n2:65 var
+R7822:7826 Picinae.Picinae_core <> OP_OR constr
+R7831:7833 Picinae.Picinae_core <> VaN constr
+R7849:7849 Picinae.Picinae_core <> w:63 var
+R7836:7840 Coq.NArith.BinNat N lor def
+R7842:7843 Picinae.Picinae_core <> n1:64 var
+R7845:7846 Picinae.Picinae_core <> n2:65 var
+R7855:7860 Picinae.Picinae_core <> OP_XOR constr
+R7865:7867 Picinae.Picinae_core <> VaN constr
+R7884:7884 Picinae.Picinae_core <> w:63 var
+R7870:7875 Coq.NArith.BinNat N lxor def
+R7877:7878 Picinae.Picinae_core <> n1:64 var
+R7880:7881 Picinae.Picinae_core <> n2:65 var
+R7890:7894 Picinae.Picinae_core <> OP_EQ constr
+R7899:7903 Picinae.Picinae_core <> tobit def
+R7908:7911 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R7906:7907 Picinae.Picinae_core <> n1:64 var
+R7912:7913 Picinae.Picinae_core <> n2:65 var
+R7920:7925 Picinae.Picinae_core <> OP_NEQ constr
+R7930:7934 Picinae.Picinae_core <> tobit def
+R7937:7940 Coq.Init.Datatypes <> negb def
+R7945:7948 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R7943:7944 Picinae.Picinae_core <> n1:64 var
+R7949:7950 Picinae.Picinae_core <> n2:65 var
+R7958:7962 Picinae.Picinae_core <> OP_LT constr
+R7967:7971 Picinae.Picinae_core <> tobit def
+R7976:7979 Coq.NArith.BinNat <> ::N_scope:x_'<?'_x not
+R7974:7975 Picinae.Picinae_core <> n1:64 var
+R7980:7981 Picinae.Picinae_core <> n2:65 var
+R7988:7992 Picinae.Picinae_core <> OP_LE constr
+R7997:8001 Picinae.Picinae_core <> tobit def
+R8006:8010 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R8004:8005 Picinae.Picinae_core <> n1:64 var
+R8011:8012 Picinae.Picinae_core <> n2:65 var
+R8019:8024 Picinae.Picinae_core <> OP_SLT constr
+R8029:8033 Picinae.Picinae_core <> tobit def
+R8036:8038 Picinae.Picinae_core <> slt def
+R8040:8040 Picinae.Picinae_core <> w:63 var
+R8042:8043 Picinae.Picinae_core <> n1:64 var
+R8045:8046 Picinae.Picinae_core <> n2:65 var
+R8053:8058 Picinae.Picinae_core <> OP_SLE constr
+R8063:8067 Picinae.Picinae_core <> tobit def
+R8070:8072 Picinae.Picinae_core <> sle def
+R8074:8074 Picinae.Picinae_core <> w:63 var
+R8076:8077 Picinae.Picinae_core <> n1:64 var
+R8079:8080 Picinae.Picinae_core <> n2:65 var
+def 8119:8130 <> Pos_popcount
+binder 8132:8132 <> p:67
+R8143:8143 Picinae.Picinae_core <> p:67 var
+R8152:8153 Coq.Numbers.BinNums <> xH constr
+R8158:8159 Coq.Numbers.BinNums <> xH constr
+R8163:8164 Coq.Numbers.BinNums <> xO constr
+R8171:8182 Picinae.Picinae_core <> Pos_popcount:68 def
+R8188:8189 Coq.Numbers.BinNums <> xI constr
+R8196:8203 Coq.PArith.BinPos Pos succ def
+R8206:8217 Picinae.Picinae_core <> Pos_popcount:68 def
+def 8238:8245 <> popcount
+binder 8247:8247 <> n:70
+R8258:8258 Picinae.Picinae_core <> n:70 var
+R8265:8266 Coq.Numbers.BinNums <> N0 constr
+R8271:8272 Coq.Numbers.BinNums <> N0 constr
+R8276:8280 Coq.NArith.BinNat N pos abbrev
+R8287:8291 Coq.NArith.BinNat N pos abbrev
+R8294:8305 Picinae.Picinae_core <> Pos_popcount def
+def 8360:8368 <> eval_unop
+R8375:8382 Picinae.Picinae_core <> unop_typ ind
+binder 8371:8373 <> uop:72
+R8388:8388 Coq.Numbers.BinNums <> N ind
+binder 8386:8386 <> n:73
+R8394:8401 Picinae.Picinae_core <> bitwidth def
+binder 8392:8392 <> w:74
+R8406:8410 Picinae.Picinae_core <> value def
+R8423:8425 Picinae.Picinae_core <> uop:72 var
+R8436:8441 Picinae.Picinae_core <> OP_NEG constr
+R8446:8448 Picinae.Picinae_core <> VaN constr
+R8463:8463 Picinae.Picinae_core <> w:74 var
+R8451:8454 Picinae.Picinae_core <> msub def
+R8456:8456 Picinae.Picinae_core <> w:74 var
+R8460:8460 Picinae.Picinae_core <> n:73 var
+R8469:8474 Picinae.Picinae_core <> OP_NOT constr
+R8479:8481 Picinae.Picinae_core <> VaN constr
+R8496:8496 Picinae.Picinae_core <> w:74 var
+R8484:8489 Coq.NArith.BinNat N lnot def
+R8491:8491 Picinae.Picinae_core <> n:73 var
+R8493:8493 Picinae.Picinae_core <> w:74 var
+R8502:8512 Picinae.Picinae_core <> OP_POPCOUNT constr
+R8517:8519 Picinae.Picinae_core <> VaN constr
+R8534:8534 Picinae.Picinae_core <> w:74 var
+R8522:8529 Picinae.Picinae_core <> popcount def
+R8531:8531 Picinae.Picinae_core <> n:73 var
+def 8601:8604 <> cast
+R8609:8616 Picinae.Picinae_core <> cast_typ ind
+binder 8607:8607 <> c:76
+R8625:8632 Picinae.Picinae_core <> bitwidth def
+binder 8620:8620 <> w:77
+binder 8622:8623 <> w':78
+R8638:8638 Coq.Numbers.BinNums <> N ind
+binder 8636:8636 <> n:79
+R8643:8643 Coq.Numbers.BinNums <> N ind
+R8656:8656 Picinae.Picinae_core <> c:76 var
+R8667:8679 Picinae.Picinae_core <> CAST_UNSIGNED constr
+R8684:8684 Picinae.Picinae_core <> n:79 var
+R8690:8700 Picinae.Picinae_core <> CAST_SIGNED constr
+R8705:8709 Picinae.Picinae_core <> scast def
+R8711:8711 Picinae.Picinae_core <> w:77 var
+R8713:8714 Picinae.Picinae_core <> w':78 var
+R8716:8716 Picinae.Picinae_core <> n:79 var
+R8722:8730 Picinae.Picinae_core <> CAST_HIGH constr
+R8735:8742 Coq.NArith.BinNat N shiftr def
+R8744:8744 Picinae.Picinae_core <> n:79 var
+R8748:8750 Coq.NArith.BinNat <> ::N_scope:x_'-'_x not
+R8747:8747 Picinae.Picinae_core <> w:77 var
+R8751:8752 Picinae.Picinae_core <> w':78 var
+R8759:8766 Picinae.Picinae_core <> CAST_LOW constr
+R8772:8776 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R8771:8771 Picinae.Picinae_core <> n:79 var
+R8778:8778 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R8779:8780 Picinae.Picinae_core <> w':78 var
+ind 8911:8914 <> exit
+constr 8926:8929 <> Addr
+constr 8942:8946 <> Raise
+R8934:8937 Picinae.Picinae_core <> addr def
+binder 8932:8932 <> a:83
+R8951:8951 Coq.Numbers.BinNums <> N ind
+binder 8949:8949 <> i:84
+def 9024:9029 <> exitof
+R9034:9037 Picinae.Picinae_core <> addr def
+binder 9032:9032 <> a:85
+R9044:9049 Coq.Init.Datatypes <> option ind
+R9051:9054 Picinae.Picinae_core <> exit ind
+binder 9041:9042 <> sx:86
+R9059:9062 Picinae.Picinae_core <> exit ind
+R9075:9076 Picinae.Picinae_core <> sx:86 var
+R9083:9086 Coq.Init.Datatypes <> None constr
+R9091:9094 Picinae.Picinae_core <> Addr constr
+R9096:9096 Picinae.Picinae_core <> a:85 var
+R9100:9103 Coq.Init.Datatypes <> Some constr
+def 9197:9203 <> stepsof
+binder 9206:9206 <> A:88
+R9212:9215 Coq.Init.Datatypes <> list ind
+R9217:9217 Picinae.Picinae_core <> A:88 var
+binder 9210:9210 <> l:89
+R9223:9234 Coq.Lists.List <> combine def
+R9239:9245 Coq.Lists.List <> tl def
+R9247:9247 Picinae.Picinae_core <> l:89 var
+R9236:9236 Picinae.Picinae_core <> l:89 var
+R9261:9267 Picinae.Picinae_core <> stepsof def
+R9261:9267 Picinae.Picinae_core <> stepsof def
+def 9342:9348 <> startof
+binder 9351:9351 <> A:90
+R9358:9366 Coq.Lists.List <> last def
+R9368:9368 Picinae.Picinae_core <> A:90 var
+def 9382:9389 <> ostartof
+binder 9392:9392 <> A:91
+R9398:9401 Coq.Init.Datatypes <> list ind
+R9403:9403 Picinae.Picinae_core <> A:91 var
+binder 9396:9396 <> l:92
+R9415:9415 Picinae.Picinae_core <> l:92 var
+R9422:9424 Coq.Init.Datatypes <> nil constr
+R9429:9432 Coq.Init.Datatypes <> None constr
+R9437:9438 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9444:9447 Coq.Init.Datatypes <> Some constr
+R9450:9456 Picinae.Picinae_core <> startof def
+def 9479:9489 <> start_state
+binder 9492:9492 <> A:94
+binder 9495:9495 <> t:95
+R9506:9508 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R9502:9505 Picinae.Picinae_core <> exit ind
+R9509:9509 Picinae.Picinae_core <> A:94 var
+binder 9498:9499 <> xs:96
+R9515:9517 Coq.Init.Datatypes <> snd def
+R9520:9526 Picinae.Picinae_core <> startof def
+R9530:9531 Picinae.Picinae_core <> xs:96 var
+R9528:9528 Picinae.Picinae_core <> t:95 var
+modtype 9977:9988 <> Architecture
+R10014:10031 Coq.Structures.Equalities UsualDecidableType <> mod
+mod 10008:10010 <> Architecture.Var
+def 10047:10049 Architecture var
+R10054:10058 Picinae.Picinae_core Architecture t defax
+def 10074:10078 Architecture store
+R10086:10089 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10083:10085 Picinae.Picinae_core Architecture var def
+R10090:10094 Picinae.Picinae_core <> value def
+ax 10110:10117 Architecture mem_bits
+R10120:10127 Coq.Numbers.BinNums <> positive ind
+ax 10142:10153 Architecture mem_readable
+R10161:10164 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10156:10160 Picinae.Picinae_core Architecture store def
+R10169:10172 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10165:10168 Picinae.Picinae_core <> addr def
+ax 10191:10202 Architecture mem_writable
+R10210:10213 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10205:10209 Picinae.Picinae_core Architecture store def
+R10218:10221 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10214:10217 Picinae.Picinae_core <> addr def
+R10232:10243 Picinae.Picinae_core Architecture <> modtype
+R10393:10404 Picinae.Picinae_core Architecture <> mod
+modtype 10373:10384 <> PICINAE_CORE
+R10416:10419 Picinae.Picinae_core Arch <> mod
+def 10433:10434 PICINAE_CORE Mb
+R10439:10442 Coq.Numbers.BinNums <> Npos constr
+R10444:10451 Picinae.Picinae_core Arch mem_bits defax
+def 10465:10469 PICINAE_CORE vareq
+R10474:10483 Picinae.Picinae_core Arch.Var eq_dec defax
+def 10497:10502 PICINAE_CORE vareqb
+binder 10504:10505 <> v1:100
+binder 10507:10508 <> v2:101
+R10516:10520 Picinae.Picinae_core PICINAE_CORE vareq def
+R10522:10523 Picinae.Picinae_core <> v1:100 var
+R10525:10526 Picinae.Picinae_core <> v2:101 var
+R10543:10547 Coq.Init.Datatypes <> false constr
+R10533:10536 Coq.Init.Datatypes <> true constr
+inst 10569:10576 PICINAE_CORE VarEqDec
+R10580:10584 Picinae.Picinae_core <> EqDec class
+R10586:10588 Picinae.Picinae_core Arch var def
+R10595:10598 Picinae.Picinae_core <> iseq meth
+R10603:10607 Picinae.Picinae_core PICINAE_CORE vareq def
+ind 10650:10652 PICINAE_CORE exp
+constr 10666:10668 PICINAE_CORE Var
+constr 10680:10683 PICINAE_CORE Word
+constr 10706:10709 PICINAE_CORE Load
+constr 10793:10797 PICINAE_CORE Store
+constr 10889:10893 PICINAE_CORE BinOp
+constr 10923:10926 PICINAE_CORE UnOp
+constr 10951:10954 PICINAE_CORE Cast
+constr 11019:11021 PICINAE_CORE Let
+constr 11045:11051 PICINAE_CORE Unknown
+constr 11068:11070 PICINAE_CORE Ite
+constr 11089:11095 PICINAE_CORE Extract
+constr 11164:11169 PICINAE_CORE Concat
+R10673:10675 Picinae.Picinae_core Arch var def
+binder 10671:10671 <> v:104
+R10688:10688 Coq.Numbers.BinNums <> N ind
+binder 10686:10686 <> n:105
+R10694:10701 Picinae.Picinae_core <> bitwidth def
+binder 10692:10692 <> w:106
+R10718:10720 Picinae.Picinae_core <> exp:102 ind
+binder 10712:10713 <> e1:107
+binder 10715:10716 <> e2:108
+R10727:10736 Picinae.Picinae_core <> endianness ind
+binder 10724:10725 <> en:109
+R10742:10749 Picinae.Picinae_core <> bitwidth def
+binder 10740:10740 <> w:110
+R10809:10811 Picinae.Picinae_core <> exp:102 ind
+binder 10800:10801 <> e1:111
+binder 10803:10804 <> e2:112
+binder 10806:10807 <> e3:113
+R10818:10827 Picinae.Picinae_core <> endianness ind
+binder 10815:10816 <> en:114
+R10833:10840 Picinae.Picinae_core <> bitwidth def
+binder 10831:10831 <> w:115
+R10898:10906 Picinae.Picinae_core <> binop_typ ind
+binder 10896:10896 <> b:116
+R10916:10918 Picinae.Picinae_core <> exp:102 ind
+binder 10910:10911 <> e1:117
+binder 10913:10914 <> e2:118
+R10931:10938 Picinae.Picinae_core <> unop_typ ind
+binder 10929:10929 <> u:119
+R10944:10946 Picinae.Picinae_core <> exp:102 ind
+binder 10942:10942 <> e:120
+R10959:10966 Picinae.Picinae_core <> cast_typ ind
+binder 10957:10957 <> c:121
+R10972:10979 Picinae.Picinae_core <> bitwidth def
+binder 10970:10970 <> w:122
+R10985:10987 Picinae.Picinae_core <> exp:102 ind
+binder 10983:10983 <> e:123
+R11026:11028 Picinae.Picinae_core Arch var def
+binder 11024:11024 <> v:124
+R11038:11040 Picinae.Picinae_core <> exp:102 ind
+binder 11032:11033 <> e1:125
+binder 11035:11036 <> e2:126
+R11056:11063 Picinae.Picinae_core <> bitwidth def
+binder 11054:11054 <> w:127
+R11082:11084 Picinae.Picinae_core <> exp:102 ind
+binder 11073:11074 <> e1:128
+binder 11076:11077 <> e2:129
+binder 11079:11080 <> e3:130
+R11104:11104 Coq.Numbers.BinNums <> N ind
+binder 11098:11099 <> n1:131
+binder 11101:11102 <> n2:132
+R11110:11112 Picinae.Picinae_core <> exp:102 ind
+binder 11108:11108 <> e:133
+R11178:11180 Picinae.Picinae_core <> exp:102 ind
+binder 11172:11173 <> e1:134
+binder 11175:11176 <> e2:135
+ind 11928:11931 PICINAE_CORE stmt
+constr 11945:11947 PICINAE_CORE Nop
+constr 11969:11972 PICINAE_CORE Move
+constr 12024:12026 PICINAE_CORE Jmp
+constr 12069:12071 PICINAE_CORE Exn
+constr 12112:12114 PICINAE_CORE Seq
+constr 12158:12159 PICINAE_CORE If
+constr 12214:12216 PICINAE_CORE Rep
+R11977:11979 Picinae.Picinae_core Arch var def
+binder 11975:11975 <> v:138
+R11985:11987 Picinae.Picinae_core PICINAE_CORE exp ind
+binder 11983:11983 <> e:139
+R12031:12033 Picinae.Picinae_core PICINAE_CORE exp ind
+binder 12029:12029 <> e:140
+R12076:12076 Coq.Numbers.BinNums <> N ind
+binder 12074:12074 <> i:141
+R12123:12126 Picinae.Picinae_core <> stmt:136 ind
+binder 12117:12118 <> q1:142
+binder 12120:12121 <> q2:143
+R12164:12166 Picinae.Picinae_core PICINAE_CORE exp ind
+binder 12162:12162 <> e:144
+R12176:12179 Picinae.Picinae_core <> stmt:136 ind
+binder 12170:12171 <> q1:145
+binder 12173:12174 <> q2:146
+R12221:12223 Picinae.Picinae_core PICINAE_CORE exp ind
+binder 12219:12219 <> e:147
+R12229:12232 Picinae.Picinae_core <> stmt:136 ind
+binder 12227:12227 <> q:148
+def 12765:12771 PICINAE_CORE program
+R12781:12784 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12776:12780 Picinae.Picinae_core Arch store def
+R12789:12792 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12785:12788 Picinae.Picinae_core <> addr def
+R12793:12798 Coq.Init.Datatypes <> option ind
+R12802:12804 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R12801:12801 Coq.Numbers.BinNums <> N ind
+R12805:12808 Picinae.Picinae_core PICINAE_CORE stmt ind
+def 13732:13741 PICINAE_CORE getmem_big
+binder 13743:13743 <> w:149
+binder 13745:13747 <> mem:150
+binder 13749:13751 <> len:151
+binder 13753:13755 <> rec:152
+binder 13757:13757 <> a:153
+R13762:13766 Coq.NArith.BinNat N lor def
+R13769:13771 Picinae.Picinae_core <> rec:152 var
+R13774:13779 Coq.NArith.BinNat N succ def
+R13781:13781 Picinae.Picinae_core <> a:153 var
+R13786:13793 Coq.NArith.BinNat N shiftl def
+R13811:13815 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R13796:13798 Picinae.Picinae_core <> mem:150 var
+R13802:13806 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R13801:13801 Picinae.Picinae_core <> a:153 var
+R13808:13808 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R13809:13809 Picinae.Picinae_core <> w:149 var
+R13817:13817 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R13818:13819 Picinae.Picinae_core PICINAE_CORE Mb def
+R13825:13825 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R13823:13824 Picinae.Picinae_core PICINAE_CORE Mb def
+R13826:13828 Picinae.Picinae_core <> len:151 var
+def 13844:13856 PICINAE_CORE getmem_little
+binder 13858:13858 <> w:154
+binder 13860:13862 <> mem:155
+R13869:13876 Picinae.Picinae_core <> bitwidth def
+binder 13865:13867 <> len:156
+binder 13879:13881 <> rec:157
+binder 13883:13883 <> a:158
+R13888:13892 Coq.NArith.BinNat N lor def
+R13910:13914 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R13895:13897 Picinae.Picinae_core <> mem:155 var
+R13901:13905 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R13900:13900 Picinae.Picinae_core <> a:158 var
+R13907:13907 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R13908:13908 Picinae.Picinae_core <> w:154 var
+R13916:13916 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R13917:13918 Picinae.Picinae_core PICINAE_CORE Mb def
+R13922:13929 Coq.NArith.BinNat N shiftl def
+R13932:13934 Picinae.Picinae_core <> rec:157 var
+R13937:13942 Coq.NArith.BinNat N succ def
+R13944:13944 Picinae.Picinae_core <> a:158 var
+R13948:13949 Picinae.Picinae_core PICINAE_CORE Mb def
+def 13964:13969 PICINAE_CORE getmem
+R13974:13981 Picinae.Picinae_core <> bitwidth def
+binder 13972:13972 <> w:159
+R13987:13996 Picinae.Picinae_core <> endianness ind
+binder 13985:13985 <> e:160
+R14004:14011 Picinae.Picinae_core <> bitwidth def
+binder 14000:14002 <> len:161
+R14023:14024 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14019:14022 Picinae.Picinae_core <> addr def
+R14025:14025 Coq.Numbers.BinNums <> N ind
+binder 14015:14017 <> mem:162
+R14034:14037 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14030:14033 Picinae.Picinae_core <> addr def
+R14038:14038 Coq.Numbers.BinNums <> N ind
+R14045:14055 Coq.NArith.BinNat N recursion def
+R14142:14144 Picinae.Picinae_core <> len:161 var
+R14078:14078 Picinae.Picinae_core <> e:160 var
+R14085:14088 Picinae.Picinae_core <> BigE constr
+R14093:14102 Picinae.Picinae_core PICINAE_CORE getmem_big def
+R14106:14112 Picinae.Picinae_core <> LittleE constr
+R14117:14129 Picinae.Picinae_core PICINAE_CORE getmem_little def
+R14135:14135 Picinae.Picinae_core <> w:159 var
+R14137:14139 Picinae.Picinae_core <> mem:162 var
+R14067:14068 Coq.Numbers.BinNums <> N0 constr
+def 14230:14239 PICINAE_CORE setmem_big
+binder 14241:14241 <> w:164
+binder 14243:14245 <> len:165
+binder 14247:14249 <> rec:166
+binder 14251:14253 <> mem:167
+binder 14255:14255 <> a:168
+binder 14257:14257 <> v:169
+R14265:14268 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14261:14264 Picinae.Picinae_core <> addr def
+R14269:14269 Coq.Numbers.BinNums <> N ind
+R14276:14278 Picinae.Picinae_core <> rec:166 var
+R14281:14286 Picinae.Picinae_core <> update def
+R14305:14305 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R14325:14330 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R14306:14313 Coq.NArith.BinNat N shiftr def
+R14315:14315 Picinae.Picinae_core <> v:169 var
+R14320:14320 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R14318:14319 Picinae.Picinae_core PICINAE_CORE Mb def
+R14321:14323 Picinae.Picinae_core <> len:165 var
+R14332:14332 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R14333:14334 Picinae.Picinae_core PICINAE_CORE Mb def
+R14294:14298 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R14293:14293 Picinae.Picinae_core <> a:168 var
+R14300:14300 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R14301:14301 Picinae.Picinae_core <> w:164 var
+R14288:14290 Picinae.Picinae_core <> mem:167 var
+R14339:14344 Coq.NArith.BinNat N succ def
+R14346:14346 Picinae.Picinae_core <> a:168 var
+R14351:14355 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R14350:14350 Picinae.Picinae_core <> v:169 var
+R14357:14358 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R14365:14365 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R14361:14361 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R14359:14360 Picinae.Picinae_core PICINAE_CORE Mb def
+R14362:14364 Picinae.Picinae_core <> len:165 var
+def 14380:14392 PICINAE_CORE setmem_little
+binder 14394:14394 <> w:170
+R14401:14401 Coq.Numbers.BinNums <> N ind
+binder 14397:14399 <> len:171
+binder 14404:14406 <> rec:172
+binder 14408:14410 <> mem:173
+binder 14412:14412 <> a:174
+binder 14414:14414 <> v:175
+R14422:14425 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14418:14421 Picinae.Picinae_core <> addr def
+R14426:14426 Coq.Numbers.BinNums <> N ind
+R14433:14435 Picinae.Picinae_core <> rec:172 var
+R14438:14443 Picinae.Picinae_core <> update def
+R14463:14467 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R14462:14462 Picinae.Picinae_core <> v:175 var
+R14469:14469 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R14470:14471 Picinae.Picinae_core PICINAE_CORE Mb def
+R14451:14455 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R14450:14450 Picinae.Picinae_core <> a:174 var
+R14457:14457 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R14458:14458 Picinae.Picinae_core <> w:170 var
+R14445:14447 Picinae.Picinae_core <> mem:173 var
+R14476:14481 Coq.NArith.BinNat N succ def
+R14483:14483 Picinae.Picinae_core <> a:174 var
+R14487:14494 Coq.NArith.BinNat N shiftr def
+R14496:14496 Picinae.Picinae_core <> v:175 var
+R14498:14499 Picinae.Picinae_core PICINAE_CORE Mb def
+def 14514:14519 PICINAE_CORE setmem
+R14524:14531 Picinae.Picinae_core <> bitwidth def
+binder 14522:14522 <> w:176
+R14537:14546 Picinae.Picinae_core <> endianness ind
+binder 14535:14535 <> e:177
+R14554:14561 Picinae.Picinae_core <> bitwidth def
+binder 14550:14552 <> len:178
+R14566:14566 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14574:14578 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14571:14572 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14567:14570 Picinae.Picinae_core <> addr def
+R14573:14573 Coq.Numbers.BinNums <> N ind
+R14583:14586 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14579:14582 Picinae.Picinae_core <> addr def
+R14588:14592 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14602:14602 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14587:14587 Coq.Numbers.BinNums <> N ind
+R14597:14600 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14593:14596 Picinae.Picinae_core <> addr def
+R14601:14601 Coq.Numbers.BinNums <> N ind
+R14609:14619 Coq.NArith.BinNat N recursion def
+R14705:14707 Picinae.Picinae_core <> len:178 var
+R14645:14645 Picinae.Picinae_core <> e:177 var
+R14652:14655 Picinae.Picinae_core <> BigE constr
+R14660:14669 Picinae.Picinae_core PICINAE_CORE setmem_big def
+R14673:14679 Picinae.Picinae_core <> LittleE constr
+R14684:14696 Picinae.Picinae_core PICINAE_CORE setmem_little def
+R14702:14702 Picinae.Picinae_core <> w:176 var
+binder 14626:14626 <> m:180
+R14635:14635 Picinae.Picinae_core <> m:180 var
+sec 14721:14737 PICINAE_CORE InterpreterEngine
+ind 15094:15101 PICINAE_CORE eval_exp
+constr 15140:15143 PICINAE_CORE EVar
+constr 15175:15179 PICINAE_CORE EWord
+constr 15220:15224 PICINAE_CORE ELoad
+constr 15462:15467 PICINAE_CORE EStore
+constr 15759:15764 PICINAE_CORE EBinOp
+constr 15912:15916 PICINAE_CORE EUnOp
+constr 16021:16025 PICINAE_CORE ECast
+constr 16134:16137 PICINAE_CORE ELet
+constr 16251:16258 PICINAE_CORE EUnknown
+constr 16314:16317 PICINAE_CORE EIte
+constr 16474:16481 PICINAE_CORE EExtract
+constr 16618:16624 PICINAE_CORE EConcat
+R15106:15110 Picinae.Picinae_core Arch store def
+binder 15104:15104 <> s:181
+R15117:15120 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15114:15116 Picinae.Picinae_core PICINAE_CORE exp ind
+R15126:15129 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15121:15125 Picinae.Picinae_core <> value def
+binder 15145:15145 <> v:184
+R15148:15155 Picinae.Picinae_core <> eval_exp:182 ind
+R15168:15168 Picinae.Picinae_core <> s:181 var
+R15170:15170 Picinae.Picinae_core <> v:184 var
+R15160:15162 Picinae.Picinae_core PICINAE_CORE Var constr
+R15164:15164 Picinae.Picinae_core <> v:184 var
+R15157:15157 Picinae.Picinae_core <> s:181 var
+binder 15181:15181 <> n:185
+binder 15183:15183 <> w:186
+R15186:15193 Picinae.Picinae_core <> eval_exp:182 ind
+R15209:15211 Picinae.Picinae_core <> VaN constr
+R15215:15215 Picinae.Picinae_core <> w:186 var
+R15213:15213 Picinae.Picinae_core <> n:185 var
+R15198:15201 Picinae.Picinae_core PICINAE_CORE Word constr
+R15203:15203 Picinae.Picinae_core <> n:185 var
+R15205:15205 Picinae.Picinae_core <> w:186 var
+R15195:15195 Picinae.Picinae_core <> s:181 var
+binder 15226:15227 <> e1:187
+binder 15229:15230 <> e2:188
+binder 15232:15233 <> en:189
+binder 15235:15237 <> len:190
+binder 15239:15240 <> mw:191
+binder 15242:15242 <> m:192
+binder 15244:15244 <> a:193
+R15259:15266 Picinae.Picinae_core <> eval_exp:182 ind
+R15274:15276 Picinae.Picinae_core <> VaM constr
+R15280:15281 Picinae.Picinae_core <> mw:191 var
+R15278:15278 Picinae.Picinae_core <> m:192 var
+R15270:15271 Picinae.Picinae_core <> e1:187 var
+R15268:15268 Picinae.Picinae_core <> s:181 var
+binder 15255:15256 <> E1:194
+R15290:15297 Picinae.Picinae_core <> eval_exp:182 ind
+R15305:15307 Picinae.Picinae_core <> VaN constr
+R15311:15312 Picinae.Picinae_core <> mw:191 var
+R15309:15309 Picinae.Picinae_core <> a:193 var
+R15301:15302 Picinae.Picinae_core <> e2:188 var
+R15299:15299 Picinae.Picinae_core <> s:181 var
+binder 15286:15287 <> E2:195
+binder 15335:15335 <> n:196
+R15345:15348 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15339:15341 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R15338:15338 Picinae.Picinae_core <> n:196 var
+R15342:15344 Picinae.Picinae_core <> len:190 var
+R15349:15360 Picinae.Picinae_core Arch mem_readable defax
+R15362:15362 Picinae.Picinae_core <> s:181 var
+R15365:15365 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R15369:15374 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R15367:15367 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R15366:15366 Picinae.Picinae_core <> a:193 var
+R15368:15368 Picinae.Picinae_core <> n:196 var
+R15376:15376 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R15377:15378 Picinae.Picinae_core <> mw:191 var
+binder 15325:15325 <> R:197
+R15391:15398 Picinae.Picinae_core <> eval_exp:182 ind
+R15423:15425 Picinae.Picinae_core <> VaN constr
+R15453:15453 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R15451:15452 Picinae.Picinae_core PICINAE_CORE Mb def
+R15454:15456 Picinae.Picinae_core <> len:190 var
+R15428:15433 Picinae.Picinae_core PICINAE_CORE getmem def
+R15435:15436 Picinae.Picinae_core <> mw:191 var
+R15438:15439 Picinae.Picinae_core <> en:189 var
+R15441:15443 Picinae.Picinae_core <> len:190 var
+R15445:15445 Picinae.Picinae_core <> m:192 var
+R15447:15447 Picinae.Picinae_core <> a:193 var
+R15403:15406 Picinae.Picinae_core PICINAE_CORE Load constr
+R15408:15409 Picinae.Picinae_core <> e1:187 var
+R15411:15412 Picinae.Picinae_core <> e2:188 var
+R15414:15415 Picinae.Picinae_core <> en:189 var
+R15417:15419 Picinae.Picinae_core <> len:190 var
+R15400:15400 Picinae.Picinae_core <> s:181 var
+binder 15469:15470 <> e1:198
+binder 15472:15473 <> e2:199
+binder 15475:15476 <> e3:200
+binder 15478:15479 <> en:201
+binder 15481:15483 <> len:202
+binder 15485:15486 <> mw:203
+binder 15488:15488 <> m:204
+binder 15490:15490 <> a:205
+binder 15492:15492 <> v:206
+R15508:15515 Picinae.Picinae_core <> eval_exp:182 ind
+R15523:15525 Picinae.Picinae_core <> VaM constr
+R15529:15530 Picinae.Picinae_core <> mw:203 var
+R15527:15527 Picinae.Picinae_core <> m:204 var
+R15519:15520 Picinae.Picinae_core <> e1:198 var
+R15517:15517 Picinae.Picinae_core <> s:181 var
+binder 15504:15505 <> E1:207
+R15539:15546 Picinae.Picinae_core <> eval_exp:182 ind
+R15554:15556 Picinae.Picinae_core <> VaN constr
+R15560:15561 Picinae.Picinae_core <> mw:203 var
+R15558:15558 Picinae.Picinae_core <> a:205 var
+R15550:15551 Picinae.Picinae_core <> e2:199 var
+R15548:15548 Picinae.Picinae_core <> s:181 var
+binder 15535:15536 <> E2:208
+R15579:15586 Picinae.Picinae_core <> eval_exp:182 ind
+R15594:15596 Picinae.Picinae_core <> VaN constr
+R15603:15603 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R15601:15602 Picinae.Picinae_core PICINAE_CORE Mb def
+R15604:15606 Picinae.Picinae_core <> len:202 var
+R15598:15598 Picinae.Picinae_core <> v:206 var
+R15590:15591 Picinae.Picinae_core <> e3:200 var
+R15588:15588 Picinae.Picinae_core <> s:181 var
+binder 15575:15576 <> E3:209
+binder 15631:15631 <> n:210
+R15641:15644 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15635:15637 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R15634:15634 Picinae.Picinae_core <> n:210 var
+R15638:15640 Picinae.Picinae_core <> len:202 var
+R15645:15656 Picinae.Picinae_core Arch mem_writable defax
+R15658:15658 Picinae.Picinae_core <> s:181 var
+R15661:15661 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R15665:15670 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R15663:15663 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R15662:15662 Picinae.Picinae_core <> a:205 var
+R15664:15664 Picinae.Picinae_core <> n:210 var
+R15672:15672 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R15673:15674 Picinae.Picinae_core <> mw:203 var
+binder 15621:15621 <> W:211
+R15688:15695 Picinae.Picinae_core <> eval_exp:182 ind
+R15724:15726 Picinae.Picinae_core <> VaM constr
+R15753:15754 Picinae.Picinae_core <> mw:203 var
+R15729:15734 Picinae.Picinae_core PICINAE_CORE setmem def
+R15736:15737 Picinae.Picinae_core <> mw:203 var
+R15739:15740 Picinae.Picinae_core <> en:201 var
+R15742:15744 Picinae.Picinae_core <> len:202 var
+R15746:15746 Picinae.Picinae_core <> m:204 var
+R15748:15748 Picinae.Picinae_core <> a:205 var
+R15750:15750 Picinae.Picinae_core <> v:206 var
+R15700:15704 Picinae.Picinae_core PICINAE_CORE Store constr
+R15706:15707 Picinae.Picinae_core <> e1:198 var
+R15709:15710 Picinae.Picinae_core <> e2:199 var
+R15712:15713 Picinae.Picinae_core <> e3:200 var
+R15715:15716 Picinae.Picinae_core <> en:201 var
+R15718:15720 Picinae.Picinae_core <> len:202 var
+R15697:15697 Picinae.Picinae_core <> s:181 var
+binder 15766:15768 <> bop:212
+binder 15770:15771 <> e1:213
+binder 15773:15774 <> e2:214
+binder 15776:15777 <> n1:215
+binder 15779:15780 <> n2:216
+binder 15782:15782 <> w:217
+R15789:15796 Picinae.Picinae_core <> eval_exp:182 ind
+R15804:15806 Picinae.Picinae_core <> VaN constr
+R15811:15811 Picinae.Picinae_core <> w:217 var
+R15808:15809 Picinae.Picinae_core <> n1:215 var
+R15800:15801 Picinae.Picinae_core <> e1:213 var
+R15798:15798 Picinae.Picinae_core <> s:181 var
+binder 15785:15786 <> E1:218
+R15820:15827 Picinae.Picinae_core <> eval_exp:182 ind
+R15835:15837 Picinae.Picinae_core <> VaN constr
+R15842:15842 Picinae.Picinae_core <> w:217 var
+R15839:15840 Picinae.Picinae_core <> n2:216 var
+R15831:15832 Picinae.Picinae_core <> e2:214 var
+R15829:15829 Picinae.Picinae_core <> s:181 var
+binder 15816:15817 <> E2:219
+R15856:15863 Picinae.Picinae_core <> eval_exp:182 ind
+R15886:15895 Picinae.Picinae_core <> eval_binop def
+R15897:15899 Picinae.Picinae_core <> bop:212 var
+R15901:15901 Picinae.Picinae_core <> w:217 var
+R15903:15904 Picinae.Picinae_core <> n1:215 var
+R15906:15907 Picinae.Picinae_core <> n2:216 var
+R15868:15872 Picinae.Picinae_core PICINAE_CORE BinOp constr
+R15874:15876 Picinae.Picinae_core <> bop:212 var
+R15878:15879 Picinae.Picinae_core <> e1:213 var
+R15881:15882 Picinae.Picinae_core <> e2:214 var
+R15865:15865 Picinae.Picinae_core <> s:181 var
+binder 15918:15920 <> uop:220
+binder 15922:15923 <> e1:221
+binder 15925:15926 <> n1:222
+binder 15928:15929 <> w1:223
+R15936:15943 Picinae.Picinae_core <> eval_exp:182 ind
+R15951:15953 Picinae.Picinae_core <> VaN constr
+R15958:15959 Picinae.Picinae_core <> w1:223 var
+R15955:15956 Picinae.Picinae_core <> n1:222 var
+R15947:15948 Picinae.Picinae_core <> e1:221 var
+R15945:15945 Picinae.Picinae_core <> s:181 var
+binder 15932:15933 <> E1:224
+R15972:15979 Picinae.Picinae_core <> eval_exp:182 ind
+R15998:16006 Picinae.Picinae_core <> eval_unop def
+R16008:16010 Picinae.Picinae_core <> uop:220 var
+R16012:16013 Picinae.Picinae_core <> n1:222 var
+R16015:16016 Picinae.Picinae_core <> w1:223 var
+R15984:15987 Picinae.Picinae_core PICINAE_CORE UnOp constr
+R15989:15991 Picinae.Picinae_core <> uop:220 var
+R15993:15994 Picinae.Picinae_core <> e1:221 var
+R15981:15981 Picinae.Picinae_core <> s:181 var
+binder 16027:16028 <> ct:225
+binder 16030:16030 <> w:226
+binder 16032:16033 <> w':227
+binder 16035:16036 <> e1:228
+binder 16038:16038 <> n:229
+R16045:16052 Picinae.Picinae_core <> eval_exp:182 ind
+R16060:16062 Picinae.Picinae_core <> VaN constr
+R16066:16066 Picinae.Picinae_core <> w:226 var
+R16064:16064 Picinae.Picinae_core <> n:229 var
+R16056:16057 Picinae.Picinae_core <> e1:228 var
+R16054:16054 Picinae.Picinae_core <> s:181 var
+binder 16041:16042 <> E1:230
+R16079:16086 Picinae.Picinae_core <> eval_exp:182 ind
+R16107:16109 Picinae.Picinae_core <> VaN constr
+R16128:16129 Picinae.Picinae_core <> w':227 var
+R16112:16115 Picinae.Picinae_core <> cast def
+R16117:16118 Picinae.Picinae_core <> ct:225 var
+R16120:16120 Picinae.Picinae_core <> w:226 var
+R16122:16123 Picinae.Picinae_core <> w':227 var
+R16125:16125 Picinae.Picinae_core <> n:229 var
+R16091:16094 Picinae.Picinae_core PICINAE_CORE Cast constr
+R16096:16097 Picinae.Picinae_core <> ct:225 var
+R16099:16100 Picinae.Picinae_core <> w':227 var
+R16102:16103 Picinae.Picinae_core <> e1:228 var
+R16088:16088 Picinae.Picinae_core <> s:181 var
+binder 16139:16139 <> v:231
+binder 16141:16142 <> e1:232
+binder 16144:16145 <> e2:233
+binder 16147:16148 <> u1:234
+binder 16150:16151 <> u2:235
+R16158:16165 Picinae.Picinae_core <> eval_exp:182 ind
+R16172:16173 Picinae.Picinae_core <> u1:234 var
+R16169:16170 Picinae.Picinae_core <> e1:232 var
+R16167:16167 Picinae.Picinae_core <> s:181 var
+binder 16154:16155 <> E1:236
+R16181:16188 Picinae.Picinae_core <> eval_exp:182 ind
+R16209:16210 Picinae.Picinae_core <> u2:235 var
+R16206:16207 Picinae.Picinae_core <> e2:233 var
+R16191:16196 Picinae.Picinae_core <> update def
+R16202:16203 Picinae.Picinae_core <> u1:234 var
+R16200:16200 Picinae.Picinae_core <> v:231 var
+R16198:16198 Picinae.Picinae_core <> s:181 var
+binder 16177:16178 <> E2:237
+R16221:16228 Picinae.Picinae_core <> eval_exp:182 ind
+R16246:16247 Picinae.Picinae_core <> u2:235 var
+R16233:16235 Picinae.Picinae_core PICINAE_CORE Let constr
+R16237:16237 Picinae.Picinae_core <> v:231 var
+R16239:16240 Picinae.Picinae_core <> e1:232 var
+R16242:16243 Picinae.Picinae_core <> e2:233 var
+R16230:16230 Picinae.Picinae_core <> s:181 var
+binder 16260:16260 <> n:238
+binder 16262:16262 <> w:239
+R16270:16272 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R16269:16269 Picinae.Picinae_core <> n:238 var
+R16274:16274 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R16275:16275 Picinae.Picinae_core <> w:239 var
+binder 16265:16266 <> LT:240
+R16279:16286 Picinae.Picinae_core <> eval_exp:182 ind
+R16303:16305 Picinae.Picinae_core <> VaN constr
+R16309:16309 Picinae.Picinae_core <> w:239 var
+R16307:16307 Picinae.Picinae_core <> n:238 var
+R16291:16297 Picinae.Picinae_core PICINAE_CORE Unknown constr
+R16299:16299 Picinae.Picinae_core <> w:239 var
+R16288:16288 Picinae.Picinae_core <> s:181 var
+binder 16319:16320 <> e1:241
+binder 16322:16323 <> e2:242
+binder 16325:16326 <> e3:243
+binder 16328:16329 <> n1:244
+binder 16331:16332 <> w1:245
+binder 16334:16335 <> u':246
+R16342:16349 Picinae.Picinae_core <> eval_exp:182 ind
+R16357:16359 Picinae.Picinae_core <> VaN constr
+R16364:16365 Picinae.Picinae_core <> w1:245 var
+R16361:16362 Picinae.Picinae_core <> n1:244 var
+R16353:16354 Picinae.Picinae_core <> e1:241 var
+R16351:16351 Picinae.Picinae_core <> s:181 var
+binder 16338:16339 <> E1:247
+R16381:16388 Picinae.Picinae_core <> eval_exp:182 ind
+R16431:16432 Picinae.Picinae_core <> u':246 var
+R16399:16400 Picinae.Picinae_core <> n1:244 var
+R16407:16408 Coq.Numbers.BinNums <> N0 constr
+R16413:16414 Picinae.Picinae_core <> e3:243 var
+R16423:16424 Picinae.Picinae_core <> e2:242 var
+R16390:16390 Picinae.Picinae_core <> s:181 var
+binder 16377:16378 <> E':249
+R16443:16450 Picinae.Picinae_core <> eval_exp:182 ind
+R16469:16470 Picinae.Picinae_core <> u':246 var
+R16455:16457 Picinae.Picinae_core PICINAE_CORE Ite constr
+R16459:16460 Picinae.Picinae_core <> e1:241 var
+R16462:16463 Picinae.Picinae_core <> e2:242 var
+R16465:16466 Picinae.Picinae_core <> e3:243 var
+R16452:16452 Picinae.Picinae_core <> s:181 var
+binder 16483:16483 <> w:250
+binder 16485:16486 <> n1:251
+binder 16488:16489 <> n2:252
+binder 16491:16492 <> e1:253
+binder 16494:16494 <> n:254
+R16501:16508 Picinae.Picinae_core <> eval_exp:182 ind
+R16516:16518 Picinae.Picinae_core <> VaN constr
+R16522:16522 Picinae.Picinae_core <> w:250 var
+R16520:16520 Picinae.Picinae_core <> n:254 var
+R16512:16513 Picinae.Picinae_core <> e1:253 var
+R16510:16510 Picinae.Picinae_core <> s:181 var
+binder 16497:16498 <> E1:255
+R16538:16545 Picinae.Picinae_core <> eval_exp:182 ind
+R16569:16571 Picinae.Picinae_core <> VaN constr
+R16608:16610 Coq.NArith.BinNat <> ::N_scope:x_'-'_x not
+R16599:16604 Coq.NArith.BinNat N succ def
+R16606:16607 Picinae.Picinae_core <> n1:251 var
+R16611:16612 Picinae.Picinae_core <> n2:252 var
+R16574:16578 Picinae.Picinae_core <> xbits def
+R16580:16580 Picinae.Picinae_core <> n:254 var
+R16582:16583 Picinae.Picinae_core <> n2:252 var
+R16586:16591 Coq.NArith.BinNat N succ def
+R16593:16594 Picinae.Picinae_core <> n1:251 var
+R16550:16556 Picinae.Picinae_core PICINAE_CORE Extract constr
+R16558:16559 Picinae.Picinae_core <> n1:251 var
+R16561:16562 Picinae.Picinae_core <> n2:252 var
+R16564:16565 Picinae.Picinae_core <> e1:253 var
+R16547:16547 Picinae.Picinae_core <> s:181 var
+binder 16626:16627 <> e1:256
+binder 16629:16630 <> e2:257
+binder 16632:16633 <> n1:258
+binder 16635:16636 <> w1:259
+binder 16638:16639 <> n2:260
+binder 16641:16642 <> w2:261
+R16649:16656 Picinae.Picinae_core <> eval_exp:182 ind
+R16664:16666 Picinae.Picinae_core <> VaN constr
+R16671:16672 Picinae.Picinae_core <> w1:259 var
+R16668:16669 Picinae.Picinae_core <> n1:258 var
+R16660:16661 Picinae.Picinae_core <> e1:256 var
+R16658:16658 Picinae.Picinae_core <> s:181 var
+binder 16645:16646 <> E1:262
+R16681:16688 Picinae.Picinae_core <> eval_exp:182 ind
+R16696:16698 Picinae.Picinae_core <> VaN constr
+R16703:16704 Picinae.Picinae_core <> w2:261 var
+R16700:16701 Picinae.Picinae_core <> n2:260 var
+R16692:16693 Picinae.Picinae_core <> e2:257 var
+R16690:16690 Picinae.Picinae_core <> s:181 var
+binder 16677:16678 <> E2:263
+R16719:16726 Picinae.Picinae_core <> eval_exp:182 ind
+R16746:16748 Picinae.Picinae_core <> VaN constr
+R16781:16781 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R16779:16780 Picinae.Picinae_core <> w1:259 var
+R16782:16783 Picinae.Picinae_core <> w2:261 var
+R16751:16755 Coq.NArith.BinNat N lor def
+R16758:16765 Coq.NArith.BinNat N shiftl def
+R16767:16768 Picinae.Picinae_core <> n1:258 var
+R16770:16771 Picinae.Picinae_core <> w2:261 var
+R16774:16775 Picinae.Picinae_core <> n2:260 var
+R16731:16736 Picinae.Picinae_core PICINAE_CORE Concat constr
+R16738:16739 Picinae.Picinae_core <> e1:256 var
+R16741:16742 Picinae.Picinae_core <> e2:257 var
+R16728:16728 Picinae.Picinae_core <> s:181 var
+ind 16983:16991 PICINAE_CORE exec_stmt
+constr 17046:17049 PICINAE_CORE XNop
+constr 17077:17081 PICINAE_CORE XMove
+constr 17159:17162 PICINAE_CORE XJmp
+constr 17243:17246 PICINAE_CORE XExn
+constr 17292:17296 PICINAE_CORE XSeq1
+constr 17385:17389 PICINAE_CORE XSeq2
+constr 17502:17504 PICINAE_CORE XIf
+constr 17659:17662 PICINAE_CORE XRep
+R16996:17000 Picinae.Picinae_core Arch store def
+binder 16994:16994 <> s:264
+R17008:17011 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17004:17007 Picinae.Picinae_core PICINAE_CORE stmt ind
+R17017:17020 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17012:17016 Picinae.Picinae_core Arch store def
+R17032:17035 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17021:17026 Coq.Init.Datatypes <> option ind
+R17028:17031 Picinae.Picinae_core <> exit ind
+R17052:17060 Picinae.Picinae_core <> exec_stmt:265 ind
+R17070:17073 Coq.Init.Datatypes <> None constr
+R17068:17068 Picinae.Picinae_core <> s:264 var
+R17064:17066 Picinae.Picinae_core PICINAE_CORE Nop constr
+R17062:17062 Picinae.Picinae_core <> s:264 var
+binder 17083:17083 <> v:267
+binder 17085:17085 <> e:268
+binder 17087:17087 <> u:269
+R17093:17100 Picinae.Picinae_core PICINAE_CORE eval_exp ind
+R17102:17102 Picinae.Picinae_core <> s:264 var
+R17104:17104 Picinae.Picinae_core <> e:268 var
+R17106:17106 Picinae.Picinae_core <> u:269 var
+binder 17090:17090 <> E:270
+R17114:17122 Picinae.Picinae_core <> exec_stmt:265 ind
+R17152:17155 Coq.Init.Datatypes <> None constr
+R17138:17143 Picinae.Picinae_core <> update def
+R17149:17149 Picinae.Picinae_core <> u:269 var
+R17147:17147 Picinae.Picinae_core <> v:267 var
+R17145:17145 Picinae.Picinae_core <> s:264 var
+R17127:17130 Picinae.Picinae_core PICINAE_CORE Move constr
+R17132:17132 Picinae.Picinae_core <> v:267 var
+R17134:17134 Picinae.Picinae_core <> e:268 var
+R17124:17124 Picinae.Picinae_core <> s:264 var
+binder 17164:17164 <> e:271
+binder 17166:17166 <> a:272
+binder 17168:17168 <> w:273
+R17174:17181 Picinae.Picinae_core PICINAE_CORE eval_exp ind
+R17183:17183 Picinae.Picinae_core <> s:264 var
+R17185:17185 Picinae.Picinae_core <> e:271 var
+R17188:17190 Picinae.Picinae_core <> VaN constr
+R17194:17194 Picinae.Picinae_core <> w:273 var
+R17192:17192 Picinae.Picinae_core <> a:272 var
+binder 17171:17171 <> E:274
+R17203:17211 Picinae.Picinae_core <> exec_stmt:265 ind
+R17226:17229 Coq.Init.Datatypes <> Some constr
+R17232:17235 Picinae.Picinae_core <> Addr constr
+R17237:17237 Picinae.Picinae_core <> a:272 var
+R17223:17223 Picinae.Picinae_core <> s:264 var
+R17216:17218 Picinae.Picinae_core PICINAE_CORE Jmp constr
+R17220:17220 Picinae.Picinae_core <> e:271 var
+R17213:17213 Picinae.Picinae_core <> s:264 var
+binder 17248:17248 <> i:275
+R17251:17259 Picinae.Picinae_core <> exec_stmt:265 ind
+R17274:17277 Coq.Init.Datatypes <> Some constr
+R17280:17284 Picinae.Picinae_core <> Raise constr
+R17286:17286 Picinae.Picinae_core <> i:275 var
+R17271:17271 Picinae.Picinae_core <> s:264 var
+R17264:17266 Picinae.Picinae_core PICINAE_CORE Exn constr
+R17268:17268 Picinae.Picinae_core <> i:275 var
+R17261:17261 Picinae.Picinae_core <> s:264 var
+binder 17298:17299 <> q1:276
+binder 17301:17302 <> q2:277
+binder 17304:17305 <> s':278
+binder 17307:17307 <> x:279
+R17314:17322 Picinae.Picinae_core <> exec_stmt:265 ind
+R17333:17336 Coq.Init.Datatypes <> Some constr
+R17338:17338 Picinae.Picinae_core <> x:279 var
+R17329:17330 Picinae.Picinae_core <> s':278 var
+R17326:17327 Picinae.Picinae_core <> q1:276 var
+R17324:17324 Picinae.Picinae_core <> s:264 var
+binder 17310:17311 <> XS:280
+R17347:17355 Picinae.Picinae_core <> exec_stmt:265 ind
+R17375:17378 Coq.Init.Datatypes <> Some constr
+R17380:17380 Picinae.Picinae_core <> x:279 var
+R17371:17372 Picinae.Picinae_core <> s':278 var
+R17360:17362 Picinae.Picinae_core PICINAE_CORE Seq constr
+R17364:17365 Picinae.Picinae_core <> q1:276 var
+R17367:17368 Picinae.Picinae_core <> q2:277 var
+R17357:17357 Picinae.Picinae_core <> s:264 var
+binder 17391:17392 <> q1:281
+binder 17394:17395 <> q2:282
+binder 17397:17398 <> s2:283
+binder 17400:17401 <> s':284
+binder 17403:17404 <> x':285
+R17412:17420 Picinae.Picinae_core <> exec_stmt:265 ind
+R17430:17433 Coq.Init.Datatypes <> None constr
+R17427:17428 Picinae.Picinae_core <> s2:283 var
+R17424:17425 Picinae.Picinae_core <> q1:281 var
+R17422:17422 Picinae.Picinae_core <> s:264 var
+binder 17407:17409 <> XS1:286
+R17442:17450 Picinae.Picinae_core <> exec_stmt:265 ind
+R17461:17462 Picinae.Picinae_core <> x':285 var
+R17458:17459 Picinae.Picinae_core <> s':284 var
+R17455:17456 Picinae.Picinae_core <> q2:282 var
+R17452:17453 Picinae.Picinae_core <> s2:283 var
+binder 17437:17439 <> XS1:287
+R17470:17478 Picinae.Picinae_core <> exec_stmt:265 ind
+R17497:17498 Picinae.Picinae_core <> x':285 var
+R17494:17495 Picinae.Picinae_core <> s':284 var
+R17483:17485 Picinae.Picinae_core PICINAE_CORE Seq constr
+R17487:17488 Picinae.Picinae_core <> q1:281 var
+R17490:17491 Picinae.Picinae_core <> q2:282 var
+R17480:17480 Picinae.Picinae_core <> s:264 var
+binder 17506:17506 <> e:288
+binder 17508:17509 <> q1:289
+binder 17511:17512 <> q2:290
+binder 17514:17514 <> c:291
+binder 17516:17517 <> s':292
+binder 17519:17519 <> x:293
+R17531:17538 Picinae.Picinae_core PICINAE_CORE eval_exp ind
+R17540:17540 Picinae.Picinae_core <> s:264 var
+R17542:17542 Picinae.Picinae_core <> e:288 var
+R17545:17547 Picinae.Picinae_core <> VaN constr
+R17549:17549 Picinae.Picinae_core <> c:291 var
+binder 17528:17528 <> E:294
+R17566:17574 Picinae.Picinae_core <> exec_stmt:265 ind
+R17619:17619 Picinae.Picinae_core <> x:293 var
+R17616:17617 Picinae.Picinae_core <> s':292 var
+R17585:17585 Picinae.Picinae_core <> c:291 var
+R17592:17593 Coq.Numbers.BinNums <> N0 constr
+R17598:17599 Picinae.Picinae_core <> q2:290 var
+R17608:17609 Picinae.Picinae_core <> q1:289 var
+R17576:17576 Picinae.Picinae_core <> s:264 var
+binder 17562:17563 <> XS:296
+R17627:17635 Picinae.Picinae_core <> exec_stmt:265 ind
+R17655:17655 Picinae.Picinae_core <> x:293 var
+R17652:17653 Picinae.Picinae_core <> s':292 var
+R17640:17641 Picinae.Picinae_core PICINAE_CORE If constr
+R17643:17643 Picinae.Picinae_core <> e:288 var
+R17645:17646 Picinae.Picinae_core <> q1:289 var
+R17648:17649 Picinae.Picinae_core <> q2:290 var
+R17637:17637 Picinae.Picinae_core <> s:264 var
+binder 17664:17664 <> n:297
+binder 17666:17666 <> w:298
+binder 17668:17668 <> e:299
+binder 17670:17670 <> q:300
+binder 17672:17673 <> s':301
+binder 17675:17675 <> x:302
+R17688:17695 Picinae.Picinae_core PICINAE_CORE eval_exp ind
+R17697:17697 Picinae.Picinae_core <> s:264 var
+R17699:17699 Picinae.Picinae_core <> e:299 var
+R17702:17704 Picinae.Picinae_core <> VaN constr
+R17708:17708 Picinae.Picinae_core <> w:298 var
+R17706:17706 Picinae.Picinae_core <> n:297 var
+binder 17685:17685 <> E:303
+R17717:17725 Picinae.Picinae_core <> exec_stmt:265 ind
+R17755:17755 Picinae.Picinae_core <> x:302 var
+R17752:17753 Picinae.Picinae_core <> s':301 var
+R17730:17735 Coq.NArith.BinNat N iter def
+R17747:17749 Picinae.Picinae_core PICINAE_CORE Nop constr
+R17740:17742 Picinae.Picinae_core PICINAE_CORE Seq constr
+R17744:17744 Picinae.Picinae_core <> q:300 var
+R17737:17737 Picinae.Picinae_core <> n:297 var
+R17727:17727 Picinae.Picinae_core <> s:264 var
+binder 17713:17714 <> XS:304
+R17763:17771 Picinae.Picinae_core <> exec_stmt:265 ind
+R17788:17788 Picinae.Picinae_core <> x:302 var
+R17785:17786 Picinae.Picinae_core <> s':301 var
+R17776:17778 Picinae.Picinae_core PICINAE_CORE Rep constr
+R17780:17780 Picinae.Picinae_core <> e:299 var
+R17782:17782 Picinae.Picinae_core <> q:300 var
+R17773:17773 Picinae.Picinae_core <> s:264 var
+def 17877:17881 PICINAE_CORE trace
+R17886:17889 Coq.Init.Datatypes <> list ind
+R17896:17898 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R17892:17895 Picinae.Picinae_core <> exit ind
+R17899:17903 Picinae.Picinae_core Arch store def
+ind 17918:17925 PICINAE_CORE can_step
+constr 17983:17989 PICINAE_CORE CanStep
+R17930:17936 Picinae.Picinae_core PICINAE_CORE program def
+binder 17928:17928 <> p:305
+R17940:17940 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17968:17972 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17941:17941 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R17952:17956 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R17967:17967 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R17946:17946 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R17942:17945 Picinae.Picinae_core <> exit ind
+R17947:17951 Picinae.Picinae_core Arch store def
+R17961:17961 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R17957:17960 Picinae.Picinae_core <> exit ind
+R17962:17966 Picinae.Picinae_core Arch store def
+binder 17991:17991 <> a:308
+binder 17993:17993 <> s:309
+binder 17995:17996 <> sz:310
+binder 17998:17998 <> q:311
+binder 18000:18001 <> s':312
+binder 18003:18003 <> x:313
+R18015:18017 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18010:18010 Picinae.Picinae_core <> p:305 var
+R18012:18012 Picinae.Picinae_core <> s:309 var
+R18014:18014 Picinae.Picinae_core <> a:308 var
+R18018:18021 Coq.Init.Datatypes <> Some constr
+R18023:18023 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18026:18026 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18028:18028 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18024:18025 Picinae.Picinae_core <> sz:310 var
+R18027:18027 Picinae.Picinae_core <> q:311 var
+binder 18006:18007 <> LU:314
+R18036:18044 Picinae.Picinae_core PICINAE_CORE exec_stmt ind
+R18046:18046 Picinae.Picinae_core <> s:309 var
+R18048:18048 Picinae.Picinae_core <> q:311 var
+R18050:18051 Picinae.Picinae_core <> s':312 var
+R18053:18053 Picinae.Picinae_core <> x:313 var
+binder 18032:18033 <> XS:315
+R18061:18068 Picinae.Picinae_core <> can_step:306 ind
+R18072:18072 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18094:18094 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18106:18106 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18073:18073 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18089:18090 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18093:18093 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18074:18079 Picinae.Picinae_core <> exitof def
+R18083:18083 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R18082:18082 Picinae.Picinae_core <> a:308 var
+R18084:18085 Picinae.Picinae_core <> sz:310 var
+R18088:18088 Picinae.Picinae_core <> x:313 var
+R18091:18092 Picinae.Picinae_core <> s':312 var
+R18095:18095 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18102:18103 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18105:18105 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R18096:18099 Picinae.Picinae_core <> Addr constr
+R18101:18101 Picinae.Picinae_core <> a:308 var
+R18104:18104 Picinae.Picinae_core <> s:309 var
+R18070:18070 Picinae.Picinae_core <> p:305 var
+def 18121:18129 PICINAE_CORE exec_prog
+R18134:18140 Picinae.Picinae_core PICINAE_CORE program def
+binder 18132:18132 <> p:316
+R18146:18150 Picinae.Picinae_core PICINAE_CORE trace def
+binder 18144:18144 <> t:317
+R18156:18161 Coq.Lists.List <> Forall ind
+R18177:18183 Picinae.Picinae_core <> stepsof def
+R18185:18185 Picinae.Picinae_core <> t:317 var
+R18164:18171 Picinae.Picinae_core PICINAE_CORE can_step ind
+R18173:18173 Picinae.Picinae_core <> p:316 var
+R18194:18210 Picinae.Picinae_core PICINAE_CORE.InterpreterEngine <> sec
+sec 18223:18236 PICINAE_CORE Quantification
+def 18320:18330 PICINAE_CORE exps_in_exp
+binder 18333:18333 <> T:318
+R18345:18346 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18344:18344 Picinae.Picinae_core <> T:318 var
+R18348:18349 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18347:18347 Picinae.Picinae_core <> T:318 var
+R18350:18350 Picinae.Picinae_core <> T:318 var
+binder 18342:18342 <> C:319
+R18359:18360 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18356:18358 Picinae.Picinae_core PICINAE_CORE exp ind
+R18361:18361 Picinae.Picinae_core <> T:318 var
+binder 18354:18354 <> P:320
+R18367:18369 Picinae.Picinae_core PICINAE_CORE exp ind
+binder 18365:18365 <> e:321
+R18374:18374 Picinae.Picinae_core <> T:318 var
+R18387:18387 Picinae.Picinae_core <> e:321 var
+R18398:18400 Picinae.Picinae_core PICINAE_CORE Var constr
+R18406:18409 Picinae.Picinae_core PICINAE_CORE Word constr
+R18417:18423 Picinae.Picinae_core PICINAE_CORE Unknown constr
+R18430:18430 Picinae.Picinae_core <> P:320 var
+R18432:18432 Picinae.Picinae_core <> e:321 var
+R18430:18430 Picinae.Picinae_core <> P:320 var
+R18432:18432 Picinae.Picinae_core <> e:321 var
+R18430:18430 Picinae.Picinae_core <> P:320 var
+R18432:18432 Picinae.Picinae_core <> e:321 var
+R18438:18441 Picinae.Picinae_core PICINAE_CORE UnOp constr
+R18450:18453 Picinae.Picinae_core PICINAE_CORE Cast constr
+R18464:18470 Picinae.Picinae_core PICINAE_CORE Extract constr
+R18482:18482 Picinae.Picinae_core <> C:319 var
+R18491:18501 Picinae.Picinae_core <> exps_in_exp:322 def
+R18505:18505 Picinae.Picinae_core <> P:320 var
+R18503:18503 Picinae.Picinae_core <> C:319 var
+R18485:18485 Picinae.Picinae_core <> P:320 var
+R18487:18487 Picinae.Picinae_core <> e:321 var
+R18482:18482 Picinae.Picinae_core <> C:319 var
+R18491:18501 Picinae.Picinae_core <> exps_in_exp:322 def
+R18505:18505 Picinae.Picinae_core <> P:320 var
+R18503:18503 Picinae.Picinae_core <> C:319 var
+R18485:18485 Picinae.Picinae_core <> P:320 var
+R18487:18487 Picinae.Picinae_core <> e:321 var
+R18482:18482 Picinae.Picinae_core <> C:319 var
+R18491:18501 Picinae.Picinae_core <> exps_in_exp:322 def
+R18505:18505 Picinae.Picinae_core <> P:320 var
+R18503:18503 Picinae.Picinae_core <> C:319 var
+R18485:18485 Picinae.Picinae_core <> P:320 var
+R18487:18487 Picinae.Picinae_core <> e:321 var
+R18515:18519 Picinae.Picinae_core PICINAE_CORE BinOp constr
+R18531:18533 Picinae.Picinae_core PICINAE_CORE Let constr
+R18545:18550 Picinae.Picinae_core PICINAE_CORE Concat constr
+R18560:18563 Picinae.Picinae_core PICINAE_CORE Load constr
+R18584:18584 Picinae.Picinae_core <> C:319 var
+R18593:18593 Picinae.Picinae_core <> C:319 var
+R18617:18627 Picinae.Picinae_core <> exps_in_exp:322 def
+R18631:18631 Picinae.Picinae_core <> P:320 var
+R18629:18629 Picinae.Picinae_core <> C:319 var
+R18596:18606 Picinae.Picinae_core <> exps_in_exp:322 def
+R18610:18610 Picinae.Picinae_core <> P:320 var
+R18608:18608 Picinae.Picinae_core <> C:319 var
+R18587:18587 Picinae.Picinae_core <> P:320 var
+R18589:18589 Picinae.Picinae_core <> e:321 var
+R18584:18584 Picinae.Picinae_core <> C:319 var
+R18593:18593 Picinae.Picinae_core <> C:319 var
+R18617:18627 Picinae.Picinae_core <> exps_in_exp:322 def
+R18631:18631 Picinae.Picinae_core <> P:320 var
+R18629:18629 Picinae.Picinae_core <> C:319 var
+R18596:18606 Picinae.Picinae_core <> exps_in_exp:322 def
+R18610:18610 Picinae.Picinae_core <> P:320 var
+R18608:18608 Picinae.Picinae_core <> C:319 var
+R18587:18587 Picinae.Picinae_core <> P:320 var
+R18589:18589 Picinae.Picinae_core <> e:321 var
+R18584:18584 Picinae.Picinae_core <> C:319 var
+R18593:18593 Picinae.Picinae_core <> C:319 var
+R18617:18627 Picinae.Picinae_core <> exps_in_exp:322 def
+R18631:18631 Picinae.Picinae_core <> P:320 var
+R18629:18629 Picinae.Picinae_core <> C:319 var
+R18596:18606 Picinae.Picinae_core <> exps_in_exp:322 def
+R18610:18610 Picinae.Picinae_core <> P:320 var
+R18608:18608 Picinae.Picinae_core <> C:319 var
+R18587:18587 Picinae.Picinae_core <> P:320 var
+R18589:18589 Picinae.Picinae_core <> e:321 var
+R18584:18584 Picinae.Picinae_core <> C:319 var
+R18593:18593 Picinae.Picinae_core <> C:319 var
+R18617:18627 Picinae.Picinae_core <> exps_in_exp:322 def
+R18631:18631 Picinae.Picinae_core <> P:320 var
+R18629:18629 Picinae.Picinae_core <> C:319 var
+R18596:18606 Picinae.Picinae_core <> exps_in_exp:322 def
+R18610:18610 Picinae.Picinae_core <> P:320 var
+R18608:18608 Picinae.Picinae_core <> C:319 var
+R18587:18587 Picinae.Picinae_core <> P:320 var
+R18589:18589 Picinae.Picinae_core <> e:321 var
+R18642:18644 Picinae.Picinae_core PICINAE_CORE Ite constr
+R18657:18661 Picinae.Picinae_core PICINAE_CORE Store constr
+R18685:18685 Picinae.Picinae_core <> C:319 var
+R18694:18694 Picinae.Picinae_core <> C:319 var
+R18718:18718 Picinae.Picinae_core <> C:319 var
+R18742:18752 Picinae.Picinae_core <> exps_in_exp:322 def
+R18756:18756 Picinae.Picinae_core <> P:320 var
+R18754:18754 Picinae.Picinae_core <> C:319 var
+R18721:18731 Picinae.Picinae_core <> exps_in_exp:322 def
+R18735:18735 Picinae.Picinae_core <> P:320 var
+R18733:18733 Picinae.Picinae_core <> C:319 var
+R18697:18707 Picinae.Picinae_core <> exps_in_exp:322 def
+R18711:18711 Picinae.Picinae_core <> P:320 var
+R18709:18709 Picinae.Picinae_core <> C:319 var
+R18688:18688 Picinae.Picinae_core <> P:320 var
+R18690:18690 Picinae.Picinae_core <> e:321 var
+R18685:18685 Picinae.Picinae_core <> C:319 var
+R18694:18694 Picinae.Picinae_core <> C:319 var
+R18718:18718 Picinae.Picinae_core <> C:319 var
+R18742:18752 Picinae.Picinae_core <> exps_in_exp:322 def
+R18756:18756 Picinae.Picinae_core <> P:320 var
+R18754:18754 Picinae.Picinae_core <> C:319 var
+R18721:18731 Picinae.Picinae_core <> exps_in_exp:322 def
+R18735:18735 Picinae.Picinae_core <> P:320 var
+R18733:18733 Picinae.Picinae_core <> C:319 var
+R18697:18707 Picinae.Picinae_core <> exps_in_exp:322 def
+R18711:18711 Picinae.Picinae_core <> P:320 var
+R18709:18709 Picinae.Picinae_core <> C:319 var
+R18688:18688 Picinae.Picinae_core <> P:320 var
+R18690:18690 Picinae.Picinae_core <> e:321 var
+def 18781:18792 PICINAE_CORE exps_in_stmt
+binder 18795:18795 <> T:324
+R18807:18808 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18806:18806 Picinae.Picinae_core <> T:324 var
+R18810:18811 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18809:18809 Picinae.Picinae_core <> T:324 var
+R18812:18812 Picinae.Picinae_core <> T:324 var
+binder 18804:18804 <> C:325
+R18818:18818 Picinae.Picinae_core <> T:324 var
+binder 18816:18816 <> b:326
+R18827:18828 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18824:18826 Picinae.Picinae_core PICINAE_CORE exp ind
+R18829:18829 Picinae.Picinae_core <> T:324 var
+binder 18822:18822 <> P:327
+R18835:18838 Picinae.Picinae_core PICINAE_CORE stmt ind
+binder 18833:18833 <> q:328
+R18843:18843 Picinae.Picinae_core <> T:324 var
+R18856:18856 Picinae.Picinae_core <> q:328 var
+R18867:18869 Picinae.Picinae_core PICINAE_CORE Nop constr
+R18873:18875 Picinae.Picinae_core PICINAE_CORE Exn constr
+R18882:18882 Picinae.Picinae_core <> b:326 var
+R18882:18882 Picinae.Picinae_core <> b:326 var
+R18888:18891 Picinae.Picinae_core PICINAE_CORE Move constr
+R18899:18901 Picinae.Picinae_core PICINAE_CORE Jmp constr
+R18908:18918 Picinae.Picinae_core PICINAE_CORE exps_in_exp def
+R18922:18922 Picinae.Picinae_core <> P:327 var
+R18920:18920 Picinae.Picinae_core <> C:325 var
+R18908:18918 Picinae.Picinae_core PICINAE_CORE exps_in_exp def
+R18922:18922 Picinae.Picinae_core <> P:327 var
+R18920:18920 Picinae.Picinae_core <> C:325 var
+R18930:18932 Picinae.Picinae_core PICINAE_CORE Seq constr
+R18943:18943 Picinae.Picinae_core <> C:325 var
+R18970:18981 Picinae.Picinae_core <> exps_in_stmt:329 def
+R18987:18987 Picinae.Picinae_core <> P:327 var
+R18985:18985 Picinae.Picinae_core <> b:326 var
+R18983:18983 Picinae.Picinae_core <> C:325 var
+R18946:18957 Picinae.Picinae_core <> exps_in_stmt:329 def
+R18963:18963 Picinae.Picinae_core <> P:327 var
+R18961:18961 Picinae.Picinae_core <> b:326 var
+R18959:18959 Picinae.Picinae_core <> C:325 var
+R18997:18999 Picinae.Picinae_core PICINAE_CORE Rep constr
+R19009:19009 Picinae.Picinae_core <> C:325 var
+R19032:19043 Picinae.Picinae_core <> exps_in_stmt:329 def
+R19049:19049 Picinae.Picinae_core <> P:327 var
+R19047:19047 Picinae.Picinae_core <> b:326 var
+R19045:19045 Picinae.Picinae_core <> C:325 var
+R19012:19022 Picinae.Picinae_core PICINAE_CORE exps_in_exp def
+R19026:19026 Picinae.Picinae_core <> P:327 var
+R19024:19024 Picinae.Picinae_core <> C:325 var
+R19059:19060 Picinae.Picinae_core PICINAE_CORE If constr
+R19073:19073 Picinae.Picinae_core <> C:325 var
+R19096:19096 Picinae.Picinae_core <> C:325 var
+R19123:19134 Picinae.Picinae_core <> exps_in_stmt:329 def
+R19140:19140 Picinae.Picinae_core <> P:327 var
+R19138:19138 Picinae.Picinae_core <> b:326 var
+R19136:19136 Picinae.Picinae_core <> C:325 var
+R19099:19110 Picinae.Picinae_core <> exps_in_stmt:329 def
+R19116:19116 Picinae.Picinae_core <> P:327 var
+R19114:19114 Picinae.Picinae_core <> b:326 var
+R19112:19112 Picinae.Picinae_core <> C:325 var
+R19076:19086 Picinae.Picinae_core PICINAE_CORE exps_in_exp def
+R19090:19090 Picinae.Picinae_core <> P:327 var
+R19088:19088 Picinae.Picinae_core <> C:325 var
+def 19164:19176 PICINAE_CORE stmts_in_stmt
+binder 19179:19179 <> T:331
+R19191:19192 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19190:19190 Picinae.Picinae_core <> T:331 var
+R19194:19195 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19193:19193 Picinae.Picinae_core <> T:331 var
+R19196:19196 Picinae.Picinae_core <> T:331 var
+binder 19188:19188 <> C:332
+R19206:19207 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19202:19205 Picinae.Picinae_core PICINAE_CORE stmt ind
+R19208:19208 Picinae.Picinae_core <> T:331 var
+binder 19200:19200 <> P:333
+R19214:19217 Picinae.Picinae_core PICINAE_CORE stmt ind
+binder 19212:19212 <> q:334
+R19222:19222 Picinae.Picinae_core <> T:331 var
+R19235:19235 Picinae.Picinae_core <> q:334 var
+R19246:19248 Picinae.Picinae_core PICINAE_CORE Nop constr
+R19252:19254 Picinae.Picinae_core PICINAE_CORE Exn constr
+R19260:19263 Picinae.Picinae_core PICINAE_CORE Move constr
+R19271:19273 Picinae.Picinae_core PICINAE_CORE Jmp constr
+R19280:19280 Picinae.Picinae_core <> P:333 var
+R19282:19282 Picinae.Picinae_core <> q:334 var
+R19280:19280 Picinae.Picinae_core <> P:333 var
+R19282:19282 Picinae.Picinae_core <> q:334 var
+R19280:19280 Picinae.Picinae_core <> P:333 var
+R19282:19282 Picinae.Picinae_core <> q:334 var
+R19280:19280 Picinae.Picinae_core <> P:333 var
+R19282:19282 Picinae.Picinae_core <> q:334 var
+R19288:19290 Picinae.Picinae_core PICINAE_CORE Rep constr
+R19300:19300 Picinae.Picinae_core <> C:332 var
+R19309:19321 Picinae.Picinae_core <> stmts_in_stmt:335 def
+R19325:19325 Picinae.Picinae_core <> P:333 var
+R19323:19323 Picinae.Picinae_core <> C:332 var
+R19303:19303 Picinae.Picinae_core <> P:333 var
+R19305:19305 Picinae.Picinae_core <> q:334 var
+R19335:19337 Picinae.Picinae_core PICINAE_CORE Seq constr
+R19347:19348 Picinae.Picinae_core PICINAE_CORE If constr
+R19361:19361 Picinae.Picinae_core <> C:332 var
+R19370:19370 Picinae.Picinae_core <> C:332 var
+R19396:19408 Picinae.Picinae_core <> stmts_in_stmt:335 def
+R19412:19412 Picinae.Picinae_core <> P:333 var
+R19410:19410 Picinae.Picinae_core <> C:332 var
+R19373:19385 Picinae.Picinae_core <> stmts_in_stmt:335 def
+R19389:19389 Picinae.Picinae_core <> P:333 var
+R19387:19387 Picinae.Picinae_core <> C:332 var
+R19364:19364 Picinae.Picinae_core <> P:333 var
+R19366:19366 Picinae.Picinae_core <> q:334 var
+R19361:19361 Picinae.Picinae_core <> C:332 var
+R19370:19370 Picinae.Picinae_core <> C:332 var
+R19396:19408 Picinae.Picinae_core <> stmts_in_stmt:335 def
+R19412:19412 Picinae.Picinae_core <> P:333 var
+R19410:19410 Picinae.Picinae_core <> C:332 var
+R19373:19385 Picinae.Picinae_core <> stmts_in_stmt:335 def
+R19389:19389 Picinae.Picinae_core <> P:333 var
+R19387:19387 Picinae.Picinae_core <> C:332 var
+R19364:19364 Picinae.Picinae_core <> P:333 var
+R19366:19366 Picinae.Picinae_core <> q:334 var
+def 19438:19455 PICINAE_CORE forall_exps_in_exp
+R19460:19470 Picinae.Picinae_core PICINAE_CORE exps_in_exp def
+R19472:19474 Coq.Init.Logic <> and ind
+def 19488:19506 PICINAE_CORE forall_exps_in_stmt
+R19511:19522 Picinae.Picinae_core PICINAE_CORE exps_in_stmt def
+R19528:19531 Coq.Init.Logic <> True ind
+R19524:19526 Coq.Init.Logic <> and ind
+def 19545:19561 PICINAE_CORE exists_exp_in_exp
+R19566:19576 Picinae.Picinae_core PICINAE_CORE exps_in_exp def
+R19578:19579 Coq.Init.Logic <> or ind
+def 19593:19610 PICINAE_CORE exists_exp_in_stmt
+R19615:19626 Picinae.Picinae_core PICINAE_CORE exps_in_stmt def
+R19631:19635 Coq.Init.Logic <> False ind
+R19628:19629 Coq.Init.Logic <> or ind
+def 19649:19668 PICINAE_CORE forall_stmts_in_stmt
+R19673:19685 Picinae.Picinae_core PICINAE_CORE stmts_in_stmt def
+R19687:19689 Coq.Init.Logic <> and ind
+def 19703:19721 PICINAE_CORE exists_stmt_in_stmt
+R19726:19738 Picinae.Picinae_core PICINAE_CORE stmts_in_stmt def
+R19740:19741 Coq.Init.Logic <> or ind
+def 19755:19773 PICINAE_CORE forall_exps_in_prog
+binder 19775:19775 <> P:337
+R19780:19786 Picinae.Picinae_core PICINAE_CORE program def
+binder 19778:19778 <> p:338
+binder 19801:19801 <> s:339
+binder 19803:19803 <> a:340
+binder 19805:19805 <> q:341
+binder 19807:19808 <> sz:342
+R19830:19833 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19816:19818 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19811:19811 Picinae.Picinae_core <> p:338 var
+R19813:19813 Picinae.Picinae_core <> s:339 var
+R19815:19815 Picinae.Picinae_core <> a:340 var
+R19819:19822 Coq.Init.Datatypes <> Some constr
+R19824:19824 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19827:19827 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19829:19829 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19825:19826 Picinae.Picinae_core <> sz:342 var
+R19828:19828 Picinae.Picinae_core <> q:341 var
+R19834:19852 Picinae.Picinae_core PICINAE_CORE forall_exps_in_stmt def
+R19854:19854 Picinae.Picinae_core <> P:337 var
+R19856:19856 Picinae.Picinae_core <> q:341 var
+def 19870:19887 PICINAE_CORE exists_exp_in_prog
+binder 19889:19889 <> P:343
+R19894:19900 Picinae.Picinae_core PICINAE_CORE program def
+binder 19892:19892 <> p:344
+R19908:19914 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19923:19924 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 19915:19915 <> s:345
+binder 19917:19917 <> a:346
+binder 19919:19919 <> q:347
+binder 19921:19922 <> sz:348
+R19944:19947 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R19930:19932 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19925:19925 Picinae.Picinae_core <> p:344 var
+R19927:19927 Picinae.Picinae_core <> s:345 var
+R19929:19929 Picinae.Picinae_core <> a:346 var
+R19933:19936 Coq.Init.Datatypes <> Some constr
+R19938:19938 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19941:19941 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19943:19943 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R19939:19940 Picinae.Picinae_core <> sz:348 var
+R19942:19942 Picinae.Picinae_core <> q:347 var
+R19948:19965 Picinae.Picinae_core PICINAE_CORE exists_exp_in_stmt def
+R19967:19967 Picinae.Picinae_core <> P:343 var
+R19969:19969 Picinae.Picinae_core <> q:347 var
+def 19983:20002 PICINAE_CORE forall_stmts_in_prog
+binder 20004:20004 <> P:349
+R20009:20015 Picinae.Picinae_core PICINAE_CORE program def
+binder 20007:20007 <> p:350
+binder 20030:20030 <> s:351
+binder 20032:20032 <> a:352
+binder 20034:20034 <> q:353
+binder 20036:20037 <> sz:354
+R20059:20062 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20045:20047 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20040:20040 Picinae.Picinae_core <> p:350 var
+R20042:20042 Picinae.Picinae_core <> s:351 var
+R20044:20044 Picinae.Picinae_core <> a:352 var
+R20048:20051 Coq.Init.Datatypes <> Some constr
+R20053:20053 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20056:20056 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20058:20058 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20054:20055 Picinae.Picinae_core <> sz:354 var
+R20057:20057 Picinae.Picinae_core <> q:353 var
+R20063:20082 Picinae.Picinae_core PICINAE_CORE forall_stmts_in_stmt def
+R20084:20084 Picinae.Picinae_core <> P:349 var
+R20086:20086 Picinae.Picinae_core <> q:353 var
+def 20100:20118 PICINAE_CORE exists_stmt_in_prog
+binder 20120:20120 <> P:355
+R20125:20131 Picinae.Picinae_core PICINAE_CORE program def
+binder 20123:20123 <> p:356
+R20139:20145 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20154:20155 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 20146:20146 <> s:357
+binder 20148:20148 <> a:358
+binder 20150:20150 <> q:359
+binder 20152:20153 <> sz:360
+R20175:20178 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R20161:20163 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20156:20156 Picinae.Picinae_core <> p:356 var
+R20158:20158 Picinae.Picinae_core <> s:357 var
+R20160:20160 Picinae.Picinae_core <> a:358 var
+R20164:20167 Coq.Init.Datatypes <> Some constr
+R20169:20169 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20172:20172 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20174:20174 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R20170:20171 Picinae.Picinae_core <> sz:360 var
+R20173:20173 Picinae.Picinae_core <> q:359 var
+R20179:20197 Picinae.Picinae_core PICINAE_CORE exists_stmt_in_stmt def
+R20199:20199 Picinae.Picinae_core <> P:355 var
+R20201:20201 Picinae.Picinae_core <> q:359 var
+def 20216:20233 PICINAE_CORE forall_vars_in_exp
+R20242:20245 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20239:20241 Picinae.Picinae_core Arch var def
+binder 20236:20236 <> P:361
+R20257:20274 Picinae.Picinae_core PICINAE_CORE forall_exps_in_exp def
+binder 20281:20281 <> e:362
+R20292:20292 Picinae.Picinae_core <> e:362 var
+R20299:20301 Picinae.Picinae_core PICINAE_CORE Var constr
+R20307:20309 Picinae.Picinae_core PICINAE_CORE Let constr
+R20320:20320 Picinae.Picinae_core <> P:361 var
+R20320:20320 Picinae.Picinae_core <> P:361 var
+R20331:20334 Coq.Init.Logic <> True ind
+def 20353:20371 PICINAE_CORE forall_vars_in_stmt
+R20380:20383 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20377:20379 Picinae.Picinae_core Arch var def
+binder 20374:20374 <> P:364
+R20393:20396 Picinae.Picinae_core PICINAE_CORE stmt ind
+binder 20391:20391 <> q:365
+R20482:20487 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R20404:20423 Picinae.Picinae_core PICINAE_CORE forall_stmts_in_stmt def
+binder 20430:20430 <> q:366
+R20441:20441 Picinae.Picinae_core <> q:366 var
+R20448:20451 Picinae.Picinae_core PICINAE_CORE Move constr
+R20460:20460 Picinae.Picinae_core <> P:364 var
+R20471:20474 Coq.Init.Logic <> True ind
+R20481:20481 Picinae.Picinae_core <> q:365 var
+R20488:20506 Picinae.Picinae_core PICINAE_CORE forall_exps_in_stmt def
+R20509:20526 Picinae.Picinae_core PICINAE_CORE forall_vars_in_exp def
+R20528:20528 Picinae.Picinae_core <> P:364 var
+R20531:20531 Picinae.Picinae_core <> q:365 var
+def 20545:20563 PICINAE_CORE forall_vars_in_prog
+R20572:20575 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20569:20571 Picinae.Picinae_core Arch var def
+binder 20566:20566 <> P:368
+R20587:20606 Picinae.Picinae_core PICINAE_CORE forall_stmts_in_prog def
+R20609:20627 Picinae.Picinae_core PICINAE_CORE forall_vars_in_stmt def
+R20629:20629 Picinae.Picinae_core <> P:368 var
+def 20644:20660 PICINAE_CORE exists_var_in_exp
+R20669:20672 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20666:20668 Picinae.Picinae_core Arch var def
+binder 20663:20663 <> P:369
+R20684:20700 Picinae.Picinae_core PICINAE_CORE exists_exp_in_exp def
+binder 20707:20707 <> e:370
+R20718:20718 Picinae.Picinae_core <> e:370 var
+R20725:20727 Picinae.Picinae_core PICINAE_CORE Var constr
+R20733:20735 Picinae.Picinae_core PICINAE_CORE Let constr
+R20746:20746 Picinae.Picinae_core <> P:369 var
+R20746:20746 Picinae.Picinae_core <> P:369 var
+R20757:20761 Coq.Init.Logic <> False ind
+def 20780:20797 PICINAE_CORE exists_var_in_stmt
+R20806:20809 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20803:20805 Picinae.Picinae_core Arch var def
+binder 20800:20800 <> P:372
+R20820:20823 Picinae.Picinae_core PICINAE_CORE stmt ind
+binder 20817:20817 <> q:373
+R20909:20914 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R20831:20849 Picinae.Picinae_core PICINAE_CORE exists_stmt_in_stmt def
+binder 20856:20856 <> q:374
+R20867:20867 Picinae.Picinae_core <> q:374 var
+R20874:20877 Picinae.Picinae_core PICINAE_CORE Move constr
+R20886:20886 Picinae.Picinae_core <> P:372 var
+R20897:20901 Coq.Init.Logic <> False ind
+R20908:20908 Picinae.Picinae_core <> q:373 var
+R20915:20932 Picinae.Picinae_core PICINAE_CORE exists_exp_in_stmt def
+R20935:20951 Picinae.Picinae_core PICINAE_CORE exists_var_in_exp def
+R20953:20953 Picinae.Picinae_core <> P:372 var
+R20956:20956 Picinae.Picinae_core <> q:373 var
+def 20970:20987 PICINAE_CORE exists_var_in_prog
+R20996:20999 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20993:20995 Picinae.Picinae_core Arch var def
+binder 20990:20990 <> P:376
+R21011:21029 Picinae.Picinae_core PICINAE_CORE exists_stmt_in_prog def
+R21032:21049 Picinae.Picinae_core PICINAE_CORE exists_var_in_stmt def
+R21051:21051 Picinae.Picinae_core <> P:376 var
+R21073:21083 Picinae.Picinae_core PICINAE_CORE exps_in_exp def
+R21073:21083 Picinae.Picinae_core PICINAE_CORE exps_in_exp def
+R21114:21125 Picinae.Picinae_core PICINAE_CORE exps_in_stmt def
+R21114:21125 Picinae.Picinae_core PICINAE_CORE exps_in_stmt def
+R21158:21170 Picinae.Picinae_core PICINAE_CORE stmts_in_stmt def
+R21158:21170 Picinae.Picinae_core PICINAE_CORE stmts_in_stmt def
+R21201:21218 Picinae.Picinae_core PICINAE_CORE forall_exps_in_exp def
+R21244:21262 Picinae.Picinae_core PICINAE_CORE forall_exps_in_stmt def
+R21288:21304 Picinae.Picinae_core PICINAE_CORE exists_exp_in_exp def
+R21330:21347 Picinae.Picinae_core PICINAE_CORE exists_exp_in_stmt def
+R21373:21392 Picinae.Picinae_core PICINAE_CORE forall_stmts_in_stmt def
+R21418:21436 Picinae.Picinae_core PICINAE_CORE exists_stmt_in_stmt def
+R21462:21479 Picinae.Picinae_core PICINAE_CORE forall_vars_in_exp def
+R21505:21523 Picinae.Picinae_core PICINAE_CORE forall_vars_in_stmt def
+R21549:21565 Picinae.Picinae_core PICINAE_CORE exists_var_in_exp def
+R21591:21608 Picinae.Picinae_core PICINAE_CORE exists_var_in_stmt def
+def 21629:21644 PICINAE_CORE forall_traces_in
+R21649:21655 Picinae.Picinae_core PICINAE_CORE program def
+binder 21647:21647 <> p:377
+R21667:21670 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21662:21666 Picinae.Picinae_core PICINAE_CORE trace def
+binder 21659:21659 <> P:378
+binder 21696:21696 <> t:379
+R21703:21711 Picinae.Picinae_core PICINAE_CORE exec_prog def
+R21713:21713 Picinae.Picinae_core <> p:377 var
+R21715:21715 Picinae.Picinae_core <> t:379 var
+binder 21699:21700 <> XP:380
+R21719:21719 Picinae.Picinae_core <> P:378 var
+R21721:21721 Picinae.Picinae_core <> t:379 var
+def 21736:21751 PICINAE_CORE forall_endstates
+R21756:21762 Picinae.Picinae_core PICINAE_CORE program def
+binder 21754:21754 <> p:381
+R21773:21776 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21769:21772 Picinae.Picinae_core <> exit ind
+R21782:21785 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21777:21781 Picinae.Picinae_core Arch store def
+R21790:21793 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21786:21789 Picinae.Picinae_core <> exit ind
+R21799:21802 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21794:21798 Picinae.Picinae_core Arch store def
+binder 21766:21766 <> P:382
+binder 21828:21828 <> t:383
+binder 21830:21830 <> x:384
+binder 21832:21832 <> s:385
+binder 21834:21835 <> x':386
+binder 21837:21838 <> s':387
+R21845:21853 Picinae.Picinae_core PICINAE_CORE exec_prog def
+R21855:21855 Picinae.Picinae_core <> p:381 var
+R21865:21866 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R21858:21858 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21861:21861 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21864:21864 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21859:21860 Picinae.Picinae_core <> x':386 var
+R21862:21863 Picinae.Picinae_core <> s':387 var
+R21867:21867 Picinae.Picinae_core <> t:383 var
+binder 21841:21842 <> XP:388
+R21896:21898 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21879:21885 Picinae.Picinae_core <> startof def
+R21889:21889 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21892:21892 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21895:21895 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21890:21891 Picinae.Picinae_core <> x':386 var
+R21893:21894 Picinae.Picinae_core <> s':387 var
+R21887:21887 Picinae.Picinae_core <> t:383 var
+R21899:21899 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21901:21901 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21903:21903 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21900:21900 Picinae.Picinae_core <> x:384 var
+R21902:21902 Picinae.Picinae_core <> s:385 var
+binder 21872:21876 <> ENTRY:389
+R21909:21909 Picinae.Picinae_core <> P:382 var
+R21918:21919 Picinae.Picinae_core <> s':387 var
+R21915:21916 Picinae.Picinae_core <> x':386 var
+R21913:21913 Picinae.Picinae_core <> s:385 var
+R21911:21911 Picinae.Picinae_core <> x:384 var
+def 22151:22161 PICINAE_CORE not_unknown
+binder 22163:22163 <> e:390
+R22174:22174 Picinae.Picinae_core <> e:390 var
+R22181:22187 Picinae.Picinae_core PICINAE_CORE Unknown constr
+R22194:22198 Coq.Init.Logic <> False ind
+R22207:22210 Coq.Init.Logic <> True ind
+ind 22503:22512 PICINAE_CORE allassigns
+constr 22551:22555 PICINAE_CORE AANop
+constr 22577:22582 PICINAE_CORE AAMove
+constr 22625:22629 PICINAE_CORE AAJmp
+constr 22657:22661 PICINAE_CORE AAExn
+constr 22689:22693 PICINAE_CORE AASeq
+constr 22775:22779 PICINAE_CORE AARep
+constr 22832:22835 PICINAE_CORE AAIf
+R22521:22524 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22518:22520 Picinae.Picinae_core Arch var def
+binder 22515:22515 <> P:392
+R22537:22540 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22533:22536 Picinae.Picinae_core PICINAE_CORE stmt ind
+R22558:22567 Picinae.Picinae_core <> allassigns:393 ind
+R22571:22573 Picinae.Picinae_core PICINAE_CORE Nop constr
+R22569:22569 Picinae.Picinae_core <> P:392 var
+binder 22584:22584 <> v:395
+binder 22586:22586 <> e:396
+R22593:22593 Picinae.Picinae_core <> P:392 var
+R22595:22595 Picinae.Picinae_core <> v:395 var
+binder 22589:22590 <> PV:397
+R22599:22608 Picinae.Picinae_core <> allassigns:393 ind
+R22613:22616 Picinae.Picinae_core PICINAE_CORE Move constr
+R22618:22618 Picinae.Picinae_core <> v:395 var
+R22620:22620 Picinae.Picinae_core <> e:396 var
+R22610:22610 Picinae.Picinae_core <> P:392 var
+binder 22631:22631 <> e:398
+R22634:22643 Picinae.Picinae_core <> allassigns:393 ind
+R22648:22650 Picinae.Picinae_core PICINAE_CORE Jmp constr
+R22652:22652 Picinae.Picinae_core <> e:398 var
+R22645:22645 Picinae.Picinae_core <> P:392 var
+binder 22663:22663 <> i:399
+R22666:22675 Picinae.Picinae_core <> allassigns:393 ind
+R22680:22682 Picinae.Picinae_core PICINAE_CORE Exn constr
+R22684:22684 Picinae.Picinae_core <> i:399 var
+R22677:22677 Picinae.Picinae_core <> P:392 var
+binder 22695:22696 <> q1:400
+binder 22698:22699 <> q2:401
+R22707:22716 Picinae.Picinae_core <> allassigns:393 ind
+R22720:22721 Picinae.Picinae_core <> q1:400 var
+R22718:22718 Picinae.Picinae_core <> P:392 var
+binder 22702:22704 <> AA1:402
+R22730:22739 Picinae.Picinae_core <> allassigns:393 ind
+R22743:22744 Picinae.Picinae_core <> q2:401 var
+R22741:22741 Picinae.Picinae_core <> P:392 var
+binder 22725:22727 <> AA2:403
+R22748:22757 Picinae.Picinae_core <> allassigns:393 ind
+R22762:22764 Picinae.Picinae_core PICINAE_CORE Seq constr
+R22766:22767 Picinae.Picinae_core <> q1:400 var
+R22769:22770 Picinae.Picinae_core <> q2:401 var
+R22759:22759 Picinae.Picinae_core <> P:392 var
+binder 22781:22781 <> e:404
+binder 22783:22783 <> q:405
+R22790:22799 Picinae.Picinae_core <> allassigns:393 ind
+R22803:22803 Picinae.Picinae_core <> q:405 var
+R22801:22801 Picinae.Picinae_core <> P:392 var
+binder 22786:22787 <> AA:406
+R22807:22816 Picinae.Picinae_core <> allassigns:393 ind
+R22821:22823 Picinae.Picinae_core PICINAE_CORE Rep constr
+R22825:22825 Picinae.Picinae_core <> e:404 var
+R22827:22827 Picinae.Picinae_core <> q:405 var
+R22818:22818 Picinae.Picinae_core <> P:392 var
+binder 22837:22837 <> e:407
+binder 22839:22840 <> q1:408
+binder 22842:22843 <> q2:409
+R22851:22860 Picinae.Picinae_core <> allassigns:393 ind
+R22864:22865 Picinae.Picinae_core <> q1:408 var
+R22862:22862 Picinae.Picinae_core <> P:392 var
+binder 22846:22848 <> AA1:410
+R22874:22883 Picinae.Picinae_core <> allassigns:393 ind
+R22887:22888 Picinae.Picinae_core <> q2:409 var
+R22885:22885 Picinae.Picinae_core <> P:392 var
+binder 22869:22871 <> AA2:411
+R22892:22901 Picinae.Picinae_core <> allassigns:393 ind
+R22906:22907 Picinae.Picinae_core PICINAE_CORE If constr
+R22909:22909 Picinae.Picinae_core <> e:407 var
+R22911:22912 Picinae.Picinae_core <> q1:408 var
+R22914:22915 Picinae.Picinae_core <> q2:409 var
+R22903:22903 Picinae.Picinae_core <> P:392 var
+def 22931:22938 PICINAE_CORE noassign
+binder 22940:22940 <> v:412
+R22945:22954 Picinae.Picinae_core PICINAE_CORE allassigns ind
+binder 22961:22962 <> v0:413
+R22969:22972 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R22967:22968 Picinae.Picinae_core <> v0:413 var
+R22973:22973 Picinae.Picinae_core <> v:412 var
+def 22989:23001 PICINAE_CORE prog_noassign
+binder 23003:23003 <> v:414
+R23008:23014 Picinae.Picinae_core PICINAE_CORE program def
+binder 23006:23006 <> p:415
+binder 23029:23029 <> s:416
+binder 23031:23031 <> a:417
+R23040:23040 Picinae.Picinae_core <> p:415 var
+R23042:23042 Picinae.Picinae_core <> s:416 var
+R23044:23044 Picinae.Picinae_core <> a:417 var
+R23051:23054 Coq.Init.Datatypes <> None constr
+R23059:23062 Coq.Init.Logic <> True ind
+R23066:23069 Coq.Init.Datatypes <> Some constr
+R23071:23071 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23073:23073 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23075:23075 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R23080:23087 Picinae.Picinae_core PICINAE_CORE noassign def
+R23089:23089 Picinae.Picinae_core <> v:414 var
+R23103:23116 Picinae.Picinae_core PICINAE_CORE.Quantification <> sec
+R23124:23135 Picinae.Picinae_core PICINAE_CORE <> modtype
+R23166:23177 Picinae.Picinae_core Architecture <> mod
+R23182:23193 Picinae.Picinae_core PICINAE_CORE <> mod
+modtype 23152:23161 <> PICINAE_IL
+R23221:23232 Picinae.Picinae_core Architecture <> mod
+R23238:23247 Picinae.Picinae_core PICINAE_IL <> mod
+mod 23204:23212 <> PicinaeIL
+R23260:23263 Picinae.Picinae_core Arch <> modtype
+R23276:23287 Picinae.Picinae_core PICINAE_CORE <> mod
+R23289:23292 Picinae.Picinae_core Arch <> modtype
+R23299:23307 Picinae.Picinae_core PicinaeIL <> mod

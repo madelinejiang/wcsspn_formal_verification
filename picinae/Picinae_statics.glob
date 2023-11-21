@@ -1,0 +1,3405 @@
+DIGEST b3249937b83d5f6558a9ff2d43997fd6
+FPicinae.Picinae_statics
+R2612:2625 Picinae.Picinae_theory <> <> lib
+R2643:2648 Coq.NArith.NArith <> <> lib
+R2666:2671 Coq.ZArith.ZArith <> <> lib
+R2689:2704 Coq.Program.Equality <> <> lib
+R2722:2745 Coq.Logic.FunctionalExtensionality <> <> lib
+ind 2953:2955 <> typ
+constr 2969:2972 <> NumT
+constr 2989:2992 <> MemT
+R2977:2984 Picinae.Picinae_core <> bitwidth def
+binder 2975:2975 <> w:3
+R2997:3004 Picinae.Picinae_core <> bitwidth def
+binder 2995:2995 <> w:4
+prf 3081:3089 <> typ_eqdec
+R3106:3108 Picinae.Picinae_statics <> typ ind
+binder 3100:3101 <> t1:5
+binder 3103:3104 <> t2:6
+R3112:3112 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3118:3120 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3127:3127 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3115:3115 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3113:3114 Picinae.Picinae_statics <> t1:5 var
+R3116:3117 Picinae.Picinae_statics <> t2:6 var
+R3123:3124 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3121:3122 Picinae.Picinae_statics <> t1:5 var
+R3125:3126 Picinae.Picinae_statics <> t2:6 var
+R3160:3167 Coq.NArith.BinNat N eq_dec def
+R3160:3167 Coq.NArith.BinNat N eq_dec def
+R3160:3167 Coq.NArith.BinNat N eq_dec def
+R3189:3197 Picinae.Picinae_statics <> typ_eqdec thm
+inst 3239:3246 <> TypEqDec
+R3250:3254 Picinae.Picinae_core <> EqDec class
+R3256:3258 Picinae.Picinae_statics <> typ ind
+R3265:3268 Picinae.Picinae_core <> iseq meth
+R3273:3281 Picinae.Picinae_statics <> typ_eqdec thm
+def 3353:3365 <> widthof_binop
+R3372:3380 Picinae.Picinae_core <> binop_typ ind
+binder 3368:3370 <> bop:7
+R3386:3393 Picinae.Picinae_core <> bitwidth def
+binder 3384:3384 <> w:8
+R3398:3405 Picinae.Picinae_core <> bitwidth def
+R3418:3420 Picinae.Picinae_statics <> bop:7 var
+R3431:3437 Picinae.Picinae_core <> OP_PLUS constr
+R3441:3448 Picinae.Picinae_core <> OP_MINUS constr
+R3452:3459 Picinae.Picinae_core <> OP_TIMES constr
+R3463:3471 Picinae.Picinae_core <> OP_DIVIDE constr
+R3475:3484 Picinae.Picinae_core <> OP_SDIVIDE constr
+R3488:3493 Picinae.Picinae_core <> OP_MOD constr
+R3497:3503 Picinae.Picinae_core <> OP_SMOD constr
+R3509:3517 Picinae.Picinae_core <> OP_LSHIFT constr
+R3521:3529 Picinae.Picinae_core <> OP_RSHIFT constr
+R3533:3542 Picinae.Picinae_core <> OP_ARSHIFT constr
+R3546:3551 Picinae.Picinae_core <> OP_AND constr
+R3555:3559 Picinae.Picinae_core <> OP_OR constr
+R3563:3568 Picinae.Picinae_core <> OP_XOR constr
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3573:3573 Picinae.Picinae_statics <> w:8 var
+R3579:3583 Picinae.Picinae_core <> OP_EQ constr
+R3587:3592 Picinae.Picinae_core <> OP_NEQ constr
+R3596:3600 Picinae.Picinae_core <> OP_LT constr
+R3604:3608 Picinae.Picinae_core <> OP_LE constr
+R3612:3617 Picinae.Picinae_core <> OP_SLT constr
+R3621:3626 Picinae.Picinae_core <> OP_SLE constr
+sec 3651:3663 <> HasUpperBound
+def 3826:3840 <> has_upper_bound
+binder 3843:3843 <> A:10
+binder 3845:3845 <> B:11
+R3855:3858 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3854:3854 Picinae.Picinae_statics <> A:10 var
+R3859:3864 Coq.Init.Datatypes <> option ind
+R3866:3866 Picinae.Picinae_statics <> B:11 var
+binder 3849:3849 <> f:12
+binder 3851:3851 <> g:13
+binder 3881:3881 <> x:14
+binder 3883:3883 <> y:15
+binder 3885:3885 <> z:16
+R3900:3903 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3891:3893 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3888:3888 Picinae.Picinae_statics <> f:12 var
+R3890:3890 Picinae.Picinae_statics <> x:14 var
+R3894:3897 Coq.Init.Datatypes <> Some constr
+R3899:3899 Picinae.Picinae_statics <> y:15 var
+R3916:3919 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3907:3909 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3904:3904 Picinae.Picinae_statics <> g:13 var
+R3906:3906 Picinae.Picinae_statics <> x:14 var
+R3910:3913 Coq.Init.Datatypes <> Some constr
+R3915:3915 Picinae.Picinae_statics <> z:16 var
+R3921:3923 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3920:3920 Picinae.Picinae_statics <> y:15 var
+R3924:3924 Picinae.Picinae_statics <> z:16 var
+prf 3934:3941 <> hub_refl
+binder 3953:3953 <> A:17
+binder 3955:3955 <> B:18
+R3962:3965 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3961:3961 Picinae.Picinae_statics <> A:17 var
+R3966:3971 Coq.Init.Datatypes <> option ind
+R3973:3973 Picinae.Picinae_statics <> B:18 var
+binder 3958:3958 <> f:19
+R3977:3991 Picinae.Picinae_statics <> has_upper_bound def
+R3995:3995 Picinae.Picinae_statics <> f:19 var
+R3993:3993 Picinae.Picinae_statics <> f:19 var
+R4014:4028 Picinae.Picinae_statics <> has_upper_bound def
+prf 4098:4104 <> hub_sym
+binder 4116:4116 <> A:20
+binder 4118:4118 <> B:21
+R4127:4130 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4126:4126 Picinae.Picinae_statics <> A:20 var
+R4131:4136 Coq.Init.Datatypes <> option ind
+R4138:4138 Picinae.Picinae_statics <> B:21 var
+binder 4121:4121 <> f:22
+binder 4123:4123 <> g:23
+R4161:4164 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4142:4156 Picinae.Picinae_statics <> has_upper_bound def
+R4160:4160 Picinae.Picinae_statics <> g:23 var
+R4158:4158 Picinae.Picinae_statics <> f:22 var
+R4165:4179 Picinae.Picinae_statics <> has_upper_bound def
+R4183:4183 Picinae.Picinae_statics <> f:22 var
+R4181:4181 Picinae.Picinae_statics <> g:23 var
+prf 4270:4279 <> hub_subset
+binder 4291:4291 <> A:24
+binder 4293:4293 <> B:25
+R4308:4311 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4307:4307 Picinae.Picinae_statics <> A:24 var
+R4312:4317 Coq.Init.Datatypes <> option ind
+R4319:4319 Picinae.Picinae_statics <> B:25 var
+binder 4296:4296 <> f:26
+binder 4298:4298 <> g:27
+binder 4300:4301 <> f':28
+binder 4303:4304 <> g':29
+R4328:4342 Picinae.Picinae_statics <> has_upper_bound def
+R4346:4346 Picinae.Picinae_statics <> g:27 var
+R4344:4344 Picinae.Picinae_statics <> f:26 var
+binder 4323:4325 <> HUB:30
+R4366:4370 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R4364:4365 Picinae.Picinae_statics <> f':28 var
+R4371:4371 Picinae.Picinae_statics <> f:26 var
+binder 4359:4361 <> SS1:31
+R4382:4386 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R4380:4381 Picinae.Picinae_statics <> g':29 var
+R4387:4387 Picinae.Picinae_statics <> g:27 var
+binder 4375:4377 <> SS2:32
+R4393:4407 Picinae.Picinae_statics <> has_upper_bound def
+R4412:4413 Picinae.Picinae_statics <> g':29 var
+R4409:4410 Picinae.Picinae_statics <> f':28 var
+R4432:4446 Picinae.Picinae_statics <> has_upper_bound def
+prf 4536:4545 <> hub_update
+binder 4548:4548 <> A:33
+binder 4550:4550 <> B:34
+R4557:4561 Picinae.Picinae_core <> EqDec class
+R4563:4563 Picinae.Picinae_statics <> A:33 var
+binder 4554:4555 <> eq:35
+R4583:4586 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4582:4582 Picinae.Picinae_statics <> A:33 var
+R4587:4592 Coq.Init.Datatypes <> option ind
+R4594:4594 Picinae.Picinae_statics <> B:34 var
+binder 4577:4577 <> f:36
+binder 4579:4579 <> g:37
+binder 4597:4597 <> x:38
+binder 4599:4599 <> y:39
+R4607:4621 Picinae.Picinae_statics <> has_upper_bound def
+R4625:4625 Picinae.Picinae_statics <> g:37 var
+R4623:4623 Picinae.Picinae_statics <> f:36 var
+binder 4602:4604 <> HUB:40
+R4631:4645 Picinae.Picinae_statics <> has_upper_bound def
+R4659:4659 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R4661:4662 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R4664:4664 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R4658:4658 Picinae.Picinae_statics <> g:37 var
+R4660:4660 Picinae.Picinae_statics <> x:38 var
+R4663:4663 Picinae.Picinae_statics <> y:39 var
+R4649:4649 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R4651:4652 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R4654:4654 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R4648:4648 Picinae.Picinae_statics <> f:36 var
+R4650:4650 Picinae.Picinae_statics <> x:38 var
+R4653:4653 Picinae.Picinae_statics <> y:39 var
+R4684:4698 Picinae.Picinae_statics <> has_upper_bound def
+R4721:4724 Picinae.Picinae_core <> :::x_'=='_x not
+R4721:4724 Picinae.Picinae_core <> :::x_'=='_x not
+R4748:4761 Picinae.Picinae_theory <> update_updated thm
+R4748:4761 Picinae.Picinae_theory <> update_updated thm
+R4748:4761 Picinae.Picinae_theory <> update_updated thm
+R4827:4838 Picinae.Picinae_theory <> update_frame thm
+R4827:4838 Picinae.Picinae_theory <> update_frame thm
+R4827:4838 Picinae.Picinae_theory <> update_frame thm
+R4898:4910 Picinae.Picinae_statics HasUpperBound <> sec
+R4954:4963 Picinae.Picinae_core PICINAE_IL <> mod
+modtype 4928:4947 <> PICINAE_STATICS_DEFS
+R5464:5465 Picinae.Picinae_statics IL <> mod
+def 5552:5567 PICINAE_STATICS_DEFS welltyped_memory
+R5576:5577 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5572:5575 Picinae.Picinae_core <> addr def
+R5578:5578 Coq.Numbers.BinNums <> N ind
+binder 5570:5570 <> m:41
+binder 5600:5600 <> a:42
+R5606:5608 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R5603:5603 Picinae.Picinae_statics <> m:41 var
+R5605:5605 Picinae.Picinae_statics <> a:42 var
+R5610:5610 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R5611:5612 Picinae.Picinae_statics IL Mb def
+ind 5724:5733 PICINAE_STATICS_DEFS hastyp_val
+constr 5762:5764 PICINAE_STATICS_DEFS TVN
+constr 5832:5834 PICINAE_STATICS_DEFS TVM
+R5741:5744 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5736:5740 Picinae.Picinae_core <> value def
+R5748:5751 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5745:5747 Picinae.Picinae_statics <> typ ind
+R5769:5769 Coq.Numbers.BinNums <> N ind
+binder 5767:5767 <> n:45
+R5775:5782 Picinae.Picinae_core <> bitwidth def
+binder 5773:5773 <> w:46
+R5791:5793 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R5790:5790 Picinae.Picinae_statics <> n:45 var
+R5795:5795 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R5796:5796 Picinae.Picinae_statics <> w:46 var
+binder 5786:5787 <> LT:47
+R5800:5809 Picinae.Picinae_statics <> hastyp_val:43 ind
+R5822:5825 Picinae.Picinae_statics <> NumT constr
+R5827:5827 Picinae.Picinae_statics <> w:46 var
+R5812:5814 Picinae.Picinae_core <> VaN constr
+R5818:5818 Picinae.Picinae_statics <> w:46 var
+R5816:5816 Picinae.Picinae_statics <> n:45 var
+R5843:5844 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5839:5842 Picinae.Picinae_core <> addr def
+R5845:5845 Coq.Numbers.BinNums <> N ind
+binder 5837:5837 <> m:48
+R5851:5858 Picinae.Picinae_core <> bitwidth def
+binder 5849:5849 <> w:49
+R5867:5882 Picinae.Picinae_statics PICINAE_STATICS_DEFS welltyped_memory def
+R5884:5884 Picinae.Picinae_statics <> m:48 var
+binder 5862:5864 <> WTM:50
+R5888:5897 Picinae.Picinae_statics <> hastyp_val:43 ind
+R5910:5913 Picinae.Picinae_statics <> MemT constr
+R5915:5915 Picinae.Picinae_statics <> w:49 var
+R5900:5902 Picinae.Picinae_core <> VaM constr
+R5906:5906 Picinae.Picinae_statics <> w:49 var
+R5904:5904 Picinae.Picinae_statics <> m:48 var
+def 5996:6001 PICINAE_STATICS_DEFS typctx
+R6009:6012 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6006:6008 Picinae.Picinae_statics IL var def
+R6013:6018 Coq.Init.Datatypes <> option ind
+R6020:6022 Picinae.Picinae_statics <> typ ind
+ind 6108:6117 PICINAE_STATICS_DEFS hastyp_exp
+constr 6155:6158 PICINAE_STATICS_DEFS TVar
+constr 6209:6213 PICINAE_STATICS_DEFS TWord
+constr 6269:6273 PICINAE_STATICS_DEFS TLoad
+constr 6442:6447 PICINAE_STATICS_DEFS TStore
+constr 6666:6671 PICINAE_STATICS_DEFS TBinOp
+constr 6828:6832 PICINAE_STATICS_DEFS TUnOp
+constr 6918:6922 PICINAE_STATICS_DEFS TCast
+constr 7143:7146 PICINAE_STATICS_DEFS TLet
+constr 7273:7280 PICINAE_STATICS_DEFS TUnknown
+constr 7321:7324 PICINAE_STATICS_DEFS TIte
+constr 7465:7472 PICINAE_STATICS_DEFS TExtract
+constr 7610:7616 PICINAE_STATICS_DEFS TConcat
+R6122:6127 Picinae.Picinae_statics PICINAE_STATICS_DEFS typctx def
+binder 6120:6120 <> c:51
+R6134:6137 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6131:6133 Picinae.Picinae_statics IL exp ind
+R6141:6144 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6138:6140 Picinae.Picinae_statics <> typ ind
+binder 6160:6160 <> v:54
+binder 6162:6162 <> t:55
+R6172:6174 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6169:6169 Picinae.Picinae_statics <> c:51 var
+R6171:6171 Picinae.Picinae_statics <> v:54 var
+R6175:6178 Coq.Init.Datatypes <> Some constr
+R6180:6180 Picinae.Picinae_statics <> t:55 var
+binder 6165:6166 <> CV:56
+R6184:6193 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6205:6205 Picinae.Picinae_statics <> t:55 var
+R6198:6200 Picinae.Picinae_statics IL Var constr
+R6202:6202 Picinae.Picinae_statics <> v:54 var
+R6195:6195 Picinae.Picinae_statics <> c:51 var
+binder 6215:6215 <> n:57
+binder 6217:6217 <> w:58
+R6225:6227 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R6224:6224 Picinae.Picinae_statics <> n:57 var
+R6229:6229 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R6230:6230 Picinae.Picinae_statics <> w:58 var
+binder 6220:6221 <> LT:59
+R6234:6243 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6259:6262 Picinae.Picinae_statics <> NumT constr
+R6264:6264 Picinae.Picinae_statics <> w:58 var
+R6248:6251 Picinae.Picinae_statics IL Word constr
+R6253:6253 Picinae.Picinae_statics <> n:57 var
+R6255:6255 Picinae.Picinae_statics <> w:58 var
+R6245:6245 Picinae.Picinae_statics <> c:51 var
+binder 6275:6276 <> e1:60
+binder 6278:6279 <> e2:61
+binder 6281:6282 <> en:62
+binder 6284:6286 <> len:63
+binder 6288:6289 <> mw:64
+R6300:6303 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R6297:6299 Picinae.Picinae_statics <> len:63 var
+R6305:6305 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R6306:6307 Picinae.Picinae_statics <> mw:64 var
+binder 6292:6294 <> LEN:65
+R6323:6332 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6340:6343 Picinae.Picinae_statics <> MemT constr
+R6345:6346 Picinae.Picinae_statics <> mw:64 var
+R6336:6337 Picinae.Picinae_statics <> e1:60 var
+R6334:6334 Picinae.Picinae_statics <> c:51 var
+binder 6319:6320 <> T1:66
+R6355:6364 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6372:6375 Picinae.Picinae_statics <> NumT constr
+R6377:6378 Picinae.Picinae_statics <> mw:64 var
+R6368:6369 Picinae.Picinae_statics <> e2:61 var
+R6366:6366 Picinae.Picinae_statics <> c:51 var
+binder 6351:6352 <> T2:67
+R6391:6400 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6425:6428 Picinae.Picinae_statics <> NumT constr
+R6433:6433 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R6431:6432 Picinae.Picinae_statics IL Mb def
+R6434:6436 Picinae.Picinae_statics <> len:63 var
+R6405:6408 Picinae.Picinae_statics IL Load constr
+R6410:6411 Picinae.Picinae_statics <> e1:60 var
+R6413:6414 Picinae.Picinae_statics <> e2:61 var
+R6416:6417 Picinae.Picinae_statics <> en:62 var
+R6419:6421 Picinae.Picinae_statics <> len:63 var
+R6402:6402 Picinae.Picinae_statics <> c:51 var
+binder 6449:6450 <> e1:68
+binder 6452:6453 <> e2:69
+binder 6455:6456 <> e3:70
+binder 6458:6459 <> en:71
+binder 6461:6463 <> len:72
+binder 6465:6466 <> mw:73
+R6477:6480 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R6474:6476 Picinae.Picinae_statics <> len:72 var
+R6482:6482 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R6483:6484 Picinae.Picinae_statics <> mw:73 var
+binder 6469:6471 <> LEN:74
+R6501:6510 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6518:6521 Picinae.Picinae_statics <> MemT constr
+R6523:6524 Picinae.Picinae_statics <> mw:73 var
+R6514:6515 Picinae.Picinae_statics <> e1:68 var
+R6512:6512 Picinae.Picinae_statics <> c:51 var
+binder 6497:6498 <> T1:75
+R6533:6542 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6550:6553 Picinae.Picinae_statics <> NumT constr
+R6555:6556 Picinae.Picinae_statics <> mw:73 var
+R6546:6547 Picinae.Picinae_statics <> e2:69 var
+R6544:6544 Picinae.Picinae_statics <> c:51 var
+binder 6529:6530 <> T2:76
+R6574:6583 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6591:6594 Picinae.Picinae_statics <> NumT constr
+R6599:6599 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R6597:6598 Picinae.Picinae_statics IL Mb def
+R6600:6602 Picinae.Picinae_statics <> len:72 var
+R6587:6588 Picinae.Picinae_statics <> e3:70 var
+R6585:6585 Picinae.Picinae_statics <> c:51 var
+binder 6570:6571 <> T3:77
+R6617:6626 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6655:6658 Picinae.Picinae_statics <> MemT constr
+R6660:6661 Picinae.Picinae_statics <> mw:73 var
+R6631:6635 Picinae.Picinae_statics IL Store constr
+R6637:6638 Picinae.Picinae_statics <> e1:68 var
+R6640:6641 Picinae.Picinae_statics <> e2:69 var
+R6643:6644 Picinae.Picinae_statics <> e3:70 var
+R6646:6647 Picinae.Picinae_statics <> en:71 var
+R6649:6651 Picinae.Picinae_statics <> len:72 var
+R6628:6628 Picinae.Picinae_statics <> c:51 var
+binder 6673:6675 <> bop:78
+binder 6677:6678 <> e1:79
+binder 6680:6681 <> e2:80
+binder 6683:6683 <> w:81
+R6699:6708 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6716:6719 Picinae.Picinae_statics <> NumT constr
+R6721:6721 Picinae.Picinae_statics <> w:81 var
+R6712:6713 Picinae.Picinae_statics <> e1:79 var
+R6710:6710 Picinae.Picinae_statics <> c:51 var
+binder 6695:6696 <> T1:82
+R6730:6739 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6747:6750 Picinae.Picinae_statics <> NumT constr
+R6752:6752 Picinae.Picinae_statics <> w:81 var
+R6743:6744 Picinae.Picinae_statics <> e2:80 var
+R6741:6741 Picinae.Picinae_statics <> c:51 var
+binder 6726:6727 <> T2:83
+R6766:6775 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6798:6801 Picinae.Picinae_statics <> NumT constr
+R6804:6816 Picinae.Picinae_statics <> widthof_binop def
+R6818:6820 Picinae.Picinae_statics <> bop:78 var
+R6822:6822 Picinae.Picinae_statics <> w:81 var
+R6780:6784 Picinae.Picinae_statics IL BinOp constr
+R6786:6788 Picinae.Picinae_statics <> bop:78 var
+R6790:6791 Picinae.Picinae_statics <> e1:79 var
+R6793:6794 Picinae.Picinae_statics <> e2:80 var
+R6777:6777 Picinae.Picinae_statics <> c:51 var
+binder 6834:6836 <> uop:84
+binder 6838:6838 <> e:85
+binder 6840:6840 <> w:86
+R6847:6856 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6863:6866 Picinae.Picinae_statics <> NumT constr
+R6868:6868 Picinae.Picinae_statics <> w:86 var
+R6860:6860 Picinae.Picinae_statics <> e:85 var
+R6858:6858 Picinae.Picinae_statics <> c:51 var
+binder 6843:6844 <> T1:87
+R6881:6890 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6908:6911 Picinae.Picinae_statics <> NumT constr
+R6913:6913 Picinae.Picinae_statics <> w:86 var
+R6895:6898 Picinae.Picinae_statics IL UnOp constr
+R6900:6902 Picinae.Picinae_statics <> uop:84 var
+R6904:6904 Picinae.Picinae_statics <> e:85 var
+R6892:6892 Picinae.Picinae_statics <> c:51 var
+binder 6924:6925 <> ct:88
+binder 6927:6927 <> w:89
+binder 6929:6930 <> w':90
+binder 6932:6932 <> e:91
+R6939:6948 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R6955:6958 Picinae.Picinae_statics <> NumT constr
+R6960:6960 Picinae.Picinae_statics <> w:89 var
+R6952:6952 Picinae.Picinae_statics <> e:91 var
+R6950:6950 Picinae.Picinae_statics <> c:51 var
+binder 6935:6936 <> T1:92
+R6983:6984 Picinae.Picinae_statics <> ct:88 var
+R6991:7003 Picinae.Picinae_core <> CAST_UNSIGNED constr
+R7007:7017 Picinae.Picinae_core <> CAST_SIGNED constr
+R7023:7026 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R7022:7022 Picinae.Picinae_statics <> w:89 var
+R7027:7028 Picinae.Picinae_statics <> w':90 var
+R7023:7026 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R7022:7022 Picinae.Picinae_statics <> w:89 var
+R7027:7028 Picinae.Picinae_statics <> w':90 var
+R7057:7065 Picinae.Picinae_core <> CAST_HIGH constr
+R7069:7076 Picinae.Picinae_core <> CAST_LOW constr
+R7083:7086 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R7081:7082 Picinae.Picinae_statics <> w':90 var
+R7087:7087 Picinae.Picinae_statics <> w:89 var
+R7083:7086 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R7081:7082 Picinae.Picinae_statics <> w':90 var
+R7087:7087 Picinae.Picinae_statics <> w:89 var
+binder 6973:6974 <> LE:94
+R7103:7112 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7132:7135 Picinae.Picinae_statics <> NumT constr
+R7137:7138 Picinae.Picinae_statics <> w':90 var
+R7117:7120 Picinae.Picinae_statics IL Cast constr
+R7122:7123 Picinae.Picinae_statics <> ct:88 var
+R7125:7126 Picinae.Picinae_statics <> w':90 var
+R7128:7128 Picinae.Picinae_statics <> e:91 var
+R7114:7114 Picinae.Picinae_statics <> c:51 var
+binder 7148:7148 <> v:95
+binder 7150:7151 <> e1:96
+binder 7153:7154 <> e2:97
+binder 7156:7157 <> t1:98
+binder 7159:7160 <> t2:99
+R7174:7183 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7190:7191 Picinae.Picinae_statics <> t1:98 var
+R7187:7188 Picinae.Picinae_statics <> e1:96 var
+R7185:7185 Picinae.Picinae_statics <> c:51 var
+binder 7170:7171 <> T1:100
+R7199:7208 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7229:7230 Picinae.Picinae_statics <> t2:99 var
+R7226:7227 Picinae.Picinae_statics <> e2:97 var
+R7212:7212 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R7214:7215 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R7223:7223 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R7211:7211 Picinae.Picinae_statics <> c:51 var
+R7213:7213 Picinae.Picinae_statics <> v:95 var
+R7216:7219 Coq.Init.Datatypes <> Some constr
+R7221:7222 Picinae.Picinae_statics <> t1:98 var
+binder 7195:7196 <> T2:101
+R7241:7250 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7268:7269 Picinae.Picinae_statics <> t2:99 var
+R7255:7257 Picinae.Picinae_statics IL Let constr
+R7259:7259 Picinae.Picinae_statics <> v:95 var
+R7261:7262 Picinae.Picinae_statics <> e1:96 var
+R7264:7265 Picinae.Picinae_statics <> e2:97 var
+R7252:7252 Picinae.Picinae_statics <> c:51 var
+binder 7282:7282 <> w:102
+R7285:7294 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7311:7314 Picinae.Picinae_statics <> NumT constr
+R7316:7316 Picinae.Picinae_statics <> w:102 var
+R7299:7305 Picinae.Picinae_statics IL Unknown constr
+R7307:7307 Picinae.Picinae_statics <> w:102 var
+R7296:7296 Picinae.Picinae_statics <> c:51 var
+binder 7326:7327 <> e1:103
+binder 7329:7330 <> e2:104
+binder 7332:7333 <> e3:105
+binder 7335:7335 <> w:106
+binder 7337:7337 <> t:107
+R7351:7360 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7368:7371 Picinae.Picinae_statics <> NumT constr
+R7373:7373 Picinae.Picinae_statics <> w:106 var
+R7364:7365 Picinae.Picinae_statics <> e1:103 var
+R7362:7362 Picinae.Picinae_statics <> c:51 var
+binder 7347:7348 <> T1:108
+R7382:7391 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7398:7398 Picinae.Picinae_statics <> t:107 var
+R7395:7396 Picinae.Picinae_statics <> e2:104 var
+R7393:7393 Picinae.Picinae_statics <> c:51 var
+binder 7378:7379 <> T2:109
+R7406:7415 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7422:7422 Picinae.Picinae_statics <> t:107 var
+R7419:7420 Picinae.Picinae_statics <> e3:105 var
+R7417:7417 Picinae.Picinae_statics <> c:51 var
+binder 7402:7403 <> T3:110
+R7433:7442 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7461:7461 Picinae.Picinae_statics <> t:107 var
+R7447:7449 Picinae.Picinae_statics IL Ite constr
+R7451:7452 Picinae.Picinae_statics <> e1:103 var
+R7454:7455 Picinae.Picinae_statics <> e2:104 var
+R7457:7458 Picinae.Picinae_statics <> e3:105 var
+R7444:7444 Picinae.Picinae_statics <> c:51 var
+binder 7474:7474 <> w:111
+binder 7476:7477 <> n1:112
+binder 7479:7480 <> n2:113
+binder 7482:7483 <> e1:114
+R7501:7510 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7518:7521 Picinae.Picinae_statics <> NumT constr
+R7523:7523 Picinae.Picinae_statics <> w:111 var
+R7514:7515 Picinae.Picinae_statics <> e1:114 var
+R7512:7512 Picinae.Picinae_statics <> c:51 var
+binder 7497:7498 <> T1:115
+R7534:7536 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R7532:7533 Picinae.Picinae_statics <> n1:112 var
+R7537:7537 Picinae.Picinae_statics <> w:111 var
+binder 7528:7529 <> HI:116
+R7552:7561 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7585:7588 Picinae.Picinae_statics <> NumT constr
+R7600:7602 Coq.NArith.BinNat <> ::N_scope:x_'-'_x not
+R7591:7596 Coq.NArith.BinNat N succ def
+R7598:7599 Picinae.Picinae_statics <> n1:112 var
+R7603:7604 Picinae.Picinae_statics <> n2:113 var
+R7566:7572 Picinae.Picinae_statics IL Extract constr
+R7574:7575 Picinae.Picinae_statics <> n1:112 var
+R7577:7578 Picinae.Picinae_statics <> n2:113 var
+R7580:7581 Picinae.Picinae_statics <> e1:114 var
+R7563:7563 Picinae.Picinae_statics <> c:51 var
+binder 7618:7619 <> e1:117
+binder 7621:7622 <> e2:118
+binder 7624:7625 <> w1:119
+binder 7627:7628 <> w2:120
+R7645:7654 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7662:7665 Picinae.Picinae_statics <> NumT constr
+R7667:7668 Picinae.Picinae_statics <> w1:119 var
+R7658:7659 Picinae.Picinae_statics <> e1:117 var
+R7656:7656 Picinae.Picinae_statics <> c:51 var
+binder 7641:7642 <> T1:121
+R7677:7686 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7694:7697 Picinae.Picinae_statics <> NumT constr
+R7699:7700 Picinae.Picinae_statics <> w2:120 var
+R7690:7691 Picinae.Picinae_statics <> e2:118 var
+R7688:7688 Picinae.Picinae_statics <> c:51 var
+binder 7673:7674 <> T2:122
+R7715:7724 Picinae.Picinae_statics <> hastyp_exp:52 ind
+R7744:7747 Picinae.Picinae_statics <> NumT constr
+R7752:7752 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R7750:7751 Picinae.Picinae_statics <> w1:119 var
+R7753:7754 Picinae.Picinae_statics <> w2:120 var
+R7729:7734 Picinae.Picinae_statics IL Concat constr
+R7736:7737 Picinae.Picinae_statics <> e1:117 var
+R7739:7740 Picinae.Picinae_statics <> e2:118 var
+R7726:7726 Picinae.Picinae_statics <> c:51 var
+ind 9006:9016 PICINAE_STATICS_DEFS hastyp_stmt
+constr 9061:9064 PICINAE_STATICS_DEFS TNop
+constr 9111:9115 PICINAE_STATICS_DEFS TMove
+constr 9248:9251 PICINAE_STATICS_DEFS TJmp
+constr 9336:9339 PICINAE_STATICS_DEFS TExn
+constr 9394:9397 PICINAE_STATICS_DEFS TSeq
+constr 9537:9539 PICINAE_STATICS_DEFS TIf
+constr 9713:9716 PICINAE_STATICS_DEFS TRep
+R9024:9029 Picinae.Picinae_statics PICINAE_STATICS_DEFS typctx def
+binder 9019:9020 <> c0:123
+binder 9022:9022 <> c:124
+R9037:9040 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9033:9036 Picinae.Picinae_statics IL stmt ind
+R9047:9050 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9041:9046 Picinae.Picinae_statics PICINAE_STATICS_DEFS typctx def
+binder 9066:9067 <> c':127
+R9076:9080 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R9074:9075 Picinae.Picinae_statics <> c':127 var
+R9081:9081 Picinae.Picinae_statics <> c:124 var
+binder 9070:9071 <> SS:128
+R9085:9095 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9106:9107 Picinae.Picinae_statics <> c':127 var
+R9102:9104 Picinae.Picinae_statics IL Nop constr
+R9100:9100 Picinae.Picinae_statics <> c:124 var
+R9097:9098 Picinae.Picinae_statics <> c0:123 var
+binder 9117:9117 <> v:129
+binder 9119:9119 <> t:130
+binder 9121:9121 <> e:131
+binder 9123:9124 <> c':132
+R9142:9145 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R9135:9137 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9131:9132 Picinae.Picinae_statics <> c0:123 var
+R9134:9134 Picinae.Picinae_statics <> v:129 var
+R9138:9141 Coq.Init.Datatypes <> None constr
+R9150:9152 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9146:9147 Picinae.Picinae_statics <> c0:123 var
+R9149:9149 Picinae.Picinae_statics <> v:129 var
+R9153:9156 Coq.Init.Datatypes <> Some constr
+R9158:9158 Picinae.Picinae_statics <> t:130 var
+binder 9127:9128 <> CV:133
+R9166:9175 Picinae.Picinae_statics PICINAE_STATICS_DEFS hastyp_exp ind
+R9177:9177 Picinae.Picinae_statics <> c:124 var
+R9179:9179 Picinae.Picinae_statics <> e:131 var
+R9181:9181 Picinae.Picinae_statics <> t:130 var
+binder 9162:9163 <> TE:134
+R9191:9195 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R9189:9190 Picinae.Picinae_statics <> c':132 var
+R9197:9197 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R9199:9200 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R9207:9207 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R9196:9196 Picinae.Picinae_statics <> c:124 var
+R9198:9198 Picinae.Picinae_statics <> v:129 var
+R9201:9204 Coq.Init.Datatypes <> Some constr
+R9206:9206 Picinae.Picinae_statics <> t:130 var
+binder 9185:9186 <> SS:135
+R9215:9225 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9243:9244 Picinae.Picinae_statics <> c':132 var
+R9233:9236 Picinae.Picinae_statics IL Move constr
+R9238:9238 Picinae.Picinae_statics <> v:129 var
+R9240:9240 Picinae.Picinae_statics <> e:131 var
+R9230:9230 Picinae.Picinae_statics <> c:124 var
+R9227:9228 Picinae.Picinae_statics <> c0:123 var
+binder 9253:9253 <> e:136
+binder 9255:9255 <> w:137
+binder 9257:9258 <> c':138
+R9265:9274 Picinae.Picinae_statics PICINAE_STATICS_DEFS hastyp_exp ind
+R9276:9276 Picinae.Picinae_statics <> c:124 var
+R9278:9278 Picinae.Picinae_statics <> e:136 var
+R9281:9284 Picinae.Picinae_statics <> NumT constr
+R9286:9286 Picinae.Picinae_statics <> w:137 var
+binder 9261:9262 <> TE:139
+R9297:9301 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R9295:9296 Picinae.Picinae_statics <> c':138 var
+R9302:9302 Picinae.Picinae_statics <> c:124 var
+binder 9291:9292 <> SS:140
+R9306:9316 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9331:9332 Picinae.Picinae_statics <> c':138 var
+R9324:9326 Picinae.Picinae_statics IL Jmp constr
+R9328:9328 Picinae.Picinae_statics <> e:136 var
+R9321:9321 Picinae.Picinae_statics <> c:124 var
+R9318:9319 Picinae.Picinae_statics <> c0:123 var
+binder 9341:9342 <> ex:141
+binder 9344:9345 <> c':142
+R9354:9358 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R9352:9353 Picinae.Picinae_statics <> c':142 var
+R9359:9359 Picinae.Picinae_statics <> c:124 var
+binder 9348:9349 <> SS:143
+R9363:9373 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9389:9390 Picinae.Picinae_statics <> c':142 var
+R9381:9383 Picinae.Picinae_statics IL Exn constr
+R9385:9386 Picinae.Picinae_statics <> ex:141 var
+R9378:9378 Picinae.Picinae_statics <> c:124 var
+R9375:9376 Picinae.Picinae_statics <> c0:123 var
+binder 9399:9400 <> q1:144
+binder 9402:9403 <> q2:145
+binder 9405:9406 <> c1:146
+binder 9408:9409 <> c2:147
+binder 9411:9412 <> c':148
+R9427:9437 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9447:9448 Picinae.Picinae_statics <> c1:146 var
+R9444:9445 Picinae.Picinae_statics <> q1:144 var
+R9442:9442 Picinae.Picinae_statics <> c:124 var
+R9439:9440 Picinae.Picinae_statics <> c0:123 var
+binder 9422:9424 <> TS1:149
+R9457:9467 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9478:9479 Picinae.Picinae_statics <> c2:147 var
+R9475:9476 Picinae.Picinae_statics <> q2:145 var
+R9472:9473 Picinae.Picinae_statics <> c1:146 var
+R9469:9470 Picinae.Picinae_statics <> c0:123 var
+binder 9452:9454 <> TS2:150
+R9489:9493 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R9487:9488 Picinae.Picinae_statics <> c':148 var
+R9494:9495 Picinae.Picinae_statics <> c2:147 var
+binder 9483:9484 <> SS:151
+R9503:9513 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9532:9533 Picinae.Picinae_statics <> c':148 var
+R9521:9523 Picinae.Picinae_statics IL Seq constr
+R9525:9526 Picinae.Picinae_statics <> q1:144 var
+R9528:9529 Picinae.Picinae_statics <> q2:145 var
+R9518:9518 Picinae.Picinae_statics <> c:124 var
+R9515:9516 Picinae.Picinae_statics <> c0:123 var
+binder 9541:9541 <> e:152
+binder 9543:9544 <> q1:153
+binder 9546:9547 <> q2:154
+binder 9549:9550 <> c2:155
+binder 9552:9553 <> c':156
+R9566:9575 Picinae.Picinae_statics PICINAE_STATICS_DEFS hastyp_exp ind
+R9577:9577 Picinae.Picinae_statics <> c:124 var
+R9579:9579 Picinae.Picinae_statics <> e:152 var
+R9582:9585 Picinae.Picinae_statics <> NumT constr
+binder 9562:9563 <> TE:157
+R9603:9613 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9623:9624 Picinae.Picinae_statics <> c2:155 var
+R9620:9621 Picinae.Picinae_statics <> q1:153 var
+R9618:9618 Picinae.Picinae_statics <> c:124 var
+R9615:9616 Picinae.Picinae_statics <> c0:123 var
+binder 9598:9600 <> TS1:158
+R9633:9643 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9653:9654 Picinae.Picinae_statics <> c2:155 var
+R9650:9651 Picinae.Picinae_statics <> q2:154 var
+R9648:9648 Picinae.Picinae_statics <> c:124 var
+R9645:9646 Picinae.Picinae_statics <> c0:123 var
+binder 9628:9630 <> TS2:159
+R9664:9668 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R9662:9663 Picinae.Picinae_statics <> c':156 var
+R9669:9670 Picinae.Picinae_statics <> c2:155 var
+binder 9658:9659 <> SS:160
+R9678:9688 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9708:9709 Picinae.Picinae_statics <> c':156 var
+R9696:9697 Picinae.Picinae_statics IL If constr
+R9699:9699 Picinae.Picinae_statics <> e:152 var
+R9701:9702 Picinae.Picinae_statics <> q1:153 var
+R9704:9705 Picinae.Picinae_statics <> q2:154 var
+R9693:9693 Picinae.Picinae_statics <> c:124 var
+R9690:9691 Picinae.Picinae_statics <> c0:123 var
+binder 9718:9718 <> e:161
+binder 9720:9720 <> w:162
+binder 9722:9722 <> q:163
+binder 9724:9725 <> c':164
+R9736:9745 Picinae.Picinae_statics PICINAE_STATICS_DEFS hastyp_exp ind
+R9747:9747 Picinae.Picinae_statics <> c:124 var
+R9749:9749 Picinae.Picinae_statics <> e:161 var
+R9752:9755 Picinae.Picinae_statics <> NumT constr
+R9757:9757 Picinae.Picinae_statics <> w:162 var
+binder 9732:9733 <> TE:165
+R9766:9776 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9785:9785 Picinae.Picinae_statics <> c:124 var
+R9783:9783 Picinae.Picinae_statics <> q:163 var
+R9781:9781 Picinae.Picinae_statics <> c:124 var
+R9778:9779 Picinae.Picinae_statics <> c0:123 var
+binder 9762:9763 <> TS:166
+R9795:9799 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R9793:9794 Picinae.Picinae_statics <> c':164 var
+R9800:9800 Picinae.Picinae_statics <> c:124 var
+binder 9789:9790 <> SS:167
+R9808:9818 Picinae.Picinae_statics <> hastyp_stmt:125 ind
+R9835:9836 Picinae.Picinae_statics <> c':164 var
+R9826:9828 Picinae.Picinae_statics IL Rep constr
+R9830:9830 Picinae.Picinae_statics <> e:161 var
+R9832:9832 Picinae.Picinae_statics <> q:163 var
+R9823:9823 Picinae.Picinae_statics <> c:124 var
+R9820:9821 Picinae.Picinae_statics <> c0:123 var
+def 9919:9932 PICINAE_STATICS_DEFS welltyped_prog
+R9938:9943 Picinae.Picinae_statics PICINAE_STATICS_DEFS typctx def
+binder 9935:9936 <> c0:168
+R9949:9955 Picinae.Picinae_statics IL program def
+binder 9947:9947 <> p:169
+binder 9977:9977 <> s:170
+binder 9979:9979 <> a:171
+R9988:9988 Picinae.Picinae_statics <> p:169 var
+R9990:9990 Picinae.Picinae_statics <> s:170 var
+R9992:9992 Picinae.Picinae_statics <> a:171 var
+R9999:10002 Coq.Init.Datatypes <> None constr
+R10007:10010 Coq.Init.Logic <> True ind
+R10014:10017 Coq.Init.Datatypes <> Some constr
+R10019:10019 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10021:10021 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10023:10023 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10044:10050 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10053:10054 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10051:10052 <> c':172
+R10055:10065 Picinae.Picinae_statics PICINAE_STATICS_DEFS hastyp_stmt ind
+R10067:10068 Picinae.Picinae_statics <> c0:168 var
+R10070:10071 Picinae.Picinae_statics <> c0:168 var
+R10075:10076 Picinae.Picinae_statics <> c':172 var
+def 10211:10216 PICINAE_STATICS_DEFS models
+R10221:10226 Picinae.Picinae_statics PICINAE_STATICS_DEFS typctx def
+binder 10219:10219 <> c:173
+R10232:10236 Picinae.Picinae_statics IL store def
+binder 10230:10230 <> s:174
+binder 10258:10258 <> v:175
+binder 10260:10260 <> t:176
+R10270:10272 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10267:10267 Picinae.Picinae_statics <> c:173 var
+R10269:10269 Picinae.Picinae_statics <> v:175 var
+R10273:10276 Coq.Init.Datatypes <> Some constr
+R10278:10278 Picinae.Picinae_statics <> t:176 var
+binder 10263:10264 <> CV:177
+R10282:10291 Picinae.Picinae_statics PICINAE_STATICS_DEFS hastyp_val ind
+R10294:10294 Picinae.Picinae_statics <> s:174 var
+R10296:10296 Picinae.Picinae_statics <> v:175 var
+R10299:10299 Picinae.Picinae_statics <> t:176 var
+def 11425:11434 PICINAE_STATICS_DEFS typchk_exp
+R11439:11441 Picinae.Picinae_statics IL exp ind
+binder 11437:11437 <> e:178
+R11447:11452 Picinae.Picinae_statics PICINAE_STATICS_DEFS typctx def
+binder 11445:11445 <> c:179
+R11456:11461 Coq.Init.Datatypes <> option ind
+R11463:11465 Picinae.Picinae_statics <> typ ind
+R11478:11478 Picinae.Picinae_statics <> e:178 var
+R11489:11491 Picinae.Picinae_statics IL Var constr
+R11498:11498 Picinae.Picinae_statics <> c:179 var
+R11506:11509 Picinae.Picinae_statics IL Word constr
+R11522:11525 Coq.NArith.BinNat <> ::N_scope:x_'<?'_x not
+R11527:11527 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R11554:11557 Coq.Init.Datatypes <> None constr
+R11535:11538 Coq.Init.Datatypes <> Some constr
+R11541:11544 Picinae.Picinae_statics <> NumT constr
+R11563:11566 Picinae.Picinae_statics IL Load constr
+R11612:11621 Picinae.Picinae_statics <> typchk_exp:180 def
+R11626:11626 Picinae.Picinae_statics <> c:179 var
+R11595:11604 Picinae.Picinae_statics <> typchk_exp:180 def
+R11609:11609 Picinae.Picinae_statics <> c:179 var
+R11641:11644 Coq.Init.Datatypes <> Some constr
+R11647:11650 Picinae.Picinae_statics <> MemT constr
+R11657:11660 Coq.Init.Datatypes <> Some constr
+R11663:11666 Picinae.Picinae_statics <> NumT constr
+R11685:11688 Coq.Init.Datatypes <> andb def
+R11717:11720 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R11694:11698 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R11699:11706 Coq.NArith.BinNat N shiftl def
+R11755:11758 Coq.Init.Datatypes <> None constr
+R11729:11732 Coq.Init.Datatypes <> Some constr
+R11735:11738 Picinae.Picinae_statics <> NumT constr
+R11743:11743 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R11741:11742 Picinae.Picinae_statics IL Mb def
+R11776:11779 Coq.Init.Datatypes <> None constr
+R11795:11799 Picinae.Picinae_statics IL Store constr
+R11865:11874 Picinae.Picinae_statics <> typchk_exp:180 def
+R11879:11879 Picinae.Picinae_statics <> c:179 var
+R11848:11857 Picinae.Picinae_statics <> typchk_exp:180 def
+R11862:11862 Picinae.Picinae_statics <> c:179 var
+R11831:11840 Picinae.Picinae_statics <> typchk_exp:180 def
+R11845:11845 Picinae.Picinae_statics <> c:179 var
+R11894:11897 Coq.Init.Datatypes <> Some constr
+R11900:11903 Picinae.Picinae_statics <> MemT constr
+R11910:11913 Coq.Init.Datatypes <> Some constr
+R11916:11919 Picinae.Picinae_statics <> NumT constr
+R11926:11929 Coq.Init.Datatypes <> Some constr
+R11932:11935 Picinae.Picinae_statics <> NumT constr
+R11956:11959 Coq.Init.Datatypes <> andb def
+R11986:11989 Coq.Init.Datatypes <> andb def
+R12004:12007 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R12010:12010 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R12008:12009 Picinae.Picinae_statics IL Mb def
+R11994:11997 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R11965:11969 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R11970:11977 Coq.NArith.BinNat N shiftl def
+R12052:12055 Coq.Init.Datatypes <> None constr
+R12032:12035 Coq.Init.Datatypes <> Some constr
+R12038:12041 Picinae.Picinae_statics <> MemT constr
+R12076:12079 Coq.Init.Datatypes <> None constr
+R12095:12099 Picinae.Picinae_statics IL BinOp constr
+R12143:12152 Picinae.Picinae_statics <> typchk_exp:180 def
+R12157:12157 Picinae.Picinae_statics <> c:179 var
+R12126:12135 Picinae.Picinae_statics <> typchk_exp:180 def
+R12140:12140 Picinae.Picinae_statics <> c:179 var
+R12172:12175 Coq.Init.Datatypes <> Some constr
+R12178:12181 Picinae.Picinae_statics <> NumT constr
+R12188:12191 Coq.Init.Datatypes <> Some constr
+R12194:12197 Picinae.Picinae_statics <> NumT constr
+R12221:12224 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R12273:12276 Coq.Init.Datatypes <> None constr
+R12233:12236 Coq.Init.Datatypes <> Some constr
+R12239:12242 Picinae.Picinae_statics <> NumT constr
+R12245:12257 Picinae.Picinae_statics <> widthof_binop def
+R12294:12297 Coq.Init.Datatypes <> None constr
+R12313:12316 Picinae.Picinae_statics IL UnOp constr
+R12334:12343 Picinae.Picinae_statics <> typchk_exp:180 def
+R12348:12348 Picinae.Picinae_statics <> c:179 var
+R12355:12358 Coq.Init.Datatypes <> Some constr
+R12361:12364 Picinae.Picinae_statics <> NumT constr
+R12372:12375 Coq.Init.Datatypes <> Some constr
+R12378:12381 Picinae.Picinae_statics <> NumT constr
+R12437:12440 Coq.Init.Datatypes <> None constr
+R12450:12453 Picinae.Picinae_statics IL Cast constr
+R12479:12488 Picinae.Picinae_statics <> typchk_exp:180 def
+R12493:12493 Picinae.Picinae_statics <> c:179 var
+R12500:12503 Coq.Init.Datatypes <> Some constr
+R12506:12509 Picinae.Picinae_statics <> NumT constr
+R12543:12555 Picinae.Picinae_core <> CAST_UNSIGNED constr
+R12559:12569 Picinae.Picinae_core <> CAST_SIGNED constr
+R12575:12579 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R12575:12579 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R12608:12616 Picinae.Picinae_core <> CAST_HIGH constr
+R12620:12627 Picinae.Picinae_core <> CAST_LOW constr
+R12634:12638 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R12634:12638 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R12670:12673 Coq.Init.Datatypes <> None constr
+R12650:12653 Coq.Init.Datatypes <> Some constr
+R12656:12659 Picinae.Picinae_statics <> NumT constr
+R12688:12691 Coq.Init.Datatypes <> None constr
+R12707:12709 Picinae.Picinae_statics IL Let constr
+R12734:12743 Picinae.Picinae_statics <> typchk_exp:180 def
+R12748:12748 Picinae.Picinae_statics <> c:179 var
+R12755:12758 Coq.Init.Datatypes <> Some constr
+R12765:12774 Picinae.Picinae_statics <> typchk_exp:180 def
+R12781:12781 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R12783:12784 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R12791:12791 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R12780:12780 Picinae.Picinae_statics <> c:179 var
+R12785:12788 Coq.Init.Datatypes <> Some constr
+R12827:12830 Coq.Init.Datatypes <> None constr
+R12835:12838 Coq.Init.Datatypes <> None constr
+R12848:12854 Picinae.Picinae_statics IL Unknown constr
+R12861:12864 Coq.Init.Datatypes <> Some constr
+R12867:12870 Picinae.Picinae_statics <> NumT constr
+R12879:12881 Picinae.Picinae_statics IL Ite constr
+R12941:12950 Picinae.Picinae_statics <> typchk_exp:180 def
+R12955:12955 Picinae.Picinae_statics <> c:179 var
+R12924:12933 Picinae.Picinae_statics <> typchk_exp:180 def
+R12938:12938 Picinae.Picinae_statics <> c:179 var
+R12907:12916 Picinae.Picinae_statics <> typchk_exp:180 def
+R12921:12921 Picinae.Picinae_statics <> c:179 var
+R12970:12973 Coq.Init.Datatypes <> Some constr
+R12976:12979 Picinae.Picinae_statics <> NumT constr
+R12985:12988 Coq.Init.Datatypes <> Some constr
+R12994:12997 Coq.Init.Datatypes <> Some constr
+R13010:13013 Picinae.Picinae_core <> :::x_'=='_x not
+R13035:13038 Coq.Init.Datatypes <> None constr
+R13022:13025 Coq.Init.Datatypes <> Some constr
+R13059:13062 Coq.Init.Datatypes <> None constr
+R13078:13084 Picinae.Picinae_statics IL Extract constr
+R13110:13119 Picinae.Picinae_statics <> typchk_exp:180 def
+R13124:13124 Picinae.Picinae_statics <> c:179 var
+R13139:13142 Coq.Init.Datatypes <> Some constr
+R13145:13148 Picinae.Picinae_statics <> NumT constr
+R13162:13165 Coq.NArith.BinNat <> ::N_scope:x_'<?'_x not
+R13208:13211 Coq.Init.Datatypes <> None constr
+R13174:13177 Coq.Init.Datatypes <> Some constr
+R13180:13183 Picinae.Picinae_statics <> NumT constr
+R13195:13197 Coq.NArith.BinNat <> ::N_scope:x_'-'_x not
+R13186:13191 Coq.NArith.BinNat N succ def
+R13226:13229 Coq.Init.Datatypes <> None constr
+R13245:13250 Picinae.Picinae_statics IL Concat constr
+R13290:13299 Picinae.Picinae_statics <> typchk_exp:180 def
+R13304:13304 Picinae.Picinae_statics <> c:179 var
+R13273:13282 Picinae.Picinae_statics <> typchk_exp:180 def
+R13287:13287 Picinae.Picinae_statics <> c:179 var
+R13319:13322 Coq.Init.Datatypes <> Some constr
+R13325:13328 Picinae.Picinae_statics <> NumT constr
+R13335:13338 Coq.Init.Datatypes <> Some constr
+R13341:13344 Picinae.Picinae_statics <> NumT constr
+R13353:13356 Coq.Init.Datatypes <> Some constr
+R13359:13362 Picinae.Picinae_statics <> NumT constr
+R13367:13367 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R13389:13392 Coq.Init.Datatypes <> None constr
+def 13469:13479 PICINAE_STATICS_DEFS typctx_meet
+R13488:13493 Picinae.Picinae_statics PICINAE_STATICS_DEFS typctx def
+binder 13482:13483 <> c1:183
+binder 13485:13486 <> c2:184
+binder 13496:13496 <> v:185
+R13515:13516 Picinae.Picinae_statics <> c2:184 var
+R13518:13518 Picinae.Picinae_statics <> v:185 var
+R13509:13510 Picinae.Picinae_statics <> c1:183 var
+R13512:13512 Picinae.Picinae_statics <> v:185 var
+R13529:13532 Coq.Init.Datatypes <> Some constr
+R13538:13541 Coq.Init.Datatypes <> Some constr
+R13554:13557 Picinae.Picinae_core <> :::x_'=='_x not
+R13579:13582 Coq.Init.Datatypes <> None constr
+R13566:13569 Coq.Init.Datatypes <> Some constr
+R13596:13599 Coq.Init.Datatypes <> None constr
+def 13690:13700 PICINAE_STATICS_DEFS typchk_stmt
+R13705:13708 Picinae.Picinae_statics IL stmt ind
+binder 13703:13703 <> q:186
+R13717:13722 Picinae.Picinae_statics PICINAE_STATICS_DEFS typctx def
+binder 13712:13713 <> c0:187
+binder 13715:13715 <> c:188
+R13726:13731 Coq.Init.Datatypes <> option ind
+R13733:13738 Picinae.Picinae_statics PICINAE_STATICS_DEFS typctx def
+R13751:13751 Picinae.Picinae_statics <> q:186 var
+R13762:13764 Picinae.Picinae_statics IL Nop constr
+R13769:13772 Coq.Init.Datatypes <> Some constr
+R13774:13774 Picinae.Picinae_statics <> c:188 var
+R13780:13783 Picinae.Picinae_statics IL Move constr
+R13804:13813 Picinae.Picinae_statics PICINAE_STATICS_DEFS typchk_exp def
+R13817:13817 Picinae.Picinae_statics <> c:188 var
+R13832:13835 Coq.Init.Datatypes <> Some constr
+R13848:13849 Picinae.Picinae_statics <> c0:187 var
+R13878:13881 Coq.Init.Datatypes <> None constr
+R13886:13889 Coq.Init.Datatypes <> Some constr
+R13893:13893 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R13895:13896 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R13903:13903 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R13892:13892 Picinae.Picinae_statics <> c:188 var
+R13897:13900 Coq.Init.Datatypes <> Some constr
+R13926:13929 Coq.Init.Datatypes <> Some constr
+R13941:13944 Picinae.Picinae_core <> :::x_'=='_x not
+R13978:13981 Coq.Init.Datatypes <> None constr
+R13953:13956 Coq.Init.Datatypes <> Some constr
+R13960:13960 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R13962:13963 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R13970:13970 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R13959:13959 Picinae.Picinae_statics <> c:188 var
+R13964:13967 Coq.Init.Datatypes <> Some constr
+R14013:14016 Coq.Init.Datatypes <> None constr
+R14021:14024 Coq.Init.Datatypes <> None constr
+R14040:14042 Picinae.Picinae_statics IL Jmp constr
+R14055:14064 Picinae.Picinae_statics PICINAE_STATICS_DEFS typchk_exp def
+R14068:14068 Picinae.Picinae_statics <> c:188 var
+R14075:14078 Coq.Init.Datatypes <> Some constr
+R14081:14084 Picinae.Picinae_statics <> NumT constr
+R14092:14095 Coq.Init.Datatypes <> Some constr
+R14097:14097 Picinae.Picinae_statics <> c:188 var
+R14106:14109 Coq.Init.Datatypes <> None constr
+R14119:14121 Picinae.Picinae_statics IL Exn constr
+R14128:14131 Coq.Init.Datatypes <> Some constr
+R14133:14133 Picinae.Picinae_statics <> c:188 var
+R14139:14141 Picinae.Picinae_statics IL Seq constr
+R14158:14168 Picinae.Picinae_statics <> typchk_stmt:189 def
+R14176:14176 Picinae.Picinae_statics <> c:188 var
+R14173:14174 Picinae.Picinae_statics <> c0:187 var
+R14202:14205 Coq.Init.Datatypes <> None constr
+R14210:14213 Coq.Init.Datatypes <> None constr
+R14234:14237 Coq.Init.Datatypes <> Some constr
+R14245:14255 Picinae.Picinae_statics <> typchk_stmt:189 def
+R14260:14261 Picinae.Picinae_statics <> c0:187 var
+R14291:14292 Picinae.Picinae_statics IL If constr
+R14354:14364 Picinae.Picinae_statics <> typchk_stmt:189 def
+R14372:14372 Picinae.Picinae_statics <> c:188 var
+R14369:14370 Picinae.Picinae_statics <> c0:187 var
+R14333:14343 Picinae.Picinae_statics <> typchk_stmt:189 def
+R14351:14351 Picinae.Picinae_statics <> c:188 var
+R14348:14349 Picinae.Picinae_statics <> c0:187 var
+R14317:14326 Picinae.Picinae_statics PICINAE_STATICS_DEFS typchk_exp def
+R14330:14330 Picinae.Picinae_statics <> c:188 var
+R14387:14390 Coq.Init.Datatypes <> Some constr
+R14393:14396 Picinae.Picinae_statics <> NumT constr
+R14402:14405 Coq.Init.Datatypes <> Some constr
+R14411:14414 Coq.Init.Datatypes <> Some constr
+R14422:14425 Coq.Init.Datatypes <> Some constr
+R14428:14438 Picinae.Picinae_statics PICINAE_STATICS_DEFS typctx_meet def
+R14466:14469 Coq.Init.Datatypes <> None constr
+R14485:14487 Picinae.Picinae_statics IL Rep constr
+R14525:14535 Picinae.Picinae_statics <> typchk_stmt:189 def
+R14542:14542 Picinae.Picinae_statics <> c:188 var
+R14540:14540 Picinae.Picinae_statics <> c:188 var
+R14509:14518 Picinae.Picinae_statics PICINAE_STATICS_DEFS typchk_exp def
+R14522:14522 Picinae.Picinae_statics <> c:188 var
+R14557:14560 Coq.Init.Datatypes <> Some constr
+R14563:14566 Picinae.Picinae_statics <> NumT constr
+R14572:14575 Coq.Init.Datatypes <> Some constr
+R14582:14585 Coq.Init.Datatypes <> Some constr
+R14587:14587 Picinae.Picinae_statics <> c:188 var
+R14605:14608 Coq.Init.Datatypes <> None constr
+R14632:14651 Picinae.Picinae_statics PICINAE_STATICS_DEFS <> modtype
+R14690:14699 Picinae.Picinae_core PICINAE_IL <> mod
+modtype 14669:14683 <> PICINAE_STATICS
+R14712:14713 Picinae.Picinae_statics IL <> modtype
+R14724:14743 Picinae.Picinae_statics PICINAE_STATICS_DEFS <> mod
+R14745:14746 Picinae.Picinae_statics IL <> modtype
+ax 14827:14837 PICINAE_STATICS value_bound
+binder 14849:14849 <> n:191
+binder 14851:14851 <> w:192
+R14858:14867 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R14870:14872 Picinae.Picinae_core <> VaN constr
+R14876:14876 Picinae.Picinae_statics <> w:192 var
+R14874:14874 Picinae.Picinae_statics <> n:191 var
+R14880:14883 Picinae.Picinae_statics <> NumT constr
+R14885:14885 Picinae.Picinae_statics <> w:192 var
+binder 14854:14855 <> TV:193
+R14891:14893 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R14890:14890 Picinae.Picinae_statics <> n:191 var
+R14895:14895 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R14896:14896 Picinae.Picinae_statics <> w:192 var
+ax 14910:14922 PICINAE_STATICS mem_welltyped
+binder 14934:14934 <> m:195
+binder 14936:14936 <> w:196
+R14943:14952 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R14955:14957 Picinae.Picinae_core <> VaM constr
+R14961:14961 Picinae.Picinae_statics <> w:196 var
+R14959:14959 Picinae.Picinae_statics <> m:195 var
+R14965:14968 Picinae.Picinae_statics <> MemT constr
+R14970:14970 Picinae.Picinae_statics <> w:196 var
+binder 14939:14940 <> TV:197
+R14975:14990 Picinae.Picinae_statics PICINAE_STATICS welltyped_memory def
+R14992:14992 Picinae.Picinae_statics <> m:195 var
+ax 15006:15019 PICINAE_STATICS hastyp_towidth
+binder 15031:15031 <> w:199
+binder 15033:15033 <> n:200
+R15036:15045 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R15048:15054 Picinae.Picinae_core <> towidth def
+R15056:15056 Picinae.Picinae_statics <> w:199 var
+R15058:15058 Picinae.Picinae_statics <> n:200 var
+R15062:15065 Picinae.Picinae_statics <> NumT constr
+R15067:15067 Picinae.Picinae_statics <> w:199 var
+ax 15163:15174 PICINAE_STATICS hastyp_binop
+binder 15186:15188 <> bop:202
+binder 15190:15190 <> c:203
+binder 15192:15193 <> e1:204
+binder 15195:15196 <> e2:205
+binder 15198:15198 <> w:206
+binder 15200:15201 <> w':207
+R15226:15228 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15207:15219 Picinae.Picinae_statics <> widthof_binop def
+R15221:15223 Picinae.Picinae_statics <> bop:202 var
+R15225:15225 Picinae.Picinae_statics <> w:206 var
+R15229:15230 Picinae.Picinae_statics <> w':207 var
+binder 15204:15204 <> W:208
+R15247:15256 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R15258:15258 Picinae.Picinae_statics <> c:203 var
+R15260:15261 Picinae.Picinae_statics <> e1:204 var
+R15264:15267 Picinae.Picinae_statics <> NumT constr
+R15269:15269 Picinae.Picinae_statics <> w:206 var
+binder 15243:15244 <> T1:209
+R15278:15287 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R15289:15289 Picinae.Picinae_statics <> c:203 var
+R15291:15292 Picinae.Picinae_statics <> e2:205 var
+R15295:15298 Picinae.Picinae_statics <> NumT constr
+R15300:15300 Picinae.Picinae_statics <> w:206 var
+binder 15274:15275 <> T2:210
+R15307:15316 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R15318:15318 Picinae.Picinae_statics <> c:203 var
+R15321:15325 Picinae.Picinae_statics PICINAE_STATICS BinOp constr
+R15327:15329 Picinae.Picinae_statics <> bop:202 var
+R15331:15332 Picinae.Picinae_statics <> e1:204 var
+R15334:15335 Picinae.Picinae_statics <> e2:205 var
+R15339:15342 Picinae.Picinae_statics <> NumT constr
+R15344:15345 Picinae.Picinae_statics <> w':207 var
+ax 15360:15373 PICINAE_STATICS hastyp_extract
+binder 15385:15385 <> w:212
+binder 15387:15387 <> c:213
+binder 15389:15390 <> n1:214
+binder 15392:15393 <> n2:215
+binder 15395:15396 <> e1:216
+binder 15398:15399 <> w':217
+R15419:15421 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15414:15416 Coq.NArith.BinNat <> ::N_scope:x_'-'_x not
+R15405:15410 Coq.NArith.BinNat N succ def
+R15412:15413 Picinae.Picinae_statics <> n1:214 var
+R15417:15418 Picinae.Picinae_statics <> n2:215 var
+R15422:15423 Picinae.Picinae_statics <> w':217 var
+binder 15402:15402 <> W:218
+R15440:15449 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R15451:15451 Picinae.Picinae_statics <> c:213 var
+R15453:15454 Picinae.Picinae_statics <> e1:216 var
+R15457:15460 Picinae.Picinae_statics <> NumT constr
+R15462:15462 Picinae.Picinae_statics <> w:212 var
+binder 15436:15437 <> T1:219
+R15473:15475 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R15471:15472 Picinae.Picinae_statics <> n1:214 var
+R15476:15476 Picinae.Picinae_statics <> w:212 var
+binder 15467:15468 <> HI:220
+R15482:15491 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R15493:15493 Picinae.Picinae_statics <> c:213 var
+R15496:15502 Picinae.Picinae_statics PICINAE_STATICS Extract constr
+R15504:15505 Picinae.Picinae_statics <> n1:214 var
+R15507:15508 Picinae.Picinae_statics <> n2:215 var
+R15510:15511 Picinae.Picinae_statics <> e1:216 var
+R15515:15518 Picinae.Picinae_statics <> NumT constr
+R15520:15521 Picinae.Picinae_statics <> w':217 var
+ax 15536:15548 PICINAE_STATICS hastyp_concat
+binder 15560:15560 <> c:222
+binder 15562:15563 <> e1:223
+binder 15565:15566 <> e2:224
+binder 15568:15569 <> w1:225
+binder 15571:15572 <> w2:226
+binder 15574:15575 <> w':227
+R15586:15588 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15583:15583 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R15581:15582 Picinae.Picinae_statics <> w1:225 var
+R15584:15585 Picinae.Picinae_statics <> w2:226 var
+R15589:15590 Picinae.Picinae_statics <> w':227 var
+binder 15578:15578 <> W:228
+R15607:15616 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R15618:15618 Picinae.Picinae_statics <> c:222 var
+R15620:15621 Picinae.Picinae_statics <> e1:223 var
+R15624:15627 Picinae.Picinae_statics <> NumT constr
+R15629:15630 Picinae.Picinae_statics <> w1:225 var
+binder 15603:15604 <> T1:229
+R15639:15648 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R15650:15650 Picinae.Picinae_statics <> c:222 var
+R15652:15653 Picinae.Picinae_statics <> e2:224 var
+R15656:15659 Picinae.Picinae_statics <> NumT constr
+R15661:15662 Picinae.Picinae_statics <> w2:226 var
+binder 15635:15636 <> T2:230
+R15669:15678 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R15680:15680 Picinae.Picinae_statics <> c:222 var
+R15683:15688 Picinae.Picinae_statics PICINAE_STATICS Concat constr
+R15690:15691 Picinae.Picinae_statics <> e1:223 var
+R15693:15694 Picinae.Picinae_statics <> e2:224 var
+R15698:15701 Picinae.Picinae_statics <> NumT constr
+R15703:15704 Picinae.Picinae_statics <> w':227 var
+ax 15755:15771 PICINAE_STATICS hastyp_exp_unique
+binder 15783:15783 <> e:232
+binder 15785:15786 <> c1:233
+binder 15788:15789 <> c2:234
+binder 15791:15792 <> t1:235
+binder 15794:15795 <> t2:236
+R15803:15817 Picinae.Picinae_statics <> has_upper_bound def
+R15822:15823 Picinae.Picinae_statics <> c2:234 var
+R15819:15820 Picinae.Picinae_statics <> c1:233 var
+binder 15798:15800 <> HUB:237
+R15841:15850 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R15852:15853 Picinae.Picinae_statics <> c1:233 var
+R15855:15855 Picinae.Picinae_statics <> e:232 var
+R15857:15858 Picinae.Picinae_statics <> t1:235 var
+binder 15836:15838 <> TE1:238
+R15867:15876 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R15878:15879 Picinae.Picinae_statics <> c2:234 var
+R15881:15881 Picinae.Picinae_statics <> e:232 var
+R15883:15884 Picinae.Picinae_statics <> t2:236 var
+binder 15862:15864 <> TE2:239
+R15892:15894 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15890:15891 Picinae.Picinae_statics <> t1:235 var
+R15895:15896 Picinae.Picinae_statics <> t2:236 var
+ax 15960:15976 PICINAE_STATICS hastyp_exp_weaken
+binder 15988:15989 <> c1:241
+binder 15991:15992 <> c2:242
+binder 15994:15994 <> e:243
+binder 15996:15996 <> t:244
+R16003:16012 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R16014:16015 Picinae.Picinae_statics <> c1:241 var
+R16017:16017 Picinae.Picinae_statics <> e:243 var
+R16019:16019 Picinae.Picinae_statics <> t:244 var
+binder 15999:16000 <> TE:245
+R16029:16033 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R16027:16028 Picinae.Picinae_statics <> c1:241 var
+R16034:16035 Picinae.Picinae_statics <> c2:242 var
+binder 16023:16024 <> SS:246
+R16041:16050 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R16052:16053 Picinae.Picinae_statics <> c2:242 var
+R16055:16055 Picinae.Picinae_statics <> e:243 var
+R16057:16057 Picinae.Picinae_statics <> t:244 var
+ax 16110:16127 PICINAE_STATICS hastyp_stmt_weaken
+binder 16139:16140 <> c0:248
+binder 16142:16142 <> c:249
+binder 16144:16145 <> c':250
+binder 16147:16149 <> c'':251
+binder 16151:16151 <> q:252
+R16158:16168 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R16170:16171 Picinae.Picinae_statics <> c0:248 var
+R16173:16173 Picinae.Picinae_statics <> c:249 var
+R16175:16175 Picinae.Picinae_statics <> q:252 var
+R16177:16178 Picinae.Picinae_statics <> c':250 var
+binder 16154:16155 <> TS:253
+R16189:16193 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R16186:16188 Picinae.Picinae_statics <> c'':251 var
+R16194:16195 Picinae.Picinae_statics <> c':250 var
+binder 16182:16183 <> SS:254
+R16201:16211 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R16213:16214 Picinae.Picinae_statics <> c0:248 var
+R16216:16216 Picinae.Picinae_statics <> c:249 var
+R16218:16218 Picinae.Picinae_statics <> q:252 var
+R16220:16222 Picinae.Picinae_statics <> c'':251 var
+ax 16297:16314 PICINAE_STATICS hastyp_stmt_compat
+binder 16326:16327 <> c0:256
+binder 16329:16329 <> q:257
+binder 16331:16332 <> c1:258
+binder 16334:16335 <> c2:259
+binder 16337:16339 <> c1':260
+binder 16341:16343 <> c2':261
+R16360:16374 Picinae.Picinae_statics <> has_upper_bound def
+R16379:16380 Picinae.Picinae_statics <> c2:259 var
+R16376:16377 Picinae.Picinae_statics <> c1:258 var
+binder 16355:16357 <> HUB:262
+R16398:16408 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R16410:16411 Picinae.Picinae_statics <> c0:256 var
+R16413:16414 Picinae.Picinae_statics <> c1:258 var
+R16416:16416 Picinae.Picinae_statics <> q:257 var
+R16418:16420 Picinae.Picinae_statics <> c1':260 var
+binder 16393:16395 <> TS1:263
+R16429:16439 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R16441:16442 Picinae.Picinae_statics <> c0:256 var
+R16444:16445 Picinae.Picinae_statics <> c2:259 var
+R16447:16447 Picinae.Picinae_statics <> q:257 var
+R16449:16451 Picinae.Picinae_statics <> c2':261 var
+binder 16424:16426 <> TS2:264
+R16457:16471 Picinae.Picinae_statics <> has_upper_bound def
+R16477:16479 Picinae.Picinae_statics <> c2':261 var
+R16473:16475 Picinae.Picinae_statics <> c1':260 var
+ax 16541:16564 PICINAE_STATICS hastyp_stmt_frame_weaken
+binder 16576:16577 <> c0:266
+binder 16579:16581 <> c0':267
+binder 16583:16583 <> q:268
+binder 16585:16585 <> c:269
+binder 16587:16588 <> c':270
+R16595:16605 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R16607:16608 Picinae.Picinae_statics <> c0:266 var
+R16610:16610 Picinae.Picinae_statics <> c:269 var
+R16612:16612 Picinae.Picinae_statics <> q:268 var
+R16614:16615 Picinae.Picinae_statics <> c':270 var
+binder 16591:16592 <> TS:271
+R16626:16630 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R16623:16625 Picinae.Picinae_statics <> c0':267 var
+R16631:16632 Picinae.Picinae_statics <> c0:266 var
+binder 16619:16620 <> SS:272
+R16638:16648 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R16650:16652 Picinae.Picinae_statics <> c0':267 var
+R16654:16654 Picinae.Picinae_statics <> c:269 var
+R16656:16656 Picinae.Picinae_statics <> q:268 var
+R16658:16659 Picinae.Picinae_statics <> c':270 var
+ax 17798:17811 PICINAE_STATICS typesafe_binop
+binder 17823:17825 <> bop:274
+binder 17827:17828 <> n1:275
+binder 17830:17831 <> n2:276
+binder 17833:17833 <> w:277
+R17850:17859 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R17862:17864 Picinae.Picinae_core <> VaN constr
+R17869:17869 Picinae.Picinae_statics <> w:277 var
+R17866:17867 Picinae.Picinae_statics <> n1:275 var
+R17873:17876 Picinae.Picinae_statics <> NumT constr
+R17878:17878 Picinae.Picinae_statics <> w:277 var
+binder 17845:17847 <> TV1:278
+R17888:17897 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R17900:17902 Picinae.Picinae_core <> VaN constr
+R17907:17907 Picinae.Picinae_statics <> w:277 var
+R17904:17905 Picinae.Picinae_statics <> n2:276 var
+R17911:17914 Picinae.Picinae_statics <> NumT constr
+R17916:17916 Picinae.Picinae_statics <> w:277 var
+binder 17883:17885 <> TV2:279
+R17923:17932 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R17935:17944 Picinae.Picinae_core <> eval_binop def
+R17946:17948 Picinae.Picinae_statics <> bop:274 var
+R17950:17950 Picinae.Picinae_statics <> w:277 var
+R17952:17953 Picinae.Picinae_statics <> n1:275 var
+R17955:17956 Picinae.Picinae_statics <> n2:276 var
+R17960:17963 Picinae.Picinae_statics <> NumT constr
+R17966:17978 Picinae.Picinae_statics <> widthof_binop def
+R17980:17982 Picinae.Picinae_statics <> bop:274 var
+R17984:17984 Picinae.Picinae_statics <> w:277 var
+ax 18069:18081 PICINAE_STATICS typesafe_unop
+binder 18093:18095 <> uop:281
+binder 18097:18097 <> n:282
+binder 18099:18099 <> w:283
+R18115:18124 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R18127:18129 Picinae.Picinae_core <> VaN constr
+R18133:18133 Picinae.Picinae_statics <> w:283 var
+R18131:18131 Picinae.Picinae_statics <> n:282 var
+R18137:18140 Picinae.Picinae_statics <> NumT constr
+R18142:18142 Picinae.Picinae_statics <> w:283 var
+binder 18111:18112 <> TV:284
+R18149:18158 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R18161:18169 Picinae.Picinae_core <> eval_unop def
+R18171:18173 Picinae.Picinae_statics <> uop:281 var
+R18175:18175 Picinae.Picinae_statics <> n:282 var
+R18177:18177 Picinae.Picinae_statics <> w:283 var
+R18181:18184 Picinae.Picinae_statics <> NumT constr
+R18186:18186 Picinae.Picinae_statics <> w:283 var
+ax 18259:18271 PICINAE_STATICS typesafe_cast
+binder 18283:18283 <> c:286
+binder 18285:18285 <> n:287
+binder 18287:18287 <> w:288
+binder 18289:18290 <> w':289
+R18297:18306 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R18309:18311 Picinae.Picinae_core <> VaN constr
+R18315:18315 Picinae.Picinae_statics <> w:288 var
+R18313:18313 Picinae.Picinae_statics <> n:287 var
+R18319:18322 Picinae.Picinae_statics <> NumT constr
+R18324:18324 Picinae.Picinae_statics <> w:288 var
+binder 18293:18294 <> TV:290
+R18342:18342 Picinae.Picinae_statics <> c:286 var
+R18349:18361 Picinae.Picinae_core <> CAST_UNSIGNED constr
+R18365:18375 Picinae.Picinae_core <> CAST_SIGNED constr
+R18381:18382 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R18380:18380 Picinae.Picinae_statics <> w:288 var
+R18383:18384 Picinae.Picinae_statics <> w':289 var
+R18381:18382 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R18380:18380 Picinae.Picinae_statics <> w:288 var
+R18383:18384 Picinae.Picinae_statics <> w':289 var
+R18407:18415 Picinae.Picinae_core <> CAST_HIGH constr
+R18419:18426 Picinae.Picinae_core <> CAST_LOW constr
+R18433:18434 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R18431:18432 Picinae.Picinae_statics <> w':289 var
+R18435:18435 Picinae.Picinae_statics <> w:288 var
+R18433:18434 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R18431:18432 Picinae.Picinae_statics <> w':289 var
+R18435:18435 Picinae.Picinae_statics <> w:288 var
+binder 18333:18333 <> T:292
+R18445:18454 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R18457:18459 Picinae.Picinae_core <> VaN constr
+R18477:18478 Picinae.Picinae_statics <> w':289 var
+R18462:18465 Picinae.Picinae_core <> cast def
+R18467:18467 Picinae.Picinae_statics <> c:286 var
+R18469:18469 Picinae.Picinae_statics <> w:288 var
+R18471:18472 Picinae.Picinae_statics <> w':289 var
+R18474:18474 Picinae.Picinae_statics <> n:287 var
+R18482:18485 Picinae.Picinae_statics <> NumT constr
+R18487:18488 Picinae.Picinae_statics <> w':289 var
+ax 18503:18517 PICINAE_STATICS typesafe_getmem
+binder 18529:18529 <> w:294
+binder 18531:18533 <> len:295
+binder 18535:18535 <> m:296
+binder 18537:18537 <> a:297
+binder 18539:18539 <> e:298
+R18544:18553 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R18556:18558 Picinae.Picinae_core <> VaN constr
+R18584:18584 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R18582:18583 Picinae.Picinae_statics PICINAE_STATICS Mb def
+R18585:18587 Picinae.Picinae_statics <> len:295 var
+R18561:18566 Picinae.Picinae_statics PICINAE_STATICS getmem def
+R18568:18568 Picinae.Picinae_statics <> w:294 var
+R18570:18570 Picinae.Picinae_statics <> e:298 var
+R18572:18574 Picinae.Picinae_statics <> len:295 var
+R18576:18576 Picinae.Picinae_statics <> m:296 var
+R18578:18578 Picinae.Picinae_statics <> a:297 var
+R18592:18595 Picinae.Picinae_statics <> NumT constr
+R18600:18600 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R18598:18599 Picinae.Picinae_statics PICINAE_STATICS Mb def
+R18601:18603 Picinae.Picinae_statics <> len:295 var
+ax 18680:18695 PICINAE_STATICS setmem_welltyped
+binder 18707:18707 <> w:300
+binder 18709:18709 <> e:301
+binder 18711:18713 <> len:302
+binder 18715:18715 <> m:303
+binder 18717:18717 <> a:304
+binder 18719:18719 <> v:305
+R18727:18742 Picinae.Picinae_statics PICINAE_STATICS welltyped_memory def
+R18744:18744 Picinae.Picinae_statics <> m:303 var
+binder 18722:18724 <> WTM:306
+R18750:18765 Picinae.Picinae_statics PICINAE_STATICS welltyped_memory def
+R18768:18773 Picinae.Picinae_statics PICINAE_STATICS setmem def
+R18775:18775 Picinae.Picinae_statics <> w:300 var
+R18777:18777 Picinae.Picinae_statics <> e:301 var
+R18779:18781 Picinae.Picinae_statics <> len:302 var
+R18783:18783 Picinae.Picinae_statics <> m:303 var
+R18785:18785 Picinae.Picinae_statics <> a:304 var
+R18787:18787 Picinae.Picinae_statics <> v:305 var
+ax 18802:18816 PICINAE_STATICS typesafe_setmem
+binder 18828:18828 <> w:308
+binder 18830:18832 <> len:309
+binder 18834:18834 <> m:310
+binder 18836:18836 <> a:311
+binder 18838:18838 <> v:312
+binder 18840:18840 <> e:313
+R18856:18865 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R18868:18870 Picinae.Picinae_core <> VaM constr
+R18874:18874 Picinae.Picinae_statics <> w:308 var
+R18872:18872 Picinae.Picinae_statics <> m:310 var
+R18878:18881 Picinae.Picinae_statics <> MemT constr
+R18883:18883 Picinae.Picinae_statics <> w:308 var
+binder 18852:18853 <> TV:314
+R18890:18899 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R18902:18904 Picinae.Picinae_core <> VaM constr
+R18929:18929 Picinae.Picinae_statics <> w:308 var
+R18907:18912 Picinae.Picinae_statics PICINAE_STATICS setmem def
+R18914:18914 Picinae.Picinae_statics <> w:308 var
+R18916:18916 Picinae.Picinae_statics <> e:313 var
+R18918:18920 Picinae.Picinae_statics <> len:309 var
+R18922:18922 Picinae.Picinae_statics <> m:310 var
+R18924:18924 Picinae.Picinae_statics <> a:311 var
+R18926:18926 Picinae.Picinae_statics <> v:312 var
+R18933:18936 Picinae.Picinae_statics <> MemT constr
+R18938:18938 Picinae.Picinae_statics <> w:308 var
+ax 19035:19044 PICINAE_STATICS models_wtm
+binder 19056:19056 <> v:316
+binder 19059:19059 <> c:317
+binder 19061:19061 <> s:318
+binder 19063:19063 <> m:319
+binder 19065:19065 <> w:320
+R19074:19079 Picinae.Picinae_statics PICINAE_STATICS models def
+R19081:19081 Picinae.Picinae_statics <> c:317 var
+R19083:19083 Picinae.Picinae_statics <> s:318 var
+binder 19069:19071 <> MDL:321
+R19094:19096 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19091:19091 Picinae.Picinae_statics <> s:318 var
+R19093:19093 Picinae.Picinae_statics <> v:316 var
+R19097:19099 Picinae.Picinae_core <> VaM constr
+R19103:19103 Picinae.Picinae_statics <> w:320 var
+R19101:19101 Picinae.Picinae_statics <> m:319 var
+binder 19087:19088 <> SV:322
+R19115:19115 Picinae.Picinae_statics <> c:317 var
+R19117:19117 Picinae.Picinae_statics <> v:316 var
+R19124:19127 Coq.Init.Datatypes <> Some constr
+R19134:19149 Picinae.Picinae_statics PICINAE_STATICS welltyped_memory def
+R19151:19151 Picinae.Picinae_statics <> m:319 var
+R19155:19158 Coq.Init.Datatypes <> None constr
+R19163:19166 Coq.Init.Logic <> True ind
+ax 19184:19197 PICINAE_STATICS models_regsize
+binder 19209:19209 <> v:324
+binder 19212:19212 <> c:325
+binder 19214:19214 <> s:326
+binder 19216:19216 <> n:327
+binder 19218:19218 <> w:328
+R19227:19232 Picinae.Picinae_statics PICINAE_STATICS models def
+R19234:19234 Picinae.Picinae_statics <> c:325 var
+R19236:19236 Picinae.Picinae_statics <> s:326 var
+binder 19222:19224 <> MDL:329
+R19247:19249 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19244:19244 Picinae.Picinae_statics <> s:326 var
+R19246:19246 Picinae.Picinae_statics <> v:324 var
+R19250:19252 Picinae.Picinae_core <> VaN constr
+R19256:19256 Picinae.Picinae_statics <> w:328 var
+R19254:19254 Picinae.Picinae_statics <> n:327 var
+binder 19240:19241 <> SV:330
+R19268:19268 Picinae.Picinae_statics <> c:325 var
+R19270:19270 Picinae.Picinae_statics <> v:324 var
+R19277:19280 Coq.Init.Datatypes <> Some constr
+R19288:19290 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R19287:19287 Picinae.Picinae_statics <> n:327 var
+R19292:19292 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R19293:19293 Picinae.Picinae_statics <> w:328 var
+R19297:19300 Coq.Init.Datatypes <> None constr
+R19305:19308 Coq.Init.Logic <> True ind
+ax 19394:19406 PICINAE_STATICS models_subset
+binder 19418:19418 <> c:332
+binder 19420:19420 <> s:333
+binder 19422:19423 <> c':334
+R19429:19434 Picinae.Picinae_statics PICINAE_STATICS models def
+R19436:19436 Picinae.Picinae_statics <> c:332 var
+R19438:19438 Picinae.Picinae_statics <> s:333 var
+binder 19426:19426 <> M:335
+R19448:19452 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R19446:19447 Picinae.Picinae_statics <> c':334 var
+R19453:19453 Picinae.Picinae_statics <> c:332 var
+binder 19442:19443 <> SS:336
+R19459:19464 Picinae.Picinae_statics PICINAE_STATICS models def
+R19466:19467 Picinae.Picinae_statics <> c':334 var
+R19469:19469 Picinae.Picinae_statics <> s:333 var
+ax 19563:19583 PICINAE_STATICS preservation_eval_exp
+binder 19596:19596 <> s:338
+binder 19598:19598 <> e:339
+binder 19600:19600 <> c:340
+binder 19602:19602 <> t:341
+binder 19604:19604 <> u:342
+R19622:19627 Picinae.Picinae_statics PICINAE_STATICS models def
+R19629:19629 Picinae.Picinae_statics <> c:340 var
+R19631:19631 Picinae.Picinae_statics <> s:338 var
+binder 19617:19619 <> MCS:343
+R19639:19648 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R19650:19650 Picinae.Picinae_statics <> c:340 var
+R19652:19652 Picinae.Picinae_statics <> e:339 var
+R19654:19654 Picinae.Picinae_statics <> t:341 var
+binder 19635:19636 <> TE:344
+R19661:19668 Picinae.Picinae_statics PICINAE_STATICS eval_exp ind
+R19670:19670 Picinae.Picinae_statics <> s:338 var
+R19672:19672 Picinae.Picinae_statics <> e:339 var
+R19674:19674 Picinae.Picinae_statics <> u:342 var
+binder 19658:19658 <> E:345
+R19680:19689 Picinae.Picinae_statics PICINAE_STATICS hastyp_val ind
+R19691:19691 Picinae.Picinae_statics <> u:342 var
+R19693:19693 Picinae.Picinae_statics <> t:341 var
+ax 19847:19863 PICINAE_STATICS progress_eval_exp
+binder 19876:19876 <> s:347
+binder 19878:19878 <> e:348
+binder 19880:19880 <> c:349
+binder 19882:19882 <> t:350
+binder 19906:19907 <> s0:351
+binder 19909:19910 <> a0:352
+R19931:19934 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R19913:19924 Picinae.Picinae_statics PICINAE_STATICS mem_readable defax
+R19926:19927 Picinae.Picinae_statics <> s0:351 var
+R19929:19930 Picinae.Picinae_statics <> a0:352 var
+R19935:19946 Picinae.Picinae_statics PICINAE_STATICS mem_writable defax
+R19948:19949 Picinae.Picinae_statics <> s0:351 var
+R19951:19952 Picinae.Picinae_statics <> a0:352 var
+binder 19895:19896 <> RW:353
+R19970:19975 Picinae.Picinae_statics PICINAE_STATICS models def
+R19977:19977 Picinae.Picinae_statics <> c:349 var
+R19979:19979 Picinae.Picinae_statics <> s:347 var
+binder 19965:19967 <> MCS:354
+R19986:19995 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R19997:19997 Picinae.Picinae_statics <> c:349 var
+R19999:19999 Picinae.Picinae_statics <> e:348 var
+R20001:20001 Picinae.Picinae_statics <> t:350 var
+binder 19983:19983 <> T:355
+R20007:20013 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20015:20016 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 20014:20014 <> u:356
+R20017:20024 Picinae.Picinae_statics PICINAE_STATICS eval_exp ind
+R20026:20026 Picinae.Picinae_statics <> s:347 var
+R20028:20028 Picinae.Picinae_statics <> e:348 var
+R20030:20030 Picinae.Picinae_statics <> u:356 var
+ax 20103:20124 PICINAE_STATICS preservation_exec_stmt
+binder 20137:20137 <> s:358
+binder 20139:20139 <> q:359
+binder 20141:20142 <> c0:360
+binder 20144:20144 <> c:361
+binder 20146:20147 <> c':362
+binder 20149:20150 <> s':363
+R20168:20173 Picinae.Picinae_statics PICINAE_STATICS models def
+R20175:20175 Picinae.Picinae_statics <> c:361 var
+R20177:20177 Picinae.Picinae_statics <> s:358 var
+binder 20163:20165 <> MCS:364
+R20184:20194 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R20196:20197 Picinae.Picinae_statics <> c0:360 var
+R20199:20199 Picinae.Picinae_statics <> c:361 var
+R20201:20201 Picinae.Picinae_statics <> q:359 var
+R20203:20204 Picinae.Picinae_statics <> c':362 var
+binder 20181:20181 <> T:365
+R20212:20220 Picinae.Picinae_statics PICINAE_STATICS exec_stmt ind
+R20222:20222 Picinae.Picinae_statics <> s:358 var
+R20224:20224 Picinae.Picinae_statics <> q:359 var
+R20226:20227 Picinae.Picinae_statics <> s':363 var
+R20229:20232 Coq.Init.Datatypes <> None constr
+binder 20208:20209 <> XS:366
+R20238:20243 Picinae.Picinae_statics PICINAE_STATICS models def
+R20245:20246 Picinae.Picinae_statics <> c':362 var
+R20248:20249 Picinae.Picinae_statics <> s':363 var
+ax 20325:20344 PICINAE_STATICS pres_frame_exec_stmt
+binder 20357:20357 <> s:368
+binder 20359:20359 <> q:369
+binder 20361:20362 <> c0:370
+binder 20364:20364 <> c:371
+binder 20366:20367 <> c':372
+binder 20369:20370 <> s':373
+binder 20372:20372 <> x:374
+R20382:20387 Picinae.Picinae_statics PICINAE_STATICS models def
+R20389:20390 Picinae.Picinae_statics <> c0:370 var
+R20392:20392 Picinae.Picinae_statics <> s:368 var
+binder 20376:20379 <> MC0S:375
+R20401:20406 Picinae.Picinae_statics PICINAE_STATICS models def
+R20408:20408 Picinae.Picinae_statics <> c:371 var
+R20410:20410 Picinae.Picinae_statics <> s:368 var
+binder 20396:20398 <> MCS:376
+R20426:20436 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R20438:20439 Picinae.Picinae_statics <> c0:370 var
+R20441:20441 Picinae.Picinae_statics <> c:371 var
+R20443:20443 Picinae.Picinae_statics <> q:369 var
+R20445:20446 Picinae.Picinae_statics <> c':372 var
+binder 20423:20423 <> T:377
+R20454:20462 Picinae.Picinae_statics PICINAE_STATICS exec_stmt ind
+R20464:20464 Picinae.Picinae_statics <> s:368 var
+R20466:20466 Picinae.Picinae_statics <> q:369 var
+R20468:20469 Picinae.Picinae_statics <> s':373 var
+R20471:20471 Picinae.Picinae_statics <> x:374 var
+binder 20450:20451 <> XS:378
+R20477:20482 Picinae.Picinae_statics PICINAE_STATICS models def
+R20484:20485 Picinae.Picinae_statics <> c0:370 var
+R20487:20488 Picinae.Picinae_statics <> s':373 var
+ax 20627:20644 PICINAE_STATICS progress_exec_stmt
+binder 20657:20657 <> s:380
+binder 20659:20659 <> q:381
+binder 20661:20662 <> c0:382
+binder 20664:20664 <> c:383
+binder 20666:20667 <> c':384
+binder 20691:20692 <> s0:385
+binder 20694:20695 <> a0:386
+R20716:20719 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R20698:20709 Picinae.Picinae_statics PICINAE_STATICS mem_readable defax
+R20711:20712 Picinae.Picinae_statics <> s0:385 var
+R20714:20715 Picinae.Picinae_statics <> a0:386 var
+R20720:20731 Picinae.Picinae_statics PICINAE_STATICS mem_writable defax
+R20733:20734 Picinae.Picinae_statics <> s0:385 var
+R20736:20737 Picinae.Picinae_statics <> a0:386 var
+binder 20680:20681 <> RW:387
+R20755:20760 Picinae.Picinae_statics PICINAE_STATICS models def
+R20762:20762 Picinae.Picinae_statics <> c:383 var
+R20764:20764 Picinae.Picinae_statics <> s:380 var
+binder 20750:20752 <> MCS:388
+R20771:20781 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R20783:20784 Picinae.Picinae_statics <> c0:382 var
+R20786:20786 Picinae.Picinae_statics <> c:383 var
+R20788:20788 Picinae.Picinae_statics <> q:381 var
+R20790:20791 Picinae.Picinae_statics <> c':384 var
+binder 20768:20768 <> T:389
+R20797:20803 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20808:20809 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 20804:20805 <> s':390
+binder 20807:20807 <> x:391
+R20810:20818 Picinae.Picinae_statics PICINAE_STATICS exec_stmt ind
+R20820:20820 Picinae.Picinae_statics <> s:380 var
+R20822:20822 Picinae.Picinae_statics <> q:381 var
+R20824:20825 Picinae.Picinae_statics <> s':390 var
+R20827:20827 Picinae.Picinae_statics <> x:391 var
+ax 20923:20944 PICINAE_STATICS preservation_exec_prog
+binder 20956:20956 <> p:393
+binder 20958:20958 <> c:394
+R20965:20978 Picinae.Picinae_statics PICINAE_STATICS welltyped_prog def
+R20980:20980 Picinae.Picinae_statics <> c:394 var
+R20982:20982 Picinae.Picinae_statics <> p:393 var
+binder 20961:20962 <> WP:395
+R20988:21003 Picinae.Picinae_statics PICINAE_STATICS forall_endstates def
+R21005:21005 Picinae.Picinae_statics <> p:393 var
+binder 21014:21014 <> s:396
+binder 21018:21019 <> s':397
+R21037:21042 Picinae.Picinae_statics PICINAE_STATICS models def
+R21044:21044 Picinae.Picinae_statics <> c:394 var
+R21046:21046 Picinae.Picinae_statics <> s:396 var
+binder 21032:21034 <> MDL:398
+R21050:21055 Picinae.Picinae_statics PICINAE_STATICS models def
+R21057:21057 Picinae.Picinae_statics <> c:394 var
+R21059:21060 Picinae.Picinae_statics <> s':397 var
+ax 21251:21268 PICINAE_STATICS progress_exec_prog
+binder 21280:21280 <> p:400
+binder 21282:21283 <> c0:401
+binder 21285:21285 <> t:402
+binder 21287:21288 <> a1:403
+binder 21290:21291 <> s1:404
+binder 21314:21315 <> s0:405
+binder 21317:21318 <> a0:406
+R21339:21342 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R21321:21332 Picinae.Picinae_statics PICINAE_STATICS mem_readable defax
+R21334:21335 Picinae.Picinae_statics <> s0:405 var
+R21337:21338 Picinae.Picinae_statics <> a0:406 var
+R21343:21354 Picinae.Picinae_statics PICINAE_STATICS mem_writable defax
+R21356:21357 Picinae.Picinae_statics <> s0:405 var
+R21359:21360 Picinae.Picinae_statics <> a0:406 var
+binder 21303:21304 <> RW:407
+R21378:21383 Picinae.Picinae_statics PICINAE_STATICS models def
+R21385:21386 Picinae.Picinae_statics <> c0:401 var
+R21389:21391 Coq.Init.Datatypes <> snd def
+R21394:21400 Picinae.Picinae_core <> startof def
+R21404:21404 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21412:21412 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21415:21415 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21405:21408 Picinae.Picinae_core <> Addr constr
+R21410:21411 Picinae.Picinae_statics <> a1:403 var
+R21413:21414 Picinae.Picinae_statics <> s1:404 var
+R21402:21402 Picinae.Picinae_statics <> t:402 var
+binder 21373:21375 <> MCS:408
+R21434:21447 Picinae.Picinae_statics PICINAE_STATICS welltyped_prog def
+R21449:21450 Picinae.Picinae_statics <> c0:401 var
+R21452:21452 Picinae.Picinae_statics <> p:400 var
+binder 21430:21431 <> WP:409
+R21469:21477 Picinae.Picinae_statics PICINAE_STATICS exec_prog def
+R21479:21479 Picinae.Picinae_statics <> p:400 var
+R21494:21495 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R21482:21482 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21490:21490 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21493:21493 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21483:21486 Picinae.Picinae_core <> Addr constr
+R21488:21489 Picinae.Picinae_statics <> a1:403 var
+R21491:21492 Picinae.Picinae_statics <> s1:404 var
+R21496:21496 Picinae.Picinae_statics <> t:402 var
+binder 21465:21466 <> XP:410
+R21512:21515 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R21505:21505 Picinae.Picinae_statics <> p:400 var
+R21507:21508 Picinae.Picinae_statics <> s1:404 var
+R21510:21511 Picinae.Picinae_statics <> a1:403 var
+R21516:21519 Coq.Init.Datatypes <> None constr
+binder 21501:21502 <> IL:411
+R21525:21531 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21535:21536 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 21532:21534 <> xs':412
+R21537:21545 Picinae.Picinae_statics PICINAE_STATICS exec_prog def
+R21547:21547 Picinae.Picinae_statics <> p:400 var
+R21553:21554 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R21550:21552 Picinae.Picinae_statics <> xs':412 var
+R21567:21568 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R21555:21555 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21563:21563 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21566:21566 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R21556:21559 Picinae.Picinae_core <> Addr constr
+R21561:21562 Picinae.Picinae_statics <> a1:403 var
+R21564:21565 Picinae.Picinae_statics <> s1:404 var
+R21569:21569 Picinae.Picinae_statics <> t:402 var
+ax 21628:21643 PICINAE_STATICS typchk_exp_sound
+binder 21655:21655 <> e:414
+binder 21657:21657 <> c:415
+binder 21659:21659 <> t:416
+R21685:21688 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21676:21678 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21662:21671 Picinae.Picinae_statics PICINAE_STATICS typchk_exp def
+R21673:21673 Picinae.Picinae_statics <> e:414 var
+R21675:21675 Picinae.Picinae_statics <> c:415 var
+R21679:21682 Coq.Init.Datatypes <> Some constr
+R21684:21684 Picinae.Picinae_statics <> t:416 var
+R21689:21698 Picinae.Picinae_statics PICINAE_STATICS hastyp_exp ind
+R21700:21700 Picinae.Picinae_statics <> c:415 var
+R21702:21702 Picinae.Picinae_statics <> e:414 var
+R21704:21704 Picinae.Picinae_statics <> t:416 var
+ax 21783:21800 PICINAE_STATICS typctx_meet_subset
+binder 21812:21813 <> c1:418
+binder 21815:21816 <> c2:419
+R21836:21840 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R21819:21829 Picinae.Picinae_statics PICINAE_STATICS typctx_meet def
+R21831:21832 Picinae.Picinae_statics <> c1:418 var
+R21834:21835 Picinae.Picinae_statics <> c2:419 var
+R21841:21842 Picinae.Picinae_statics <> c1:418 var
+ax 21891:21906 PICINAE_STATICS typctx_meet_comm
+binder 21918:21919 <> c1:421
+binder 21921:21922 <> c2:422
+R21942:21944 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21925:21935 Picinae.Picinae_statics PICINAE_STATICS typctx_meet def
+R21937:21938 Picinae.Picinae_statics <> c1:421 var
+R21940:21941 Picinae.Picinae_statics <> c2:422 var
+R21945:21955 Picinae.Picinae_statics PICINAE_STATICS typctx_meet def
+R21957:21958 Picinae.Picinae_statics <> c2:422 var
+R21960:21961 Picinae.Picinae_statics <> c1:421 var
+ax 22051:22070 PICINAE_STATICS typctx_meet_lowbound
+binder 22082:22083 <> c0:424
+binder 22085:22086 <> c1:425
+binder 22088:22089 <> c2:426
+R22099:22103 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R22097:22098 Picinae.Picinae_statics <> c0:424 var
+R22104:22105 Picinae.Picinae_statics <> c1:425 var
+binder 22092:22094 <> SS1:427
+R22116:22120 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R22114:22115 Picinae.Picinae_statics <> c0:424 var
+R22121:22122 Picinae.Picinae_statics <> c2:426 var
+binder 22109:22111 <> SS2:428
+R22128:22132 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R22126:22127 Picinae.Picinae_statics <> c0:424 var
+R22133:22143 Picinae.Picinae_statics PICINAE_STATICS typctx_meet def
+R22145:22146 Picinae.Picinae_statics <> c1:425 var
+R22148:22149 Picinae.Picinae_statics <> c2:426 var
+ax 22215:22230 PICINAE_STATICS typchk_stmt_mono
+binder 22242:22243 <> c0:430
+binder 22245:22245 <> q:431
+binder 22247:22247 <> c:432
+binder 22249:22250 <> c':433
+R22275:22277 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22257:22267 Picinae.Picinae_statics PICINAE_STATICS typchk_stmt def
+R22269:22269 Picinae.Picinae_statics <> q:431 var
+R22271:22272 Picinae.Picinae_statics <> c0:430 var
+R22274:22274 Picinae.Picinae_statics <> c:432 var
+R22278:22281 Coq.Init.Datatypes <> Some constr
+R22283:22284 Picinae.Picinae_statics <> c':433 var
+binder 22253:22254 <> TS:434
+R22294:22298 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R22292:22293 Picinae.Picinae_statics <> c0:430 var
+R22299:22299 Picinae.Picinae_statics <> c:432 var
+binder 22288:22289 <> SS:435
+R22305:22309 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R22303:22304 Picinae.Picinae_statics <> c0:430 var
+R22310:22311 Picinae.Picinae_statics <> c':433 var
+ax 22368:22384 PICINAE_STATICS typchk_stmt_sound
+binder 22396:22396 <> q:437
+binder 22398:22399 <> c0:438
+binder 22401:22401 <> c:439
+binder 22403:22404 <> c':440
+R22413:22417 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R22411:22412 Picinae.Picinae_statics <> c0:438 var
+R22418:22418 Picinae.Picinae_statics <> c:439 var
+binder 22407:22408 <> SS:441
+R22444:22446 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22426:22436 Picinae.Picinae_statics PICINAE_STATICS typchk_stmt def
+R22438:22438 Picinae.Picinae_statics <> q:437 var
+R22440:22441 Picinae.Picinae_statics <> c0:438 var
+R22443:22443 Picinae.Picinae_statics <> c:439 var
+R22447:22450 Coq.Init.Datatypes <> Some constr
+R22452:22453 Picinae.Picinae_statics <> c':440 var
+binder 22422:22423 <> TS:442
+R22459:22469 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R22471:22472 Picinae.Picinae_statics <> c0:438 var
+R22474:22474 Picinae.Picinae_statics <> c:439 var
+R22476:22476 Picinae.Picinae_statics <> q:437 var
+R22478:22479 Picinae.Picinae_statics <> c':440 var
+ax 22720:22738 PICINAE_STATICS typchk_stmt_compute
+binder 22750:22750 <> q:444
+binder 22752:22752 <> c:445
+R22762:22772 Picinae.Picinae_statics PICINAE_STATICS typchk_stmt def
+R22774:22774 Picinae.Picinae_statics <> q:444 var
+R22776:22776 Picinae.Picinae_statics <> c:445 var
+R22778:22778 Picinae.Picinae_statics <> c:445 var
+R22795:22799 Coq.Init.Logic <> False ind
+R22785:22788 Coq.Init.Logic <> True ind
+binder 22755:22756 <> TS:446
+R22805:22811 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R22814:22815 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 22812:22813 <> c':447
+R22816:22826 Picinae.Picinae_statics PICINAE_STATICS hastyp_stmt ind
+R22828:22828 Picinae.Picinae_statics <> c:445 var
+R22830:22830 Picinae.Picinae_statics <> c:445 var
+R22832:22832 Picinae.Picinae_statics <> q:444 var
+R22834:22835 Picinae.Picinae_statics <> c':447 var
+R23261:23274 Picinae.Picinae_statics PICINAE_STATICS welltyped_prog def
+R23261:23274 Picinae.Picinae_statics PICINAE_STATICS welltyped_prog def
+R23394:23394 Coq.Init.Logic <> I constr
+R23437:23455 Picinae.Picinae_statics PICINAE_STATICS typchk_stmt_compute defax
+R23476:23476 Coq.Init.Logic <> I constr
+R23552:23566 Picinae.Picinae_statics PICINAE_STATICS <> modtype
+R23598:23607 Picinae.Picinae_core PICINAE_IL <> mod
+R23612:23626 Picinae.Picinae_statics PICINAE_STATICS <> mod
+R23628:23629 Picinae.Picinae_statics IL <> modtype
+mod 23578:23591 <> PicinaeStatics
+R23641:23642 Picinae.Picinae_statics IL <> modtype
+R23653:23672 Picinae.Picinae_statics PICINAE_STATICS_DEFS <> mod
+R23674:23675 Picinae.Picinae_statics IL <> modtype
+R23696:23708 Picinae.Picinae_theory PicinaeTheory <> modtype
+R23710:23711 Picinae.Picinae_statics IL <> modtype
+mod 23685:23691 <> PicinaeStatics.PTheory
+R23721:23727 Picinae.Picinae_statics PicinaeStatics.PTheory <> mod
+prf 23737:23747 PicinaeStatics value_bound
+binder 23759:23759 <> n:449
+binder 23761:23761 <> w:450
+R23768:23777 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R23780:23782 Picinae.Picinae_core <> VaN constr
+R23786:23786 Picinae.Picinae_statics <> w:450 var
+R23784:23784 Picinae.Picinae_statics <> n:449 var
+R23790:23793 Picinae.Picinae_statics <> NumT constr
+R23795:23795 Picinae.Picinae_statics <> w:450 var
+binder 23764:23765 <> TV:451
+R23801:23803 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R23800:23800 Picinae.Picinae_statics <> n:449 var
+R23805:23805 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R23806:23806 Picinae.Picinae_statics <> w:450 var
+prf 23862:23874 PicinaeStatics mem_welltyped
+binder 23886:23886 <> m:452
+binder 23888:23888 <> w:453
+R23895:23904 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R23907:23909 Picinae.Picinae_core <> VaM constr
+R23913:23913 Picinae.Picinae_statics <> w:453 var
+R23911:23911 Picinae.Picinae_statics <> m:452 var
+R23917:23920 Picinae.Picinae_statics <> MemT constr
+R23922:23922 Picinae.Picinae_statics <> w:453 var
+binder 23891:23892 <> TV:454
+R23927:23942 Picinae.Picinae_statics PicinaeStatics welltyped_memory def
+R23944:23944 Picinae.Picinae_statics <> m:452 var
+prf 24000:24013 PicinaeStatics hastyp_towidth
+binder 24025:24025 <> w:455
+binder 24027:24027 <> n:456
+R24030:24039 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R24042:24048 Picinae.Picinae_core <> towidth def
+R24050:24050 Picinae.Picinae_statics <> w:455 var
+R24052:24052 Picinae.Picinae_statics <> n:456 var
+R24056:24059 Picinae.Picinae_statics <> NumT constr
+R24061:24061 Picinae.Picinae_statics <> w:455 var
+R24088:24090 Picinae.Picinae_statics PicinaeStatics TVN constr
+R24093:24102 Picinae.Picinae_theory <> mp2_mod_lt thm
+R24088:24090 Picinae.Picinae_statics PicinaeStatics TVN constr
+R24093:24102 Picinae.Picinae_theory <> mp2_mod_lt thm
+prf 24117:24128 PicinaeStatics hastyp_binop
+binder 24140:24142 <> bop:457
+binder 24144:24144 <> c:458
+binder 24146:24147 <> e1:459
+binder 24149:24150 <> e2:460
+binder 24152:24152 <> w:461
+binder 24154:24155 <> w':462
+R24180:24182 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24161:24173 Picinae.Picinae_statics <> widthof_binop def
+R24175:24177 Picinae.Picinae_statics <> bop:457 var
+R24179:24179 Picinae.Picinae_statics <> w:461 var
+R24183:24184 Picinae.Picinae_statics <> w':462 var
+binder 24158:24158 <> W:463
+R24201:24210 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R24212:24212 Picinae.Picinae_statics <> c:458 var
+R24214:24215 Picinae.Picinae_statics <> e1:459 var
+R24218:24221 Picinae.Picinae_statics <> NumT constr
+R24223:24223 Picinae.Picinae_statics <> w:461 var
+binder 24197:24198 <> T1:464
+R24232:24241 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R24243:24243 Picinae.Picinae_statics <> c:458 var
+R24245:24246 Picinae.Picinae_statics <> e2:460 var
+R24249:24252 Picinae.Picinae_statics <> NumT constr
+R24254:24254 Picinae.Picinae_statics <> w:461 var
+binder 24228:24229 <> T2:465
+R24261:24270 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R24272:24272 Picinae.Picinae_statics <> c:458 var
+R24275:24279 Picinae.Picinae_statics PicinaeStatics BinOp constr
+R24281:24283 Picinae.Picinae_statics <> bop:457 var
+R24285:24286 Picinae.Picinae_statics <> e1:459 var
+R24288:24289 Picinae.Picinae_statics <> e2:460 var
+R24293:24296 Picinae.Picinae_statics <> NumT constr
+R24298:24299 Picinae.Picinae_statics <> w':462 var
+R24340:24345 Picinae.Picinae_statics PicinaeStatics TBinOp constr
+R24340:24345 Picinae.Picinae_statics PicinaeStatics TBinOp constr
+prf 24372:24385 PicinaeStatics hastyp_extract
+binder 24397:24397 <> w:466
+binder 24399:24399 <> c:467
+binder 24401:24402 <> n1:468
+binder 24404:24405 <> n2:469
+binder 24407:24408 <> e1:470
+binder 24410:24411 <> w':471
+R24431:24433 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24426:24428 Coq.NArith.BinNat <> ::N_scope:x_'-'_x not
+R24417:24422 Coq.NArith.BinNat N succ def
+R24424:24425 Picinae.Picinae_statics <> n1:468 var
+R24429:24430 Picinae.Picinae_statics <> n2:469 var
+R24434:24435 Picinae.Picinae_statics <> w':471 var
+binder 24414:24414 <> W:472
+R24452:24461 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R24463:24463 Picinae.Picinae_statics <> c:467 var
+R24465:24466 Picinae.Picinae_statics <> e1:470 var
+R24469:24472 Picinae.Picinae_statics <> NumT constr
+R24474:24474 Picinae.Picinae_statics <> w:466 var
+binder 24448:24449 <> T1:473
+R24485:24487 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R24483:24484 Picinae.Picinae_statics <> n1:468 var
+R24488:24488 Picinae.Picinae_statics <> w:466 var
+binder 24479:24480 <> HI:474
+R24494:24503 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R24505:24505 Picinae.Picinae_statics <> c:467 var
+R24508:24514 Picinae.Picinae_statics PicinaeStatics Extract constr
+R24516:24517 Picinae.Picinae_statics <> n1:468 var
+R24519:24520 Picinae.Picinae_statics <> n2:469 var
+R24522:24523 Picinae.Picinae_statics <> e1:470 var
+R24527:24530 Picinae.Picinae_statics <> NumT constr
+R24532:24533 Picinae.Picinae_statics <> w':471 var
+R24575:24582 Picinae.Picinae_statics PicinaeStatics TExtract constr
+R24575:24582 Picinae.Picinae_statics PicinaeStatics TExtract constr
+prf 24610:24622 PicinaeStatics hastyp_concat
+binder 24634:24634 <> c:475
+binder 24636:24637 <> e1:476
+binder 24639:24640 <> e2:477
+binder 24642:24643 <> w1:478
+binder 24645:24646 <> w2:479
+binder 24648:24649 <> w':480
+R24660:24662 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24657:24657 Coq.NArith.BinNat <> ::N_scope:x_'+'_x not
+R24655:24656 Picinae.Picinae_statics <> w1:478 var
+R24658:24659 Picinae.Picinae_statics <> w2:479 var
+R24663:24664 Picinae.Picinae_statics <> w':480 var
+binder 24652:24652 <> W:481
+R24681:24690 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R24692:24692 Picinae.Picinae_statics <> c:475 var
+R24694:24695 Picinae.Picinae_statics <> e1:476 var
+R24698:24701 Picinae.Picinae_statics <> NumT constr
+R24703:24704 Picinae.Picinae_statics <> w1:478 var
+binder 24677:24678 <> T1:482
+R24713:24722 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R24724:24724 Picinae.Picinae_statics <> c:475 var
+R24726:24727 Picinae.Picinae_statics <> e2:477 var
+R24730:24733 Picinae.Picinae_statics <> NumT constr
+R24735:24736 Picinae.Picinae_statics <> w2:479 var
+binder 24709:24710 <> T2:483
+R24743:24752 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R24754:24754 Picinae.Picinae_statics <> c:475 var
+R24757:24762 Picinae.Picinae_statics PicinaeStatics Concat constr
+R24764:24765 Picinae.Picinae_statics <> e1:476 var
+R24767:24768 Picinae.Picinae_statics <> e2:477 var
+R24772:24775 Picinae.Picinae_statics <> NumT constr
+R24777:24778 Picinae.Picinae_statics <> w':480 var
+R24819:24825 Picinae.Picinae_statics PicinaeStatics TConcat constr
+R24819:24825 Picinae.Picinae_statics PicinaeStatics TConcat constr
+prf 24854:24870 PicinaeStatics hastyp_exp_unique
+binder 24882:24882 <> e:484
+binder 24884:24885 <> c1:485
+binder 24887:24888 <> c2:486
+binder 24890:24891 <> t1:487
+binder 24893:24894 <> t2:488
+R24902:24916 Picinae.Picinae_statics <> has_upper_bound def
+R24921:24922 Picinae.Picinae_statics <> c2:486 var
+R24918:24919 Picinae.Picinae_statics <> c1:485 var
+binder 24897:24899 <> HUB:489
+R24940:24949 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R24951:24952 Picinae.Picinae_statics <> c1:485 var
+R24954:24954 Picinae.Picinae_statics <> e:484 var
+R24956:24957 Picinae.Picinae_statics <> t1:487 var
+binder 24935:24937 <> TE1:490
+R24966:24975 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R24977:24978 Picinae.Picinae_statics <> c2:486 var
+R24980:24980 Picinae.Picinae_statics <> e:484 var
+R24982:24983 Picinae.Picinae_statics <> t2:488 var
+binder 24961:24963 <> TE2:491
+R24991:24993 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24989:24990 Picinae.Picinae_statics <> t1:487 var
+R24994:24995 Picinae.Picinae_statics <> t2:488 var
+R25485:25494 Picinae.Picinae_statics <> hub_update thm
+R25485:25494 Picinae.Picinae_statics <> hub_update thm
+prf 25728:25744 PicinaeStatics hastyp_exp_weaken
+binder 25756:25757 <> c1:492
+binder 25759:25760 <> c2:493
+binder 25762:25762 <> e:494
+binder 25764:25764 <> t:495
+R25771:25780 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R25782:25783 Picinae.Picinae_statics <> c1:492 var
+R25785:25785 Picinae.Picinae_statics <> e:494 var
+R25787:25787 Picinae.Picinae_statics <> t:495 var
+binder 25767:25768 <> TE:496
+R25797:25801 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R25795:25796 Picinae.Picinae_statics <> c1:492 var
+R25802:25803 Picinae.Picinae_statics <> c2:493 var
+binder 25791:25792 <> SS:497
+R25809:25818 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R25820:25821 Picinae.Picinae_statics <> c2:493 var
+R25823:25823 Picinae.Picinae_statics <> e:494 var
+R25825:25825 Picinae.Picinae_statics <> t:495 var
+R26041:26046 Picinae.Picinae_core <> update def
+R26077:26080 Picinae.Picinae_core <> :::x_'=='_x not
+R26077:26080 Picinae.Picinae_core <> :::x_'=='_x not
+prf 26141:26158 PicinaeStatics hastyp_stmt_weaken
+binder 26170:26171 <> c0:498
+binder 26173:26173 <> c:499
+binder 26175:26176 <> c':500
+binder 26178:26180 <> c'':501
+binder 26182:26182 <> q:502
+R26189:26199 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R26201:26202 Picinae.Picinae_statics <> c0:498 var
+R26204:26204 Picinae.Picinae_statics <> c:499 var
+R26206:26206 Picinae.Picinae_statics <> q:502 var
+R26208:26209 Picinae.Picinae_statics <> c':500 var
+binder 26185:26186 <> TS:503
+R26220:26224 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R26217:26219 Picinae.Picinae_statics <> c'':501 var
+R26225:26226 Picinae.Picinae_statics <> c':500 var
+binder 26213:26214 <> SS:504
+R26232:26242 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R26244:26245 Picinae.Picinae_statics <> c0:498 var
+R26247:26247 Picinae.Picinae_statics <> c:499 var
+R26249:26249 Picinae.Picinae_statics <> q:502 var
+R26251:26253 Picinae.Picinae_statics <> c'':501 var
+prf 26387:26404 PicinaeStatics hastyp_stmt_compat
+binder 26416:26417 <> c0:505
+binder 26419:26419 <> q:506
+binder 26421:26422 <> c1:507
+binder 26424:26425 <> c2:508
+binder 26427:26429 <> c1':509
+binder 26431:26433 <> c2':510
+R26450:26464 Picinae.Picinae_statics <> has_upper_bound def
+R26469:26470 Picinae.Picinae_statics <> c2:508 var
+R26466:26467 Picinae.Picinae_statics <> c1:507 var
+binder 26445:26447 <> HUB:511
+R26488:26498 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R26500:26501 Picinae.Picinae_statics <> c0:505 var
+R26503:26504 Picinae.Picinae_statics <> c1:507 var
+R26506:26506 Picinae.Picinae_statics <> q:506 var
+R26508:26510 Picinae.Picinae_statics <> c1':509 var
+binder 26483:26485 <> TS1:512
+R26519:26529 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R26531:26532 Picinae.Picinae_statics <> c0:505 var
+R26534:26535 Picinae.Picinae_statics <> c2:508 var
+R26537:26537 Picinae.Picinae_statics <> q:506 var
+R26539:26541 Picinae.Picinae_statics <> c2':510 var
+binder 26514:26516 <> TS2:513
+R26547:26561 Picinae.Picinae_statics <> has_upper_bound def
+R26567:26569 Picinae.Picinae_statics <> c2':510 var
+R26563:26565 Picinae.Picinae_statics <> c1':509 var
+R26675:26684 Picinae.Picinae_statics <> hub_subset thm
+R26675:26684 Picinae.Picinae_statics <> hub_subset thm
+R26675:26684 Picinae.Picinae_statics <> hub_subset thm
+R26675:26684 Picinae.Picinae_statics <> hub_subset thm
+R26675:26684 Picinae.Picinae_statics <> hub_subset thm
+R26675:26684 Picinae.Picinae_statics <> hub_subset thm
+R26675:26684 Picinae.Picinae_statics <> hub_subset thm
+R26675:26684 Picinae.Picinae_statics <> hub_subset thm
+R26729:26738 Picinae.Picinae_statics <> hub_subset thm
+R26729:26738 Picinae.Picinae_statics <> hub_subset thm
+R26790:26799 Picinae.Picinae_statics <> hub_update thm
+R26790:26799 Picinae.Picinae_statics <> hub_update thm
+R26820:26836 Picinae.Picinae_statics PicinaeStatics hastyp_exp_unique thm
+R26820:26836 Picinae.Picinae_statics PicinaeStatics hastyp_exp_unique thm
+R26914:26931 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_weaken thm
+R26914:26931 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_weaken thm
+R26968:26985 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_weaken thm
+R26968:26985 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_weaken thm
+R27021:27030 Picinae.Picinae_statics <> hub_subset thm
+R27021:27030 Picinae.Picinae_statics <> hub_subset thm
+prf 27091:27114 PicinaeStatics hastyp_stmt_frame_weaken
+binder 27126:27127 <> c0:514
+binder 27129:27131 <> c0':515
+binder 27133:27133 <> q:516
+binder 27135:27135 <> c:517
+binder 27137:27138 <> c':518
+R27145:27155 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R27157:27158 Picinae.Picinae_statics <> c0:514 var
+R27160:27160 Picinae.Picinae_statics <> c:517 var
+R27162:27162 Picinae.Picinae_statics <> q:516 var
+R27164:27165 Picinae.Picinae_statics <> c':518 var
+binder 27141:27142 <> TS:519
+R27176:27180 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R27173:27175 Picinae.Picinae_statics <> c0':515 var
+R27181:27182 Picinae.Picinae_statics <> c0:514 var
+binder 27169:27170 <> SS:520
+R27188:27198 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R27200:27202 Picinae.Picinae_statics <> c0':515 var
+R27204:27204 Picinae.Picinae_statics <> c:517 var
+R27206:27206 Picinae.Picinae_statics <> q:516 var
+R27208:27209 Picinae.Picinae_statics <> c':518 var
+R27273:27276 Picinae.Picinae_statics PicinaeStatics TNop constr
+R27273:27276 Picinae.Picinae_statics PicinaeStatics TNop constr
+R27302:27306 Picinae.Picinae_statics PicinaeStatics TMove constr
+R27302:27306 Picinae.Picinae_statics PicinaeStatics TMove constr
+R27383:27389 Coq.Init.Logic <> eq_refl constr
+R27383:27389 Coq.Init.Logic <> eq_refl constr
+R27383:27389 Coq.Init.Logic <> eq_refl constr
+R27514:27517 Picinae.Picinae_statics PicinaeStatics TJmp constr
+R27514:27517 Picinae.Picinae_statics PicinaeStatics TJmp constr
+R27552:27555 Picinae.Picinae_statics PicinaeStatics TExn constr
+R27552:27555 Picinae.Picinae_statics PicinaeStatics TExn constr
+R27581:27584 Picinae.Picinae_statics PicinaeStatics TSeq constr
+R27581:27584 Picinae.Picinae_statics PicinaeStatics TSeq constr
+R27693:27695 Picinae.Picinae_statics PicinaeStatics TIf constr
+R27693:27695 Picinae.Picinae_statics PicinaeStatics TIf constr
+R27820:27823 Picinae.Picinae_statics PicinaeStatics TRep constr
+R27820:27823 Picinae.Picinae_statics PicinaeStatics TRep constr
+prf 27911:27924 PicinaeStatics typesafe_binop
+binder 27936:27938 <> bop:521
+binder 27940:27941 <> n1:522
+binder 27943:27944 <> n2:523
+binder 27946:27946 <> w:524
+R27963:27972 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R27975:27977 Picinae.Picinae_core <> VaN constr
+R27982:27982 Picinae.Picinae_statics <> w:524 var
+R27979:27980 Picinae.Picinae_statics <> n1:522 var
+R27986:27989 Picinae.Picinae_statics <> NumT constr
+R27991:27991 Picinae.Picinae_statics <> w:524 var
+binder 27958:27960 <> TV1:525
+R28001:28010 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R28013:28015 Picinae.Picinae_core <> VaN constr
+R28020:28020 Picinae.Picinae_statics <> w:524 var
+R28017:28018 Picinae.Picinae_statics <> n2:523 var
+R28024:28027 Picinae.Picinae_statics <> NumT constr
+R28029:28029 Picinae.Picinae_statics <> w:524 var
+binder 27996:27998 <> TV2:526
+R28036:28045 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R28048:28057 Picinae.Picinae_core <> eval_binop def
+R28059:28061 Picinae.Picinae_statics <> bop:521 var
+R28063:28063 Picinae.Picinae_statics <> w:524 var
+R28065:28066 Picinae.Picinae_statics <> n1:522 var
+R28068:28069 Picinae.Picinae_statics <> n2:523 var
+R28073:28076 Picinae.Picinae_statics <> NumT constr
+R28079:28091 Picinae.Picinae_statics <> widthof_binop def
+R28093:28095 Picinae.Picinae_statics <> bop:521 var
+R28097:28097 Picinae.Picinae_statics <> w:524 var
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28200:28202 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28215:28223 Picinae.Picinae_theory <> ofZ_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28151:28164 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R28174:28176 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28179:28187 Picinae.Picinae_theory <> bit_bound thm
+R28200:28202 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28200:28202 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28200:28202 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28200:28202 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28200:28202 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28200:28202 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28200:28202 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28200:28202 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28200:28202 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28215:28223 Picinae.Picinae_theory <> ofZ_bound thm
+R28215:28223 Picinae.Picinae_theory <> ofZ_bound thm
+R28215:28223 Picinae.Picinae_theory <> ofZ_bound thm
+R28215:28223 Picinae.Picinae_theory <> ofZ_bound thm
+R28215:28223 Picinae.Picinae_theory <> ofZ_bound thm
+R28215:28223 Picinae.Picinae_theory <> ofZ_bound thm
+R28215:28223 Picinae.Picinae_theory <> ofZ_bound thm
+R28215:28223 Picinae.Picinae_theory <> ofZ_bound thm
+R28215:28223 Picinae.Picinae_theory <> ofZ_bound thm
+R28248:28260 Coq.NArith.BinNat N le_lt_trans thm
+R28248:28260 Coq.NArith.BinNat N le_lt_trans thm
+R28269:28277 Picinae.Picinae_theory <> div_bound thm
+R28269:28277 Picinae.Picinae_theory <> div_bound thm
+R28286:28296 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28286:28296 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28333:28341 Picinae.Picinae_theory <> mod_bound thm
+R28350:28360 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28333:28341 Picinae.Picinae_theory <> mod_bound thm
+R28350:28360 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28350:28360 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28400:28412 Coq.NArith.BinNat N lt_le_trans thm
+R28400:28412 Coq.NArith.BinNat N lt_le_trans thm
+R28425:28436 Picinae.Picinae_theory <> shiftr_bound thm
+R28425:28436 Picinae.Picinae_theory <> shiftr_bound thm
+R28445:28455 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28445:28455 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28481:28495 Coq.NArith.BinNat N pow_le_mono_r thm
+R28481:28495 Coq.NArith.BinNat N pow_le_mono_r thm
+R28520:28529 Coq.NArith.BinNat N le_sub_l thm
+R28520:28529 Coq.NArith.BinNat N le_sub_l thm
+R28554:28563 Picinae.Picinae_theory <> land_bound thm
+R28572:28582 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28554:28563 Picinae.Picinae_theory <> land_bound thm
+R28572:28582 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28618:28626 Picinae.Picinae_theory <> lor_bound thm
+R28635:28645 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28618:28626 Picinae.Picinae_theory <> lor_bound thm
+R28635:28645 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28635:28645 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28682:28691 Picinae.Picinae_theory <> lxor_bound thm
+R28700:28710 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28682:28691 Picinae.Picinae_theory <> lxor_bound thm
+R28700:28710 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28700:28710 Picinae.Picinae_statics PicinaeStatics value_bound thm
+prf 28739:28751 PicinaeStatics typesafe_unop
+binder 28763:28765 <> uop:527
+binder 28767:28767 <> n:528
+binder 28769:28769 <> w:529
+R28785:28794 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R28797:28799 Picinae.Picinae_core <> VaN constr
+R28803:28803 Picinae.Picinae_statics <> w:529 var
+R28801:28801 Picinae.Picinae_statics <> n:528 var
+R28807:28810 Picinae.Picinae_statics <> NumT constr
+R28812:28812 Picinae.Picinae_statics <> w:529 var
+binder 28781:28782 <> TV:530
+R28819:28828 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R28831:28839 Picinae.Picinae_core <> eval_unop def
+R28841:28843 Picinae.Picinae_statics <> uop:527 var
+R28845:28845 Picinae.Picinae_statics <> n:528 var
+R28847:28847 Picinae.Picinae_statics <> w:529 var
+R28851:28854 Picinae.Picinae_statics <> NumT constr
+R28856:28856 Picinae.Picinae_statics <> w:529 var
+R28897:28899 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28897:28899 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28897:28899 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28897:28899 Picinae.Picinae_statics PicinaeStatics TVN constr
+R28923:28932 Picinae.Picinae_theory <> mp2_mod_lt thm
+R28923:28932 Picinae.Picinae_theory <> mp2_mod_lt thm
+R28956:28965 Picinae.Picinae_theory <> lnot_bound thm
+R28968:28978 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R28956:28965 Picinae.Picinae_theory <> lnot_bound thm
+R28968:28978 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R29020:29032 Coq.NArith.BinNat N le_lt_trans thm
+R29020:29032 Coq.NArith.BinNat N le_lt_trans thm
+R29041:29054 Picinae.Picinae_theory <> popcount_bound thm
+R29041:29054 Picinae.Picinae_theory <> popcount_bound thm
+R29066:29078 Coq.NArith.BinNat N le_lt_trans thm
+R29066:29078 Coq.NArith.BinNat N le_lt_trans thm
+R29087:29098 Picinae.Picinae_theory <> size_le_diag thm
+R29087:29098 Picinae.Picinae_theory <> size_le_diag thm
+R29107:29117 Picinae.Picinae_statics PicinaeStatics value_bound thm
+R29107:29117 Picinae.Picinae_statics PicinaeStatics value_bound thm
+prf 29138:29150 PicinaeStatics typesafe_cast
+binder 29162:29162 <> c:531
+binder 29164:29164 <> n:532
+binder 29166:29166 <> w:533
+binder 29168:29169 <> w':534
+R29176:29185 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R29188:29190 Picinae.Picinae_core <> VaN constr
+R29194:29194 Picinae.Picinae_statics <> w:533 var
+R29192:29192 Picinae.Picinae_statics <> n:532 var
+R29198:29201 Picinae.Picinae_statics <> NumT constr
+R29203:29203 Picinae.Picinae_statics <> w:533 var
+binder 29172:29173 <> TV:535
+R29221:29221 Picinae.Picinae_statics <> c:531 var
+R29228:29240 Picinae.Picinae_core <> CAST_UNSIGNED constr
+R29244:29254 Picinae.Picinae_core <> CAST_SIGNED constr
+R29260:29261 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R29259:29259 Picinae.Picinae_statics <> w:533 var
+R29262:29263 Picinae.Picinae_statics <> w':534 var
+R29260:29261 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R29259:29259 Picinae.Picinae_statics <> w:533 var
+R29262:29263 Picinae.Picinae_statics <> w':534 var
+R29286:29294 Picinae.Picinae_core <> CAST_HIGH constr
+R29298:29305 Picinae.Picinae_core <> CAST_LOW constr
+R29312:29313 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R29310:29311 Picinae.Picinae_statics <> w':534 var
+R29314:29314 Picinae.Picinae_statics <> w:533 var
+R29312:29313 Coq.NArith.BinNat <> ::N_scope:x_'<='_x not
+R29310:29311 Picinae.Picinae_statics <> w':534 var
+R29314:29314 Picinae.Picinae_statics <> w:533 var
+binder 29212:29212 <> T:537
+R29324:29333 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R29336:29338 Picinae.Picinae_core <> VaN constr
+R29356:29357 Picinae.Picinae_statics <> w':534 var
+R29341:29344 Picinae.Picinae_core <> cast def
+R29346:29346 Picinae.Picinae_statics <> c:531 var
+R29348:29348 Picinae.Picinae_statics <> w:533 var
+R29350:29351 Picinae.Picinae_statics <> w':534 var
+R29353:29353 Picinae.Picinae_statics <> n:532 var
+R29361:29364 Picinae.Picinae_statics <> NumT constr
+R29366:29367 Picinae.Picinae_statics <> w':534 var
+R29449:29462 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R29449:29462 Picinae.Picinae_statics PicinaeStatics hastyp_towidth thm
+R29487:29489 Picinae.Picinae_statics PicinaeStatics TVN constr
+R29492:29506 Picinae.Picinae_theory <> cast_high_bound thm
+R29487:29489 Picinae.Picinae_statics PicinaeStatics TVN constr
+R29492:29506 Picinae.Picinae_theory <> cast_high_bound thm
+R29545:29547 Picinae.Picinae_statics PicinaeStatics TVN constr
+R29550:29558 Picinae.Picinae_theory <> ofZ_bound thm
+R29545:29547 Picinae.Picinae_statics PicinaeStatics TVN constr
+R29550:29558 Picinae.Picinae_theory <> ofZ_bound thm
+R29587:29589 Picinae.Picinae_statics PicinaeStatics TVN constr
+R29587:29589 Picinae.Picinae_statics PicinaeStatics TVN constr
+R29599:29611 Coq.NArith.BinNat N lt_le_trans thm
+R29599:29611 Coq.NArith.BinNat N lt_le_trans thm
+R29635:29649 Coq.NArith.BinNat N pow_le_mono_r thm
+R29635:29649 Coq.NArith.BinNat N pow_le_mono_r thm
+prf 29694:29708 PicinaeStatics typesafe_getmem
+binder 29720:29720 <> w:538
+binder 29722:29724 <> len:539
+binder 29726:29726 <> m:540
+binder 29728:29728 <> a:541
+binder 29730:29730 <> e:542
+R29735:29744 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R29747:29749 Picinae.Picinae_core <> VaN constr
+R29775:29775 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R29773:29774 Picinae.Picinae_statics PicinaeStatics Mb def
+R29776:29778 Picinae.Picinae_statics <> len:539 var
+R29752:29757 Picinae.Picinae_statics PicinaeStatics getmem def
+R29759:29759 Picinae.Picinae_statics <> w:538 var
+R29761:29761 Picinae.Picinae_statics <> e:542 var
+R29763:29765 Picinae.Picinae_statics <> len:539 var
+R29767:29767 Picinae.Picinae_statics <> m:540 var
+R29769:29769 Picinae.Picinae_statics <> a:541 var
+R29783:29786 Picinae.Picinae_statics <> NumT constr
+R29791:29791 Coq.NArith.BinNat <> ::N_scope:x_'*'_x not
+R29789:29790 Picinae.Picinae_statics PicinaeStatics Mb def
+R29792:29794 Picinae.Picinae_statics <> len:539 var
+R29822:29824 Picinae.Picinae_statics PicinaeStatics TVN constr
+R29822:29824 Picinae.Picinae_statics PicinaeStatics TVN constr
+R29833:29844 Picinae.Picinae_statics PicinaeStatics getmem_bound thm
+R29833:29844 Picinae.Picinae_statics PicinaeStatics getmem_bound thm
+prf 29861:29876 PicinaeStatics setmem_welltyped
+binder 29888:29888 <> w:543
+binder 29890:29890 <> e:544
+binder 29892:29894 <> len:545
+binder 29896:29896 <> m:546
+binder 29898:29898 <> a:547
+binder 29900:29900 <> v:548
+R29908:29923 Picinae.Picinae_statics PicinaeStatics welltyped_memory def
+R29925:29925 Picinae.Picinae_statics <> m:546 var
+binder 29903:29905 <> WTM:549
+R29931:29946 Picinae.Picinae_statics PicinaeStatics welltyped_memory def
+R29949:29954 Picinae.Picinae_statics PicinaeStatics setmem def
+R29956:29956 Picinae.Picinae_statics <> w:543 var
+R29958:29958 Picinae.Picinae_statics <> e:544 var
+R29960:29962 Picinae.Picinae_statics <> len:545 var
+R29964:29964 Picinae.Picinae_statics <> m:546 var
+R29966:29966 Picinae.Picinae_statics <> a:547 var
+R29968:29968 Picinae.Picinae_statics <> v:548 var
+R30001:30011 Coq.NArith.BinNat N peano_ind def
+R30001:30011 Coq.NArith.BinNat N peano_ind def
+R30034:30041 Picinae.Picinae_statics PicinaeStatics setmem_0 thm
+R30034:30041 Picinae.Picinae_statics PicinaeStatics setmem_0 thm
+R30034:30041 Picinae.Picinae_statics PicinaeStatics setmem_0 thm
+R30067:30077 Picinae.Picinae_statics PicinaeStatics setmem_succ thm
+R30067:30077 Picinae.Picinae_statics PicinaeStatics setmem_succ thm
+R30067:30077 Picinae.Picinae_statics PicinaeStatics setmem_succ thm
+R30131:30138 Coq.NArith.BinNat N eq_dec def
+R30145:30149 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R30151:30151 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R30185:30198 Picinae.Picinae_theory <> update_updated thm
+R30207:30214 Coq.NArith.BinNat N mod_lt thm
+R30217:30229 Coq.NArith.BinNat N pow_nonzero thm
+R30263:30274 Picinae.Picinae_theory <> update_frame thm
+R30131:30138 Coq.NArith.BinNat N eq_dec def
+R30145:30149 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R30151:30151 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R30185:30198 Picinae.Picinae_theory <> update_updated thm
+R30185:30198 Picinae.Picinae_theory <> update_updated thm
+R30207:30214 Coq.NArith.BinNat N mod_lt thm
+R30217:30229 Coq.NArith.BinNat N pow_nonzero thm
+R30263:30274 Picinae.Picinae_theory <> update_frame thm
+R30263:30274 Picinae.Picinae_theory <> update_frame thm
+R30131:30138 Coq.NArith.BinNat N eq_dec def
+R30145:30149 Coq.NArith.BinNat <> ::N_scope:x_'mod'_x not
+R30151:30151 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R30185:30198 Picinae.Picinae_theory <> update_updated thm
+R30185:30198 Picinae.Picinae_theory <> update_updated thm
+R30207:30214 Coq.NArith.BinNat N mod_lt thm
+R30217:30229 Coq.NArith.BinNat N pow_nonzero thm
+R30263:30274 Picinae.Picinae_theory <> update_frame thm
+R30263:30274 Picinae.Picinae_theory <> update_frame thm
+prf 30322:30336 PicinaeStatics typesafe_setmem
+binder 30348:30348 <> w:550
+binder 30350:30352 <> len:551
+binder 30354:30354 <> m:552
+binder 30356:30356 <> a:553
+binder 30358:30358 <> v:554
+binder 30360:30360 <> e:555
+R30376:30385 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R30388:30390 Picinae.Picinae_core <> VaM constr
+R30394:30394 Picinae.Picinae_statics <> w:550 var
+R30392:30392 Picinae.Picinae_statics <> m:552 var
+R30398:30401 Picinae.Picinae_statics <> MemT constr
+R30403:30403 Picinae.Picinae_statics <> w:550 var
+binder 30372:30373 <> TV:556
+R30410:30419 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R30422:30424 Picinae.Picinae_core <> VaM constr
+R30449:30449 Picinae.Picinae_statics <> w:550 var
+R30427:30432 Picinae.Picinae_statics PicinaeStatics setmem def
+R30434:30434 Picinae.Picinae_statics <> w:550 var
+R30436:30436 Picinae.Picinae_statics <> e:555 var
+R30438:30440 Picinae.Picinae_statics <> len:551 var
+R30442:30442 Picinae.Picinae_statics <> m:552 var
+R30444:30444 Picinae.Picinae_statics <> a:553 var
+R30446:30446 Picinae.Picinae_statics <> v:554 var
+R30453:30456 Picinae.Picinae_statics <> MemT constr
+R30458:30458 Picinae.Picinae_statics <> w:550 var
+R30486:30488 Picinae.Picinae_statics PicinaeStatics TVM constr
+R30491:30506 Picinae.Picinae_statics PicinaeStatics setmem_welltyped thm
+R30509:30521 Picinae.Picinae_statics PicinaeStatics mem_welltyped thm
+R30486:30488 Picinae.Picinae_statics PicinaeStatics TVM constr
+R30491:30506 Picinae.Picinae_statics PicinaeStatics setmem_welltyped thm
+R30509:30521 Picinae.Picinae_statics PicinaeStatics mem_welltyped thm
+prf 30542:30551 PicinaeStatics models_wtm
+binder 30563:30563 <> v:557
+binder 30566:30566 <> c:558
+binder 30568:30568 <> s:559
+binder 30570:30570 <> m:560
+binder 30572:30572 <> w:561
+R30581:30586 Picinae.Picinae_statics PicinaeStatics models def
+R30588:30588 Picinae.Picinae_statics <> c:558 var
+R30590:30590 Picinae.Picinae_statics <> s:559 var
+binder 30576:30578 <> MDL:562
+R30601:30603 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R30598:30598 Picinae.Picinae_statics <> s:559 var
+R30600:30600 Picinae.Picinae_statics <> v:557 var
+R30604:30606 Picinae.Picinae_core <> VaM constr
+R30610:30610 Picinae.Picinae_statics <> w:561 var
+R30608:30608 Picinae.Picinae_statics <> m:560 var
+binder 30594:30595 <> SV:563
+R30622:30622 Picinae.Picinae_statics <> c:558 var
+R30624:30624 Picinae.Picinae_statics <> v:557 var
+R30631:30634 Coq.Init.Datatypes <> Some constr
+R30641:30656 Picinae.Picinae_statics PicinaeStatics welltyped_memory def
+R30658:30658 Picinae.Picinae_statics <> m:560 var
+R30662:30665 Coq.Init.Datatypes <> None constr
+R30670:30673 Coq.Init.Logic <> True ind
+R30728:30728 Coq.Init.Logic <> I constr
+R30728:30728 Coq.Init.Logic <> I constr
+prf 30819:30832 PicinaeStatics models_regsize
+binder 30844:30844 <> v:564
+binder 30847:30847 <> c:565
+binder 30849:30849 <> s:566
+binder 30851:30851 <> n:567
+binder 30853:30853 <> w:568
+R30862:30867 Picinae.Picinae_statics PicinaeStatics models def
+R30869:30869 Picinae.Picinae_statics <> c:565 var
+R30871:30871 Picinae.Picinae_statics <> s:566 var
+binder 30857:30859 <> MDL:569
+R30882:30884 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R30879:30879 Picinae.Picinae_statics <> s:566 var
+R30881:30881 Picinae.Picinae_statics <> v:564 var
+R30885:30887 Picinae.Picinae_core <> VaN constr
+R30891:30891 Picinae.Picinae_statics <> w:568 var
+R30889:30889 Picinae.Picinae_statics <> n:567 var
+binder 30875:30876 <> SV:570
+R30903:30903 Picinae.Picinae_statics <> c:565 var
+R30905:30905 Picinae.Picinae_statics <> v:564 var
+R30912:30915 Coq.Init.Datatypes <> Some constr
+R30923:30925 Coq.NArith.BinNat <> ::N_scope:x_'<'_x not
+R30922:30922 Picinae.Picinae_statics <> n:567 var
+R30927:30927 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R30928:30928 Picinae.Picinae_statics <> w:568 var
+R30932:30935 Coq.Init.Datatypes <> None constr
+R30940:30943 Coq.Init.Logic <> True ind
+R30998:30998 Coq.Init.Logic <> I constr
+R30998:30998 Coq.Init.Logic <> I constr
+prf 31087:31099 PicinaeStatics models_subset
+binder 31111:31111 <> c:571
+binder 31113:31113 <> s:572
+binder 31115:31116 <> c':573
+R31122:31127 Picinae.Picinae_statics PicinaeStatics models def
+R31129:31129 Picinae.Picinae_statics <> c:571 var
+R31131:31131 Picinae.Picinae_statics <> s:572 var
+binder 31119:31119 <> M:574
+R31141:31145 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R31139:31140 Picinae.Picinae_statics <> c':573 var
+R31146:31146 Picinae.Picinae_statics <> c:571 var
+binder 31135:31136 <> SS:575
+R31152:31157 Picinae.Picinae_statics PicinaeStatics models def
+R31159:31160 Picinae.Picinae_statics <> c':573 var
+R31162:31162 Picinae.Picinae_statics <> s:572 var
+R31181:31186 Picinae.Picinae_statics PicinaeStatics models def
+prf 31226:31246 PicinaeStatics preservation_eval_exp
+binder 31259:31259 <> s:576
+binder 31261:31261 <> e:577
+binder 31263:31263 <> c:578
+binder 31265:31265 <> t:579
+binder 31267:31267 <> u:580
+R31285:31290 Picinae.Picinae_statics PicinaeStatics models def
+R31292:31292 Picinae.Picinae_statics <> c:578 var
+R31294:31294 Picinae.Picinae_statics <> s:576 var
+binder 31280:31282 <> MCS:581
+R31302:31311 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R31313:31313 Picinae.Picinae_statics <> c:578 var
+R31315:31315 Picinae.Picinae_statics <> e:577 var
+R31317:31317 Picinae.Picinae_statics <> t:579 var
+binder 31298:31299 <> TE:582
+R31324:31331 Picinae.Picinae_statics PicinaeStatics eval_exp ind
+R31333:31333 Picinae.Picinae_statics <> s:576 var
+R31335:31335 Picinae.Picinae_statics <> e:577 var
+R31337:31337 Picinae.Picinae_statics <> u:580 var
+binder 31321:31321 <> E:583
+R31343:31352 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R31354:31354 Picinae.Picinae_statics <> u:580 var
+R31356:31356 Picinae.Picinae_statics <> t:579 var
+R31502:31505 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31492:31497 Picinae.Picinae_statics PicinaeStatics models def
+R31521:31524 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31506:31513 Picinae.Picinae_statics PicinaeStatics eval_exp ind
+R31525:31534 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R31502:31505 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31492:31497 Picinae.Picinae_statics PicinaeStatics models def
+R31521:31524 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31506:31513 Picinae.Picinae_statics PicinaeStatics eval_exp ind
+R31525:31534 Picinae.Picinae_statics PicinaeStatics hastyp_val ind
+R31572:31577 Picinae.Picinae_statics PicinaeStatics models def
+R31572:31577 Picinae.Picinae_statics PicinaeStatics models def
+R31617:31624 Picinae.Picinae_statics PicinaeStatics eval_exp ind
+R31617:31624 Picinae.Picinae_statics PicinaeStatics eval_exp ind
+R31777:31779 Picinae.Picinae_statics PicinaeStatics TVN constr
+R31777:31779 Picinae.Picinae_statics PicinaeStatics TVN constr
+R31816:31830 Picinae.Picinae_statics PicinaeStatics typesafe_getmem thm
+R31816:31830 Picinae.Picinae_statics PicinaeStatics typesafe_getmem thm
+R31856:31870 Picinae.Picinae_statics PicinaeStatics typesafe_setmem thm
+R31873:31875 Picinae.Picinae_statics PicinaeStatics TVM constr
+R31856:31870 Picinae.Picinae_statics PicinaeStatics typesafe_setmem thm
+R31873:31875 Picinae.Picinae_statics PicinaeStatics TVM constr
+R31906:31919 Picinae.Picinae_statics PicinaeStatics typesafe_binop thm
+R31906:31919 Picinae.Picinae_statics PicinaeStatics typesafe_binop thm
+R31956:31968 Picinae.Picinae_statics PicinaeStatics typesafe_unop thm
+R31956:31968 Picinae.Picinae_statics PicinaeStatics typesafe_unop thm
+R32005:32017 Picinae.Picinae_statics PicinaeStatics typesafe_cast thm
+R32005:32017 Picinae.Picinae_statics PicinaeStatics typesafe_cast thm
+R32083:32088 Picinae.Picinae_core <> update def
+R32122:32125 Picinae.Picinae_core <> :::x_'=='_x not
+R32122:32125 Picinae.Picinae_core <> :::x_'=='_x not
+R32222:32224 Picinae.Picinae_statics PicinaeStatics TVN constr
+R32222:32224 Picinae.Picinae_statics PicinaeStatics TVN constr
+R32356:32358 Picinae.Picinae_statics PicinaeStatics TVN constr
+R32361:32371 Picinae.Picinae_theory <> xbits_bound thm
+R32356:32358 Picinae.Picinae_statics PicinaeStatics TVN constr
+R32361:32371 Picinae.Picinae_theory <> xbits_bound thm
+R32398:32400 Picinae.Picinae_statics PicinaeStatics TVN constr
+R32398:32400 Picinae.Picinae_statics PicinaeStatics TVN constr
+R32409:32420 Picinae.Picinae_theory <> concat_bound thm
+R32409:32420 Picinae.Picinae_theory <> concat_bound thm
+prf 32447:32463 PicinaeStatics progress_eval_exp
+binder 32476:32476 <> s:584
+binder 32478:32478 <> e:585
+binder 32480:32480 <> c:586
+binder 32482:32482 <> t:587
+binder 32506:32507 <> s0:588
+binder 32509:32510 <> a0:589
+R32531:32534 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R32513:32524 Picinae.Picinae_statics PicinaeStatics mem_readable defax
+R32526:32527 Picinae.Picinae_statics <> s0:588 var
+R32529:32530 Picinae.Picinae_statics <> a0:589 var
+R32535:32546 Picinae.Picinae_statics PicinaeStatics mem_writable defax
+R32548:32549 Picinae.Picinae_statics <> s0:588 var
+R32551:32552 Picinae.Picinae_statics <> a0:589 var
+binder 32495:32496 <> RW:590
+R32570:32575 Picinae.Picinae_statics PicinaeStatics models def
+R32577:32577 Picinae.Picinae_statics <> c:586 var
+R32579:32579 Picinae.Picinae_statics <> s:584 var
+binder 32565:32567 <> MCS:591
+R32586:32595 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R32597:32597 Picinae.Picinae_statics <> c:586 var
+R32599:32599 Picinae.Picinae_statics <> e:585 var
+R32601:32601 Picinae.Picinae_statics <> t:587 var
+binder 32583:32583 <> T:592
+R32607:32613 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R32615:32616 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 32614:32614 <> u:593
+R32617:32624 Picinae.Picinae_statics PicinaeStatics eval_exp ind
+R32626:32626 Picinae.Picinae_statics <> s:584 var
+R32628:32628 Picinae.Picinae_statics <> e:585 var
+R32630:32630 Picinae.Picinae_statics <> u:593 var
+R32755:32758 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32744:32749 Picinae.Picinae_statics PicinaeStatics models def
+R32759:32765 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R32767:32768 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R32769:32776 Picinae.Picinae_statics PicinaeStatics eval_exp ind
+R32755:32758 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32744:32749 Picinae.Picinae_statics PicinaeStatics models def
+R32759:32765 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R32767:32768 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R32769:32776 Picinae.Picinae_statics PicinaeStatics eval_exp ind
+R32825:32830 Picinae.Picinae_statics PicinaeStatics models def
+R32825:32830 Picinae.Picinae_statics PicinaeStatics models def
+R32878:32887 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R32878:32887 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33048:33068 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R33162:33165 Picinae.Picinae_statics PicinaeStatics EVar constr
+R33162:33165 Picinae.Picinae_statics PicinaeStatics EVar constr
+R33192:33194 Picinae.Picinae_core <> VaN constr
+R33192:33194 Picinae.Picinae_core <> VaN constr
+R33208:33212 Picinae.Picinae_statics PicinaeStatics EWord constr
+R33208:33212 Picinae.Picinae_statics PicinaeStatics EWord constr
+R33259:33263 Picinae.Picinae_statics PicinaeStatics ELoad constr
+R33259:33263 Picinae.Picinae_statics PicinaeStatics ELoad constr
+R33334:33339 Picinae.Picinae_statics PicinaeStatics EStore constr
+R33334:33339 Picinae.Picinae_statics PicinaeStatics EStore constr
+R33409:33414 Picinae.Picinae_statics PicinaeStatics EBinOp constr
+R33409:33414 Picinae.Picinae_statics PicinaeStatics EBinOp constr
+R33461:33465 Picinae.Picinae_statics PicinaeStatics EUnOp constr
+R33461:33465 Picinae.Picinae_statics PicinaeStatics EUnOp constr
+R33512:33516 Picinae.Picinae_statics PicinaeStatics ECast constr
+R33512:33516 Picinae.Picinae_statics PicinaeStatics ECast constr
+R33564:33564 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R33566:33567 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R33569:33569 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R33564:33564 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R33566:33567 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R33569:33569 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R33596:33601 Picinae.Picinae_core <> update def
+R33635:33638 Picinae.Picinae_core <> :::x_'=='_x not
+R33635:33638 Picinae.Picinae_core <> :::x_'=='_x not
+R33735:33738 Picinae.Picinae_statics PicinaeStatics ELet constr
+R33735:33738 Picinae.Picinae_statics PicinaeStatics ELet constr
+R33781:33783 Picinae.Picinae_core <> VaN constr
+R33781:33783 Picinae.Picinae_core <> VaN constr
+R33797:33804 Picinae.Picinae_statics PicinaeStatics EUnknown constr
+R33797:33804 Picinae.Picinae_statics PicinaeStatics EUnknown constr
+R33813:33820 Picinae.Picinae_theory <> mp2_gt_0 thm
+R33813:33820 Picinae.Picinae_theory <> mp2_gt_0 thm
+R33860:33861 Coq.Numbers.BinNums <> N0 constr
+R33860:33861 Coq.Numbers.BinNums <> N0 constr
+R33892:33895 Picinae.Picinae_statics PicinaeStatics EIte constr
+R33892:33895 Picinae.Picinae_statics PicinaeStatics EIte constr
+R33990:33997 Picinae.Picinae_statics PicinaeStatics EExtract constr
+R33990:33997 Picinae.Picinae_statics PicinaeStatics EExtract constr
+R34046:34052 Picinae.Picinae_statics PicinaeStatics EConcat constr
+R34046:34052 Picinae.Picinae_statics PicinaeStatics EConcat constr
+prf 34081:34093 PicinaeStatics welltyped_rep
+binder 34105:34105 <> e:596
+binder 34107:34108 <> c0:597
+binder 34110:34110 <> c:598
+binder 34112:34112 <> q:599
+binder 34114:34114 <> n:600
+R34121:34131 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R34133:34134 Picinae.Picinae_statics <> c0:597 var
+R34136:34136 Picinae.Picinae_statics <> c:598 var
+R34139:34141 Picinae.Picinae_statics PicinaeStatics Rep constr
+R34143:34143 Picinae.Picinae_statics <> e:596 var
+R34145:34145 Picinae.Picinae_statics <> q:599 var
+R34148:34148 Picinae.Picinae_statics <> c:598 var
+binder 34117:34118 <> TS:601
+R34154:34164 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R34166:34167 Picinae.Picinae_statics <> c0:597 var
+R34169:34169 Picinae.Picinae_statics <> c:598 var
+R34172:34177 Coq.NArith.BinNat N iter def
+R34189:34191 Picinae.Picinae_statics PicinaeStatics Nop constr
+R34182:34184 Picinae.Picinae_statics PicinaeStatics Seq constr
+R34186:34186 Picinae.Picinae_statics <> q:599 var
+R34179:34179 Picinae.Picinae_statics <> n:600 var
+R34194:34194 Picinae.Picinae_statics <> c:598 var
+R34241:34255 Picinae.Picinae_theory <> Niter_invariant thm
+R34241:34255 Picinae.Picinae_theory <> Niter_invariant thm
+R34268:34271 Picinae.Picinae_statics PicinaeStatics TNop constr
+R34268:34271 Picinae.Picinae_statics PicinaeStatics TNop constr
+R34306:34309 Picinae.Picinae_statics PicinaeStatics TSeq constr
+R34306:34309 Picinae.Picinae_statics PicinaeStatics TSeq constr
+prf 34337:34358 PicinaeStatics preservation_exec_stmt
+binder 34371:34371 <> s:602
+binder 34373:34373 <> q:603
+binder 34375:34376 <> c0:604
+binder 34378:34378 <> c:605
+binder 34380:34381 <> c':606
+binder 34383:34384 <> s':607
+R34402:34407 Picinae.Picinae_statics PicinaeStatics models def
+R34409:34409 Picinae.Picinae_statics <> c:605 var
+R34411:34411 Picinae.Picinae_statics <> s:602 var
+binder 34397:34399 <> MCS:608
+R34418:34428 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R34430:34431 Picinae.Picinae_statics <> c0:604 var
+R34433:34433 Picinae.Picinae_statics <> c:605 var
+R34435:34435 Picinae.Picinae_statics <> q:603 var
+R34437:34438 Picinae.Picinae_statics <> c':606 var
+binder 34415:34415 <> T:609
+R34446:34454 Picinae.Picinae_statics PicinaeStatics exec_stmt ind
+R34456:34456 Picinae.Picinae_statics <> s:602 var
+R34458:34458 Picinae.Picinae_statics <> q:603 var
+R34460:34461 Picinae.Picinae_statics <> s':607 var
+R34463:34466 Coq.Init.Datatypes <> None constr
+binder 34442:34443 <> XS:610
+R34472:34477 Picinae.Picinae_statics PicinaeStatics models def
+R34479:34480 Picinae.Picinae_statics <> c':606 var
+R34482:34483 Picinae.Picinae_statics <> s':607 var
+R34584:34596 Picinae.Picinae_statics PicinaeStatics models_subset thm
+R34584:34596 Picinae.Picinae_statics PicinaeStatics models_subset thm
+R34622:34627 Picinae.Picinae_core <> update def
+R34659:34662 Picinae.Picinae_core <> :::x_'=='_x not
+R34659:34662 Picinae.Picinae_core <> :::x_'=='_x not
+R34710:34730 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R34710:34730 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R34781:34794 Picinae.Picinae_theory <> update_updated thm
+R34781:34794 Picinae.Picinae_theory <> update_updated thm
+R34781:34794 Picinae.Picinae_theory <> update_updated thm
+R34877:34888 Picinae.Picinae_theory <> update_frame thm
+R34877:34888 Picinae.Picinae_theory <> update_frame thm
+R34877:34888 Picinae.Picinae_theory <> update_frame thm
+R34877:34888 Picinae.Picinae_theory <> update_frame thm
+R34919:34931 Picinae.Picinae_statics PicinaeStatics models_subset thm
+R34919:34931 Picinae.Picinae_statics PicinaeStatics models_subset thm
+R35054:35066 Picinae.Picinae_statics PicinaeStatics models_subset thm
+R35054:35066 Picinae.Picinae_statics PicinaeStatics models_subset thm
+R35214:35226 Picinae.Picinae_statics PicinaeStatics models_subset thm
+R35214:35226 Picinae.Picinae_statics PicinaeStatics models_subset thm
+R35290:35302 Picinae.Picinae_statics PicinaeStatics welltyped_rep thm
+R35290:35302 Picinae.Picinae_statics PicinaeStatics welltyped_rep thm
+prf 35366:35385 PicinaeStatics pres_frame_exec_stmt
+binder 35398:35398 <> s:611
+binder 35400:35400 <> q:612
+binder 35402:35403 <> c0:613
+binder 35405:35405 <> c:614
+binder 35407:35408 <> c':615
+binder 35410:35411 <> s':616
+binder 35413:35413 <> x:617
+R35423:35428 Picinae.Picinae_statics PicinaeStatics models def
+R35430:35431 Picinae.Picinae_statics <> c0:613 var
+R35433:35433 Picinae.Picinae_statics <> s:611 var
+binder 35417:35420 <> MC0S:618
+R35442:35447 Picinae.Picinae_statics PicinaeStatics models def
+R35449:35449 Picinae.Picinae_statics <> c:614 var
+R35451:35451 Picinae.Picinae_statics <> s:611 var
+binder 35437:35439 <> MCS:619
+R35467:35477 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R35479:35480 Picinae.Picinae_statics <> c0:613 var
+R35482:35482 Picinae.Picinae_statics <> c:614 var
+R35484:35484 Picinae.Picinae_statics <> q:612 var
+R35486:35487 Picinae.Picinae_statics <> c':615 var
+binder 35464:35464 <> T:620
+R35495:35503 Picinae.Picinae_statics PicinaeStatics exec_stmt ind
+R35505:35505 Picinae.Picinae_statics <> s:611 var
+R35507:35507 Picinae.Picinae_statics <> q:612 var
+R35509:35510 Picinae.Picinae_statics <> s':616 var
+R35512:35512 Picinae.Picinae_statics <> x:617 var
+binder 35491:35492 <> XS:621
+R35518:35523 Picinae.Picinae_statics PicinaeStatics models def
+R35525:35526 Picinae.Picinae_statics <> c0:613 var
+R35528:35529 Picinae.Picinae_statics <> s':616 var
+R35668:35673 Picinae.Picinae_core <> update def
+R35688:35691 Picinae.Picinae_core <> :::x_'=='_x not
+R35688:35691 Picinae.Picinae_core <> :::x_'=='_x not
+R35807:35827 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R35807:35827 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R35984:36005 Picinae.Picinae_statics PicinaeStatics preservation_exec_stmt thm
+R35984:36005 Picinae.Picinae_statics PicinaeStatics preservation_exec_stmt thm
+R36110:36122 Picinae.Picinae_statics PicinaeStatics welltyped_rep thm
+R36110:36122 Picinae.Picinae_statics PicinaeStatics welltyped_rep thm
+prf 36186:36203 PicinaeStatics progress_exec_stmt
+binder 36216:36216 <> s:622
+binder 36218:36218 <> q:623
+binder 36220:36221 <> c0:624
+binder 36223:36223 <> c:625
+binder 36225:36226 <> c':626
+binder 36250:36251 <> s0:627
+binder 36253:36254 <> a0:628
+R36275:36278 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R36257:36268 Picinae.Picinae_statics PicinaeStatics mem_readable defax
+R36270:36271 Picinae.Picinae_statics <> s0:627 var
+R36273:36274 Picinae.Picinae_statics <> a0:628 var
+R36279:36290 Picinae.Picinae_statics PicinaeStatics mem_writable defax
+R36292:36293 Picinae.Picinae_statics <> s0:627 var
+R36295:36296 Picinae.Picinae_statics <> a0:628 var
+binder 36239:36240 <> RW:629
+R36314:36319 Picinae.Picinae_statics PicinaeStatics models def
+R36321:36321 Picinae.Picinae_statics <> c:625 var
+R36323:36323 Picinae.Picinae_statics <> s:622 var
+binder 36309:36311 <> MCS:630
+R36330:36340 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R36342:36343 Picinae.Picinae_statics <> c0:624 var
+R36345:36345 Picinae.Picinae_statics <> c:625 var
+R36347:36347 Picinae.Picinae_statics <> q:623 var
+R36349:36350 Picinae.Picinae_statics <> c':626 var
+binder 36327:36327 <> T:631
+R36356:36362 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R36367:36368 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 36363:36364 <> s':632
+binder 36366:36366 <> x:633
+R36369:36377 Picinae.Picinae_statics PicinaeStatics exec_stmt ind
+R36379:36379 Picinae.Picinae_statics <> s:622 var
+R36381:36381 Picinae.Picinae_statics <> q:623 var
+R36383:36384 Picinae.Picinae_statics <> s':632 var
+R36386:36386 Picinae.Picinae_statics <> x:633 var
+R36445:36453 Picinae.Picinae_statics PicinaeStatics stmt_ind2 thm
+R36445:36453 Picinae.Picinae_statics PicinaeStatics stmt_ind2 thm
+R36516:36519 Coq.Init.Datatypes <> None constr
+R36516:36519 Coq.Init.Datatypes <> None constr
+R36528:36531 Picinae.Picinae_statics PicinaeStatics XNop constr
+R36528:36531 Picinae.Picinae_statics PicinaeStatics XNop constr
+R36560:36576 Picinae.Picinae_statics PicinaeStatics progress_eval_exp thm
+R36560:36576 Picinae.Picinae_statics PicinaeStatics progress_eval_exp thm
+R36610:36610 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R36612:36613 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R36615:36615 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R36618:36621 Coq.Init.Datatypes <> None constr
+R36610:36610 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R36612:36613 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R36615:36615 Picinae.Picinae_core <> :::x_'['_x_':='_x_']' not
+R36618:36621 Coq.Init.Datatypes <> None constr
+R36630:36634 Picinae.Picinae_statics PicinaeStatics XMove constr
+R36630:36634 Picinae.Picinae_statics PicinaeStatics XMove constr
+R36674:36690 Picinae.Picinae_statics PicinaeStatics progress_eval_exp thm
+R36674:36690 Picinae.Picinae_statics PicinaeStatics progress_eval_exp thm
+R36727:36747 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R36727:36747 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R36805:36808 Coq.Init.Datatypes <> Some constr
+R36811:36814 Picinae.Picinae_core <> Addr constr
+R36805:36808 Coq.Init.Datatypes <> Some constr
+R36811:36814 Picinae.Picinae_core <> Addr constr
+R36828:36831 Picinae.Picinae_statics PicinaeStatics XJmp constr
+R36828:36831 Picinae.Picinae_statics PicinaeStatics XJmp constr
+R36883:36886 Coq.Init.Datatypes <> Some constr
+R36889:36893 Picinae.Picinae_core <> Raise constr
+R36883:36886 Coq.Init.Datatypes <> Some constr
+R36889:36893 Picinae.Picinae_core <> Raise constr
+R36906:36909 Picinae.Picinae_statics PicinaeStatics XExn constr
+R36906:36909 Picinae.Picinae_statics PicinaeStatics XExn constr
+R37003:37006 Coq.Init.Datatypes <> Some constr
+R37003:37006 Coq.Init.Datatypes <> Some constr
+R37018:37022 Picinae.Picinae_statics PicinaeStatics XSeq1 constr
+R37018:37022 Picinae.Picinae_statics PicinaeStatics XSeq1 constr
+R37098:37110 Picinae.Picinae_statics PicinaeStatics models_subset thm
+R37098:37110 Picinae.Picinae_statics PicinaeStatics models_subset thm
+R37128:37149 Picinae.Picinae_statics PicinaeStatics preservation_exec_stmt thm
+R37128:37149 Picinae.Picinae_statics PicinaeStatics preservation_exec_stmt thm
+R37213:37217 Picinae.Picinae_statics PicinaeStatics XSeq2 constr
+R37213:37217 Picinae.Picinae_statics PicinaeStatics XSeq2 constr
+R37257:37273 Picinae.Picinae_statics PicinaeStatics progress_eval_exp thm
+R37257:37273 Picinae.Picinae_statics PicinaeStatics progress_eval_exp thm
+R37310:37330 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R37310:37330 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R37476:37478 Picinae.Picinae_statics PicinaeStatics XIf constr
+R37476:37478 Picinae.Picinae_statics PicinaeStatics XIf constr
+R37592:37596 Coq.NArith.BinNat N pos abbrev
+R37579:37581 Picinae.Picinae_statics PicinaeStatics XIf constr
+R37592:37596 Coq.NArith.BinNat N pos abbrev
+R37579:37581 Picinae.Picinae_statics PicinaeStatics XIf constr
+R37641:37657 Picinae.Picinae_statics PicinaeStatics progress_eval_exp thm
+R37641:37657 Picinae.Picinae_statics PicinaeStatics progress_eval_exp thm
+R37694:37714 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R37694:37714 Picinae.Picinae_statics PicinaeStatics preservation_eval_exp thm
+R37801:37815 Picinae.Picinae_theory <> Niter_invariant thm
+R37801:37815 Picinae.Picinae_theory <> Niter_invariant thm
+R37830:37833 Picinae.Picinae_statics PicinaeStatics TNop constr
+R37830:37833 Picinae.Picinae_statics PicinaeStatics TNop constr
+R37867:37870 Picinae.Picinae_statics PicinaeStatics TSeq constr
+R37867:37870 Picinae.Picinae_statics PicinaeStatics TSeq constr
+R37945:37948 Picinae.Picinae_statics PicinaeStatics XRep constr
+R37945:37948 Picinae.Picinae_statics PicinaeStatics XRep constr
+prf 37986:38007 PicinaeStatics preservation_exec_prog
+binder 38019:38019 <> p:634
+binder 38021:38021 <> c:635
+R38028:38041 Picinae.Picinae_statics PicinaeStatics welltyped_prog def
+R38043:38043 Picinae.Picinae_statics <> c:635 var
+R38045:38045 Picinae.Picinae_statics <> p:634 var
+binder 38024:38025 <> WP:636
+R38051:38066 Picinae.Picinae_statics PicinaeStatics forall_endstates def
+R38068:38068 Picinae.Picinae_statics <> p:634 var
+binder 38077:38077 <> s:637
+binder 38081:38082 <> s':638
+R38100:38105 Picinae.Picinae_statics PicinaeStatics models def
+R38107:38107 Picinae.Picinae_statics <> c:635 var
+R38109:38109 Picinae.Picinae_statics <> s:637 var
+binder 38095:38097 <> MDL:639
+R38113:38118 Picinae.Picinae_statics PicinaeStatics models def
+R38120:38120 Picinae.Picinae_statics <> c:635 var
+R38122:38123 Picinae.Picinae_statics <> s':638 var
+R38143:38158 Picinae.Picinae_statics PicinaeStatics forall_endstates def
+R38186:38188 Coq.Init.Datatypes <> snd def
+R38190:38190 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38192:38192 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38194:38194 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38186:38188 Coq.Init.Datatypes <> snd def
+R38190:38190 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38192:38192 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38194:38194 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38339:38353 Picinae.Picinae_statics PicinaeStatics exec_prog_final thm
+R38339:38353 Picinae.Picinae_statics PicinaeStatics exec_prog_final thm
+R38469:38480 Picinae.Picinae_theory <> startof_cons thm
+R38469:38480 Picinae.Picinae_theory <> startof_cons thm
+R38469:38480 Picinae.Picinae_theory <> startof_cons thm
+R38496:38509 Picinae.Picinae_statics PicinaeStatics exec_prog_tail thm
+R38496:38509 Picinae.Picinae_statics PicinaeStatics exec_prog_tail thm
+R38569:38588 Picinae.Picinae_statics PicinaeStatics pres_frame_exec_stmt thm
+R38569:38588 Picinae.Picinae_statics PicinaeStatics pres_frame_exec_stmt thm
+prf 38618:38635 PicinaeStatics progress_exec_prog
+binder 38647:38647 <> p:640
+binder 38649:38650 <> c0:641
+binder 38652:38652 <> t:642
+binder 38654:38655 <> a1:643
+binder 38657:38658 <> s1:644
+binder 38681:38682 <> s0:645
+binder 38684:38685 <> a0:646
+R38706:38709 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R38688:38699 Picinae.Picinae_statics PicinaeStatics mem_readable defax
+R38701:38702 Picinae.Picinae_statics <> s0:645 var
+R38704:38705 Picinae.Picinae_statics <> a0:646 var
+R38710:38721 Picinae.Picinae_statics PicinaeStatics mem_writable defax
+R38723:38724 Picinae.Picinae_statics <> s0:645 var
+R38726:38727 Picinae.Picinae_statics <> a0:646 var
+binder 38670:38671 <> RW:647
+R38745:38750 Picinae.Picinae_statics PicinaeStatics models def
+R38752:38753 Picinae.Picinae_statics <> c0:641 var
+R38756:38758 Coq.Init.Datatypes <> snd def
+R38761:38767 Picinae.Picinae_core <> startof def
+R38771:38771 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38779:38779 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38782:38782 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38772:38775 Picinae.Picinae_core <> Addr constr
+R38777:38778 Picinae.Picinae_statics <> a1:643 var
+R38780:38781 Picinae.Picinae_statics <> s1:644 var
+R38769:38769 Picinae.Picinae_statics <> t:642 var
+binder 38740:38742 <> MCS:648
+R38801:38814 Picinae.Picinae_statics PicinaeStatics welltyped_prog def
+R38816:38817 Picinae.Picinae_statics <> c0:641 var
+R38819:38819 Picinae.Picinae_statics <> p:640 var
+binder 38797:38798 <> WP:649
+R38836:38844 Picinae.Picinae_statics PicinaeStatics exec_prog def
+R38846:38846 Picinae.Picinae_statics <> p:640 var
+R38861:38862 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R38849:38849 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38857:38857 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38860:38860 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38850:38853 Picinae.Picinae_core <> Addr constr
+R38855:38856 Picinae.Picinae_statics <> a1:643 var
+R38858:38859 Picinae.Picinae_statics <> s1:644 var
+R38863:38863 Picinae.Picinae_statics <> t:642 var
+binder 38832:38833 <> XP:650
+R38879:38882 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R38872:38872 Picinae.Picinae_statics <> p:640 var
+R38874:38875 Picinae.Picinae_statics <> s1:644 var
+R38877:38878 Picinae.Picinae_statics <> a1:643 var
+R38883:38886 Coq.Init.Datatypes <> None constr
+binder 38868:38869 <> IL:651
+R38892:38898 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R38902:38903 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 38899:38901 <> xs':652
+R38904:38912 Picinae.Picinae_statics PicinaeStatics exec_prog def
+R38914:38914 Picinae.Picinae_statics <> p:640 var
+R38920:38921 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R38917:38919 Picinae.Picinae_statics <> xs':652 var
+R38934:38935 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R38922:38922 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38930:38930 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38933:38933 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R38923:38926 Picinae.Picinae_core <> Addr constr
+R38928:38929 Picinae.Picinae_statics <> a1:643 var
+R38931:38932 Picinae.Picinae_statics <> s1:644 var
+R38936:38936 Picinae.Picinae_statics <> t:642 var
+R39100:39117 Picinae.Picinae_statics PicinaeStatics progress_exec_stmt thm
+R39100:39117 Picinae.Picinae_statics PicinaeStatics progress_exec_stmt thm
+R39165:39165 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R39167:39167 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R39170:39170 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R39165:39165 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R39167:39167 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R39170:39170 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R39180:39193 Picinae.Picinae_statics PicinaeStatics exec_prog_step thm
+R39180:39193 Picinae.Picinae_statics PicinaeStatics exec_prog_step thm
+R39270:39291 Picinae.Picinae_statics PicinaeStatics preservation_exec_prog thm
+R39270:39291 Picinae.Picinae_statics PicinaeStatics preservation_exec_prog thm
+R39317:39334 Coq.Init.Datatypes <> surjective_pairing thm
+R39317:39334 Coq.Init.Datatypes <> surjective_pairing thm
+prf 39351:39366 PicinaeStatics typchk_exp_sound
+binder 39378:39378 <> e:653
+binder 39380:39380 <> c:654
+binder 39382:39382 <> t:655
+R39408:39411 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R39399:39401 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R39385:39394 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R39396:39396 Picinae.Picinae_statics <> e:653 var
+R39398:39398 Picinae.Picinae_statics <> c:654 var
+R39402:39405 Coq.Init.Datatypes <> Some constr
+R39407:39407 Picinae.Picinae_statics <> t:655 var
+R39412:39421 Picinae.Picinae_statics PicinaeStatics hastyp_exp ind
+R39423:39423 Picinae.Picinae_statics <> c:654 var
+R39425:39425 Picinae.Picinae_statics <> e:653 var
+R39427:39427 Picinae.Picinae_statics <> t:655 var
+R39488:39491 Picinae.Picinae_statics PicinaeStatics TVar constr
+R39488:39491 Picinae.Picinae_statics PicinaeStatics TVar constr
+R39533:39536 Coq.NArith.BinNat <> ::N_scope:x_'<?'_x not
+R39538:39538 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R39533:39536 Coq.NArith.BinNat <> ::N_scope:x_'<?'_x not
+R39538:39538 Coq.NArith.BinNat <> ::N_scope:x_'^'_x not
+R39587:39591 Picinae.Picinae_statics PicinaeStatics TWord constr
+R39594:39601 Coq.NArith.BinNat N ltb_lt thm
+R39587:39591 Picinae.Picinae_statics PicinaeStatics TWord constr
+R39594:39601 Coq.NArith.BinNat N ltb_lt thm
+R39696:39705 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R39696:39705 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R39769:39778 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R39769:39778 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R39843:39847 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R39843:39847 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R39890:39893 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R39890:39893 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R39933:39937 Coq.NArith.BinNat N pos abbrev
+R39948:39955 Coq.NArith.BinNat N shiftl def
+R39933:39937 Coq.NArith.BinNat N pos abbrev
+R39948:39955 Coq.NArith.BinNat N shiftl def
+R39979:39990 Coq.NArith.BinNat N shiftl_1_l thm
+R39979:39990 Coq.NArith.BinNat N shiftl_1_l thm
+R39979:39990 Coq.NArith.BinNat N shiftl_1_l thm
+R40008:40014 Coq.setoid_ring.InitialRing <> Neqb_ok thm
+R40008:40014 Coq.setoid_ring.InitialRing <> Neqb_ok thm
+R40060:40064 Picinae.Picinae_statics PicinaeStatics TLoad constr
+R40060:40064 Picinae.Picinae_statics PicinaeStatics TLoad constr
+R40077:40084 Coq.NArith.BinNat N leb_le thm
+R40077:40084 Coq.NArith.BinNat N leb_le thm
+R40242:40251 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R40242:40251 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R40315:40324 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R40315:40324 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R40388:40397 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R40388:40397 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R40462:40466 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R40462:40466 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R40510:40513 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R40510:40513 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R40558:40561 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R40558:40561 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R40601:40605 Coq.NArith.BinNat N pos abbrev
+R40616:40623 Coq.NArith.BinNat N shiftl def
+R40601:40605 Coq.NArith.BinNat N pos abbrev
+R40616:40623 Coq.NArith.BinNat N shiftl def
+R40647:40658 Coq.NArith.BinNat N shiftl_1_l thm
+R40647:40658 Coq.NArith.BinNat N shiftl_1_l thm
+R40647:40658 Coq.NArith.BinNat N shiftl_1_l thm
+R40676:40682 Coq.setoid_ring.InitialRing <> Neqb_ok thm
+R40676:40682 Coq.setoid_ring.InitialRing <> Neqb_ok thm
+R40698:40704 Coq.setoid_ring.InitialRing <> Neqb_ok thm
+R40698:40704 Coq.setoid_ring.InitialRing <> Neqb_ok thm
+R40749:40754 Picinae.Picinae_statics PicinaeStatics TStore constr
+R40749:40754 Picinae.Picinae_statics PicinaeStatics TStore constr
+R40767:40774 Coq.NArith.BinNat N leb_le thm
+R40767:40774 Coq.NArith.BinNat N leb_le thm
+R40940:40949 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R40940:40949 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R41013:41022 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R41013:41022 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R41087:41090 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R41087:41090 Coq.NArith.BinNat <> ::N_scope:x_'=?'_x not
+R41128:41134 Coq.setoid_ring.InitialRing <> Neqb_ok thm
+R41128:41134 Coq.setoid_ring.InitialRing <> Neqb_ok thm
+R41178:41183 Picinae.Picinae_statics PicinaeStatics TBinOp constr
+R41178:41183 Picinae.Picinae_statics PicinaeStatics TBinOp constr
+R41292:41301 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R41292:41301 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R41389:41393 Picinae.Picinae_statics PicinaeStatics TUnOp constr
+R41389:41393 Picinae.Picinae_statics PicinaeStatics TUnOp constr
+R41469:41478 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R41469:41478 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R41555:41559 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R41597:41604 Coq.NArith.BinNat N leb_le thm
+R41650:41654 Picinae.Picinae_statics PicinaeStatics TCast constr
+R41555:41559 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R41555:41559 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R41555:41559 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R41555:41559 Coq.NArith.BinNat <> ::N_scope:x_'<=?'_x not
+R41597:41604 Coq.NArith.BinNat N leb_le thm
+R41597:41604 Coq.NArith.BinNat N leb_le thm
+R41597:41604 Coq.NArith.BinNat N leb_le thm
+R41597:41604 Coq.NArith.BinNat N leb_le thm
+R41650:41654 Picinae.Picinae_statics PicinaeStatics TCast constr
+R41650:41654 Picinae.Picinae_statics PicinaeStatics TCast constr
+R41650:41654 Picinae.Picinae_statics PicinaeStatics TCast constr
+R41650:41654 Picinae.Picinae_statics PicinaeStatics TCast constr
+R41743:41752 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R41743:41752 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R41787:41790 Picinae.Picinae_statics PicinaeStatics TLet constr
+R41787:41790 Picinae.Picinae_statics PicinaeStatics TLet constr
+R41902:41909 Picinae.Picinae_statics PicinaeStatics TUnknown constr
+R41902:41909 Picinae.Picinae_statics PicinaeStatics TUnknown constr
+R42002:42011 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42002:42011 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42075:42084 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42075:42084 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42131:42140 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42131:42140 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42189:42192 Picinae.Picinae_core <> :::x_'=='_x not
+R42189:42192 Picinae.Picinae_core <> :::x_'=='_x not
+R42253:42256 Picinae.Picinae_statics PicinaeStatics TIte constr
+R42253:42256 Picinae.Picinae_statics PicinaeStatics TIte constr
+R42397:42406 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42397:42406 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42471:42474 Coq.NArith.BinNat <> ::N_scope:x_'<?'_x not
+R42471:42474 Coq.NArith.BinNat <> ::N_scope:x_'<?'_x not
+R42509:42516 Coq.NArith.BinNat N ltb_lt thm
+R42509:42516 Coq.NArith.BinNat N ltb_lt thm
+R42563:42570 Picinae.Picinae_statics PicinaeStatics TExtract constr
+R42563:42570 Picinae.Picinae_statics PicinaeStatics TExtract constr
+R42687:42696 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42687:42696 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42760:42769 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42760:42769 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R42858:42864 Picinae.Picinae_statics PicinaeStatics TConcat constr
+R42858:42864 Picinae.Picinae_statics PicinaeStatics TConcat constr
+prf 42937:42954 PicinaeStatics typctx_meet_subset
+binder 42966:42967 <> c1:656
+binder 42969:42970 <> c2:657
+R42990:42994 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R42973:42983 Picinae.Picinae_statics PicinaeStatics typctx_meet def
+R42985:42986 Picinae.Picinae_statics <> c1:656 var
+R42988:42989 Picinae.Picinae_statics <> c2:657 var
+R42995:42996 Picinae.Picinae_statics <> c1:656 var
+R43035:43045 Picinae.Picinae_statics PicinaeStatics typctx_meet def
+R43157:43160 Picinae.Picinae_core <> :::x_'=='_x not
+R43157:43160 Picinae.Picinae_core <> :::x_'=='_x not
+prf 43201:43216 PicinaeStatics typctx_meet_comm
+binder 43228:43229 <> c1:658
+binder 43231:43232 <> c2:659
+R43252:43254 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R43235:43245 Picinae.Picinae_statics PicinaeStatics typctx_meet def
+R43247:43248 Picinae.Picinae_statics <> c1:658 var
+R43250:43251 Picinae.Picinae_statics <> c2:659 var
+R43255:43265 Picinae.Picinae_statics PicinaeStatics typctx_meet def
+R43267:43268 Picinae.Picinae_statics <> c2:659 var
+R43270:43271 Picinae.Picinae_statics <> c1:658 var
+R43316:43326 Picinae.Picinae_statics PicinaeStatics typctx_meet def
+R43386:43389 Picinae.Picinae_core <> :::x_'=='_x not
+R43386:43389 Picinae.Picinae_core <> :::x_'=='_x not
+R43418:43421 Picinae.Picinae_core <> :::x_'=='_x not
+R43418:43421 Picinae.Picinae_core <> :::x_'=='_x not
+R43483:43486 Picinae.Picinae_core <> :::x_'=='_x not
+R43483:43486 Picinae.Picinae_core <> :::x_'=='_x not
+prf 43552:43571 PicinaeStatics typctx_meet_lowbound
+binder 43583:43584 <> c0:660
+binder 43586:43587 <> c1:661
+binder 43589:43590 <> c2:662
+R43600:43604 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R43598:43599 Picinae.Picinae_statics <> c0:660 var
+R43605:43606 Picinae.Picinae_statics <> c1:661 var
+binder 43593:43595 <> SS1:663
+R43617:43621 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R43615:43616 Picinae.Picinae_statics <> c0:660 var
+R43622:43623 Picinae.Picinae_statics <> c2:662 var
+binder 43610:43612 <> SS2:664
+R43629:43633 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R43627:43628 Picinae.Picinae_statics <> c0:660 var
+R43634:43644 Picinae.Picinae_statics PicinaeStatics typctx_meet def
+R43646:43647 Picinae.Picinae_statics <> c1:661 var
+R43649:43650 Picinae.Picinae_statics <> c2:662 var
+R43669:43673 Picinae.Picinae_theory <> pfsub def
+R43676:43686 Picinae.Picinae_statics PicinaeStatics typctx_meet def
+R43754:43757 Picinae.Picinae_core <> :::x_'=='_x not
+R43754:43757 Picinae.Picinae_core <> :::x_'=='_x not
+prf 43804:43819 PicinaeStatics typchk_stmt_mono
+binder 43831:43832 <> c0:665
+binder 43834:43834 <> q:666
+binder 43836:43836 <> c:667
+binder 43838:43839 <> c':668
+R43864:43866 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R43846:43856 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R43858:43858 Picinae.Picinae_statics <> q:666 var
+R43860:43861 Picinae.Picinae_statics <> c0:665 var
+R43863:43863 Picinae.Picinae_statics <> c:667 var
+R43867:43870 Coq.Init.Datatypes <> Some constr
+R43872:43873 Picinae.Picinae_statics <> c':668 var
+binder 43842:43843 <> TS:669
+R43883:43887 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R43881:43882 Picinae.Picinae_statics <> c0:665 var
+R43888:43888 Picinae.Picinae_statics <> c:667 var
+binder 43877:43878 <> SS:670
+R43894:43898 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R43892:43893 Picinae.Picinae_statics <> c0:665 var
+R43899:43900 Picinae.Picinae_statics <> c':668 var
+R44019:44028 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R44019:44028 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R44112:44115 Picinae.Picinae_core <> :::x_'=='_x not
+R44112:44115 Picinae.Picinae_core <> :::x_'=='_x not
+R44183:44186 Picinae.Picinae_core <> :::x_'=='_x not
+R44183:44186 Picinae.Picinae_core <> :::x_'=='_x not
+R44217:44230 Picinae.Picinae_theory <> update_updated thm
+R44217:44230 Picinae.Picinae_theory <> update_updated thm
+R44217:44230 Picinae.Picinae_theory <> update_updated thm
+R44276:44287 Picinae.Picinae_theory <> update_frame thm
+R44276:44287 Picinae.Picinae_theory <> update_frame thm
+R44276:44287 Picinae.Picinae_theory <> update_frame thm
+R44397:44400 Picinae.Picinae_core <> :::x_'=='_x not
+R44397:44400 Picinae.Picinae_core <> :::x_'=='_x not
+R44467:44478 Picinae.Picinae_theory <> update_frame thm
+R44467:44478 Picinae.Picinae_theory <> update_frame thm
+R44467:44478 Picinae.Picinae_theory <> update_frame thm
+R44533:44542 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R44533:44542 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R44697:44707 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R44697:44707 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R44838:44847 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R44838:44847 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R44903:44913 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R44903:44913 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R44971:44981 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R44971:44981 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R45065:45084 Picinae.Picinae_statics PicinaeStatics typctx_meet_lowbound thm
+R45065:45084 Picinae.Picinae_statics PicinaeStatics typctx_meet_lowbound thm
+R45188:45197 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R45188:45197 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R45245:45255 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R45245:45255 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+prf 45346:45362 PicinaeStatics typchk_stmt_sound
+binder 45374:45374 <> q:671
+binder 45376:45377 <> c0:672
+binder 45379:45379 <> c:673
+binder 45381:45382 <> c':674
+R45391:45395 Picinae.Picinae_theory <> :::x_'⊆'_x not
+R45389:45390 Picinae.Picinae_statics <> c0:672 var
+R45396:45396 Picinae.Picinae_statics <> c:673 var
+binder 45385:45386 <> SS:675
+R45422:45424 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R45404:45414 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R45416:45416 Picinae.Picinae_statics <> q:671 var
+R45418:45419 Picinae.Picinae_statics <> c0:672 var
+R45421:45421 Picinae.Picinae_statics <> c:673 var
+R45425:45428 Coq.Init.Datatypes <> Some constr
+R45430:45431 Picinae.Picinae_statics <> c':674 var
+binder 45400:45401 <> TS:676
+R45437:45447 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R45449:45450 Picinae.Picinae_statics <> c0:672 var
+R45452:45452 Picinae.Picinae_statics <> c:673 var
+R45454:45454 Picinae.Picinae_statics <> q:671 var
+R45456:45457 Picinae.Picinae_statics <> c':674 var
+R45552:45555 Picinae.Picinae_statics PicinaeStatics TNop constr
+R45552:45555 Picinae.Picinae_statics PicinaeStatics TNop constr
+R45597:45606 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R45597:45606 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R45677:45680 Picinae.Picinae_core <> :::x_'=='_x not
+R45765:45769 Picinae.Picinae_statics PicinaeStatics TMove constr
+R45677:45680 Picinae.Picinae_core <> :::x_'=='_x not
+R45765:45769 Picinae.Picinae_statics PicinaeStatics TMove constr
+R45765:45769 Picinae.Picinae_statics PicinaeStatics TMove constr
+R45820:45835 Picinae.Picinae_statics PicinaeStatics typchk_exp_sound thm
+R45820:45835 Picinae.Picinae_statics PicinaeStatics typchk_exp_sound thm
+R45875:45890 Picinae.Picinae_statics PicinaeStatics typchk_exp_sound thm
+R45875:45890 Picinae.Picinae_statics PicinaeStatics typchk_exp_sound thm
+R45928:45937 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R45928:45937 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R46032:46035 Picinae.Picinae_statics PicinaeStatics TJmp constr
+R46032:46035 Picinae.Picinae_statics PicinaeStatics TJmp constr
+R46044:46059 Picinae.Picinae_statics PicinaeStatics typchk_exp_sound thm
+R46044:46059 Picinae.Picinae_statics PicinaeStatics typchk_exp_sound thm
+R46134:46137 Picinae.Picinae_statics PicinaeStatics TExn constr
+R46134:46137 Picinae.Picinae_statics PicinaeStatics TExn constr
+R46202:46212 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R46202:46212 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R46295:46305 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R46295:46305 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R46384:46387 Picinae.Picinae_statics PicinaeStatics TSeq constr
+R46384:46387 Picinae.Picinae_statics PicinaeStatics TSeq constr
+R46452:46467 Picinae.Picinae_statics PicinaeStatics typchk_stmt_mono thm
+R46452:46467 Picinae.Picinae_statics PicinaeStatics typchk_stmt_mono thm
+R46533:46542 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R46533:46542 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R46605:46615 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R46605:46615 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R46673:46683 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R46673:46683 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R46778:46780 Picinae.Picinae_statics PicinaeStatics TIf constr
+R46778:46780 Picinae.Picinae_statics PicinaeStatics TIf constr
+R46793:46808 Picinae.Picinae_statics PicinaeStatics typchk_exp_sound thm
+R46793:46808 Picinae.Picinae_statics PicinaeStatics typchk_exp_sound thm
+R46832:46849 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_weaken thm
+R46832:46849 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_weaken thm
+R46903:46920 Picinae.Picinae_statics PicinaeStatics typctx_meet_subset thm
+R46903:46920 Picinae.Picinae_statics PicinaeStatics typctx_meet_subset thm
+R46934:46951 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_weaken thm
+R46934:46951 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_weaken thm
+R47007:47022 Picinae.Picinae_statics PicinaeStatics typctx_meet_comm thm
+R47007:47022 Picinae.Picinae_statics PicinaeStatics typctx_meet_comm thm
+R47007:47022 Picinae.Picinae_statics PicinaeStatics typctx_meet_comm thm
+R47031:47048 Picinae.Picinae_statics PicinaeStatics typctx_meet_subset thm
+R47031:47048 Picinae.Picinae_statics PicinaeStatics typctx_meet_subset thm
+R47093:47102 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R47093:47102 Picinae.Picinae_statics PicinaeStatics typchk_exp def
+R47179:47189 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R47179:47189 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R47282:47285 Picinae.Picinae_statics PicinaeStatics TRep constr
+R47282:47285 Picinae.Picinae_statics PicinaeStatics TRep constr
+R47298:47313 Picinae.Picinae_statics PicinaeStatics typchk_exp_sound thm
+R47298:47313 Picinae.Picinae_statics PicinaeStatics typchk_exp_sound thm
+R47337:47360 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_frame_weaken thm
+R47337:47360 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_frame_weaken thm
+R47383:47400 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_weaken thm
+R47383:47400 Picinae.Picinae_statics PicinaeStatics hastyp_stmt_weaken thm
+R47459:47474 Picinae.Picinae_statics PicinaeStatics typchk_stmt_mono thm
+R47459:47474 Picinae.Picinae_statics PicinaeStatics typchk_stmt_mono thm
+prf 47534:47552 PicinaeStatics typchk_stmt_compute
+binder 47564:47564 <> q:677
+binder 47566:47566 <> c:678
+R47576:47586 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R47588:47588 Picinae.Picinae_statics <> q:677 var
+R47590:47590 Picinae.Picinae_statics <> c:678 var
+R47592:47592 Picinae.Picinae_statics <> c:678 var
+R47609:47613 Coq.Init.Logic <> False ind
+R47599:47602 Coq.Init.Logic <> True ind
+binder 47569:47570 <> TS:679
+R47619:47625 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R47628:47629 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 47626:47627 <> c':680
+R47630:47640 Picinae.Picinae_statics PicinaeStatics hastyp_stmt ind
+R47642:47642 Picinae.Picinae_statics <> c:678 var
+R47644:47644 Picinae.Picinae_statics <> c:678 var
+R47646:47646 Picinae.Picinae_statics <> q:677 var
+R47648:47649 Picinae.Picinae_statics <> c':680 var
+R47679:47689 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R47679:47689 Picinae.Picinae_statics PicinaeStatics typchk_stmt def
+R47737:47753 Picinae.Picinae_statics PicinaeStatics typchk_stmt_sound thm
+R47737:47753 Picinae.Picinae_statics PicinaeStatics typchk_stmt_sound thm
+R47809:47822 Picinae.Picinae_statics PicinaeStatics <> mod
