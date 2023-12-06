@@ -47,19 +47,13 @@ Proof.
   prove_noassign.
 Qed.
 
-(* Define function exits *)
-Definition wcsspn_exit (t:trace) :=
-  match t with (Addr a,s)::_ => match a with
-  | 65 | 86 => true
-  | _ => false
-  end | _ => false end.
 
 (* question regarding parameter types *)
 (* check definition correctness *)
 (* forall i, i < n /\ m [p +i] != 0 /\ m[p+n] = 0 *)
 (* m Ⓓ[ a  ] *)
 Definition haslength (m : addr -> N) (p: addr) (n: N) : Prop :=
-   forall i, i< n /\  m Ⓓ[ p + i ] <> 0 /\ m Ⓓ[ p + n ]  = 0.
+   forall i, i< n /\ 0<m Ⓓ[ p + i ] /\ m Ⓓ[ p + n ]  = 0.
 
 (* question regarding parameter types *)
 (* forall n,exists i, haslength m p n ->  i < n -> m[p+i] = c *)
@@ -72,3 +66,41 @@ Definition post_condition (m: addr -> N) (p1 p2: addr) (r:N): Prop :=
     forall n, haslength m p1 n -> r <= n /\ 
     forall i, i < r -> contains m p2 (m Ⓓ[p1 + i] ) /\
     ( (m Ⓓ[p1 + r] ) = 0 \/ ~contains m p2 (m Ⓓ[p1 + r] )).
+
+(* Define function exits *)
+Definition wcsspn_exit (t:trace) :=
+  match t with (Addr a,s)::_ => match a with
+  | 65 | 86 => true
+  | _ => false
+  end | _ => false end.
+
+(* edi = wcs1, ebp = wcs2 *)
+Definition exit_invariant (m:addr->N) (edi:N) (ebp:N) (esi:N) (ebx:N) (eax: N) (t:trace) :=
+  match t with (Addr a,s)::_ => match a with
+  (* wcs1 is empty or wcs2 empty or wcs2 hit the end *)
+  | 65 => Some(
+        (* wcs1 is empty *)
+        (ebx = 0 /\ s R_EAX = Ⓓ0) \/ 
+        (* wcs2 is empty *)
+        (esi= 0 /\ s R_EAX = Ⓓ0) \/ 
+        (* ECX checks if at the end of wcs2 *)
+        (s R_ECX = Ⓓ0 /\ 
+          (post_condition m edi ebp 
+              match (s R_EAX) with 
+              | VaN n _ => n
+              | _ => 0 end
+          )
+        )
+      )
+  (* wcs1 hit the end *)
+  | 86 => Some(
+      (ebx = 0 /\ 
+        (post_condition m edi ebp 
+            match (s R_EAX) with 
+            | VaN n _ => n
+            | _ => 0 end
+        )
+      )
+  )
+  | _ => None
+  end | _ => None end.
