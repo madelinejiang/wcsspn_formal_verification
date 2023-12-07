@@ -104,3 +104,41 @@ Definition exit_invariant (m:addr->N) (edi:N) (ebp:N) (esi:N) (ebx:N) (eax: N) (
   )
   | _ => None
   end | _ => None end.
+Definition outer_loop_entry (m: addr -> N) (edi:N) (esi:N) (t:trace) :=
+  match t with (Addr a,s)::_ => match a with
+  | 36 => Some(
+          forall i, i< (match (s R_EAX) with
+            | VaN n _ => n 
+            | _ => 0 end
+            )
+          -> contains m esi (m Ⓓ[edi + i]) /\ (m Ⓓ[edi + i]) <> 0
+        )
+  | _ => None
+  end | _ => None end.
+
+
+Definition inner_loop_entry (m: addr -> N) (edi:N) (esi:N) (ecx:N) (t:trace) :=
+  match t with (Addr a,s)::_ => match a with
+  | 52 => Some(
+          forall i j, (4*j + esi < ecx /\ i < (match (s R_EAX) with
+                                              | VaN n _ => n 
+                                              | _ => 0 end))
+          -> contains m esi (m Ⓓ[edi + i]) /\ (m Ⓓ[edi + i]) <> 0 /\
+             (m Ⓓ[esi + 4*j]) <> (match s R_EBX with
+                                   | VaN n _ => n 
+                                   | _ => 0 end)
+             /\ (m Ⓓ[esi + 4*j]) <> 0
+        )
+  | _ => None
+  end | _ => None end.
+
+
+Definition ncontains_upto (m: addr -> N) (p: addr) (c:N) (n:N) :=
+  forall i, i< n -> m Ⓓ[p+i] <> c /\ m Ⓓ[p+i] <>0.
+
+Definition ncontains (m: addr -> N) (p: addr) (c:N) :=
+exists n, ncontains_upto m p c n /\ (m Ⓓ[p + n] ) = 0.
+
+Definition postcondition_1 (m: addr -> N) (p1 p2: addr) (r:N): Prop :=
+(forall i, i<r -> ~ncontains m p2 (m Ⓓ[p1 + i]) ) /\ ncontains m p2 (m Ⓓ[p1 + r] ).
+
