@@ -48,25 +48,6 @@ Proof.
 Qed.
 
 
-(* question regarding parameter types *)
-(* check definition correctness *)
-(* forall i, i < n /\ m [p +i] != 0 /\ m[p+n] = 0 *)
-(* m Ⓓ[ a  ] *)
-Definition haslength (m : addr -> N) (p: addr) (n: N) : Prop :=
-   forall i, i< n /\ 0<m Ⓓ[ p + i ] /\ m Ⓓ[ p + n ]  = 0.
-
-(* question regarding parameter types *)
-(* forall n,exists i, haslength m p n ->  i < n -> m[p+i] = c *)
-Definition contains (m: addr -> N) (p: addr) (c:N) : Prop :=
-    forall n, exists i, haslength m p n -> i < n -> m Ⓓ[p+i] = c.
-
-(* question regarding parameter types *)
-(* p1 = s1 src, p2 = s2 dictionary, r returned prefix length s1 *)
-Definition post_condition (m: addr -> N) (p1 p2: addr) (r:N): Prop :=
-    forall n, haslength m p1 n -> r <= n /\ 
-    forall i, i < r -> contains m p2 (m Ⓓ[p1 + i] ) /\
-    ( (m Ⓓ[p1 + r] ) = 0 \/ ~contains m p2 (m Ⓓ[p1 + r] )).
-
 (* Define function exits *)
 Definition wcsspn_exit (t:trace) :=
   match t with (Addr a,s)::_ => match a with
@@ -74,71 +55,63 @@ Definition wcsspn_exit (t:trace) :=
   | _ => false
   end | _ => false end.
 
-(* edi = wcs1, ebp = wcs2 *)
-Definition exit_invariant (m:addr->N) (edi:N) (ebp:N) (esi:N) (ebx:N) (eax: N) (t:trace) :=
-  match t with (Addr a,s)::_ => match a with
-  (* wcs1 is empty or wcs2 empty or wcs2 hit the end *)
-  | 65 => Some(
-        (* wcs1 is empty *)
-        (ebx = 0 /\ s R_EAX = Ⓓ0) \/ 
-        (* wcs2 is empty *)
-        (esi= 0 /\ s R_EAX = Ⓓ0) \/ 
-        (* ECX checks if at the end of wcs2 *)
-        (s R_ECX = Ⓓ0 /\ 
-          (post_condition m edi ebp 
-              match (s R_EAX) with 
-              | VaN n _ => n
-              | _ => 0 end
-          )
-        )
-      )
-  (* wcs1 hit the end *)
-  | 86 => Some(
-      (ebx = 0 /\ 
-        (post_condition m edi ebp 
-            match (s R_EAX) with 
-            | VaN n _ => n
-            | _ => 0 end
-        )
-      )
-  )
-  | _ => None
-  end | _ => None end.
-Definition outer_loop_entry (m: addr -> N) (edi:N) (esi:N) (t:trace) :=
-  match t with (Addr a,s)::_ => match a with
-  | 36 => Some(
-          forall i, i< (match (s R_EAX) with
-            | VaN n _ => n 
-            | _ => 0 end
-            )
-          -> contains m esi (m Ⓓ[edi + i]) /\ (m Ⓓ[edi + i]) <> 0
-        )
-  | _ => None
-  end | _ => None end.
 
-
-Definition inner_loop_entry (m: addr -> N) (edi:N) (esi:N) (ecx:N) (t:trace) :=
-  match t with (Addr a,s)::_ => match a with
-  | 52 => Some(
-          forall i j, (4*j + esi < ecx /\ i < (match (s R_EAX) with
-                                              | VaN n _ => n 
-                                              | _ => 0 end))
-          -> contains m esi (m Ⓓ[edi + i]) /\ (m Ⓓ[edi + i]) <> 0 /\
-             (m Ⓓ[esi + 4*j]) <> (match s R_EBX with
-                                   | VaN n _ => n 
-                                   | _ => 0 end)
-             /\ (m Ⓓ[esi + 4*j]) <> 0
-        )
-  | _ => None
-  end | _ => None end.
-
-
+(* Takes param string pointer p, character c and length n as parameter *)
+(* defines character c is not contained upto index n of string p, excluding index n *)
 Definition ncontains_upto (m: addr -> N) (p: addr) (c:N) (n:N) :=
   forall i, i< n -> m Ⓓ[p+i] <> c /\ m Ⓓ[p+i] <>0.
 
+(* equivalent to ~contains we previously defined *)
 Definition ncontains (m: addr -> N) (p: addr) (c:N) :=
 exists n, ncontains_upto m p c n /\ (m Ⓓ[p + n] ) = 0.
 
+(* first part: forall wcs1[i], i< return value, wcs[i] is contained in wcs2 *)
+(* second part: wcs does not contain character at wcs[return value] *)
 Definition postcondition_1 (m: addr -> N) (p1 p2: addr) (r:N): Prop :=
 (forall i, i<r -> ~ncontains m p2 (m Ⓓ[p1 + i]) ) /\ ncontains m p2 (m Ⓓ[p1 + r] ).
 
+(* edi: wcs1 , ebp:wcs2 *)
+(* decide if passing value to invariant via parameter or extracting values from registers? *)
+Definition wcsspn_invs (m:addr->N) (edi:N) (ebp:N) (t:trace) :=
+  match t with (Addr a,s)::_ => match a with
+  (* exit_condition == postcondition_1 *)
+  (* here all values are passed by parameter because registers are already popped by the retl instruction *)
+  | 65 | 86=> Some(exists n, s R_EAX = Ⓓn /\postcondition_1 m edi ebp n)
+  (* outer_loop_entry *)
+  (* value in R_EAX is the index for outer loop *)
+  (* i * 4 for indexing like the assembly code *)
+  | 72 => Some(forall i, exists n, s R_EAX = Ⓓn /\ i < n -> ~ncontains m ebp (m Ⓓ[edi + 4*i]))
+  (* inner_loop_entry *)
+  | 52 => Some(forall i, exists outer_n inner_n char,
+      (* R_EAX is the outer_loop index, EDX is inner loop index, EBX is the character currently pointed in wcs1 *)
+      s R_EAX = Ⓓouter_n /\ s R_EDX = Ⓓinner_n /\ s R_EBX = Ⓓchar /\
+      i < outer_n -> ~ncontains m ebp (m Ⓓ[edi + 4*i]) /\ 
+      ncontains_upto m ebp char inner_n
+    )
+  |_ => None
+  end | _ => None end.
+
+Theorem wcsspn_partial_correctness:
+  forall s edi ebp mem t s' x'
+         (ENTRY: startof t (x',s') = (Addr 0, s))
+         (MDL: models x86typctx s)
+         (EDI: s R_EDI = Ⓓ edi)(EBP: s R_EBP = Ⓓ ebp) (MEM: s V_MEM32 = Ⓜ mem),
+  satisfies_all wcsspn_i386 ( wcsspn_invs mem edi ebp) wcsspn_exit ((x',s')::t).
+  Proof.
+    intros.
+    assert (WTM0 := x86_wtm MDL MEM). simpl in WTM0.
+    eapply prove_invs. simpl. rewrite ENTRY.
+
+    (* Time how long it takes for each symbolic interpretation step to complete
+      (for profiling and to give visual cues that something is happening...). *)
+    Local Ltac step := time x86_step.
+
+    (* Optional: The following proof ignores all flag values except CF and ZF, so
+      we can make evaluation faster and shorter by telling Picinae to ignore the
+      other flags (i.e., abstract their values away). *)
+    Ltac x86_ignore v ::= constr:(match v with
+      R_AF | R_DF | R_OF | R_PF | R_SF => true
+    | _ => false end).
+
+    (* Address 0 *)
+    step. step. A.
