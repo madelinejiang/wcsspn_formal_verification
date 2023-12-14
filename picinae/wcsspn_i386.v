@@ -4,6 +4,7 @@ Open Scope N.
 
 Definition wcsspn_i386 : program := fun _ a => match a with
 
+(*
 (* 0xc0000040: pushl %ebp *)
 | 0 => Some (1, 
     Move (V_TEMP 0 (* v53 *)) (Cast CAST_LOW 32 (Var R_EBP)) $;
@@ -42,6 +43,7 @@ Definition wcsspn_i386 : program := fun _ a => match a with
     Move R_ESP (BinOp OP_MINUS (Var R_ESP) (Word 4 32)) $;
     Move V_MEM32 (Store (Var V_MEM32) (Var R_ESP) (Var (V_TEMP 3 (* v56 *))) LittleE 4)
   )
+*)
 
 (* 0xc0000046: movl 0x14(%esp), %edi *)
 | 6 => Some (4,
