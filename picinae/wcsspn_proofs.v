@@ -138,22 +138,27 @@ Proof.
           intros i H. contradict H. apply N.nlt_0_r.
           apply N.eqb_eq in BC. psimpl. symmetry. assumption.
 
-      (* Jump 18 -> 20 *)
+            (* Jump 18 -> 20 *)
       step. step. step. exists 0. split. split. reflexivity. intros. contradict H.  apply N.nlt_0_r.
       split. reflexivity.
       reflexivity.
+  (*See PRE, destruct PRE*)
+    destruct PRE as [n H]. destruct H. destruct H.
     (* Address 32 *)
-    step. step.
+    step. step. apply N.eqb_eq in BC.
 
       (* Jump 34 -> 61 *)
-      step. step. step. step. admit.
+      step. step. step. step. exists n. 
+      split.  assumption. 
+      split. intros. admit. admit.
 
       (* Jump 34 -> 36 *)
-      step. step.
-
-        (* Jump 38 -> 72 *)
-        admit.
-
+      step. step. exists n. 
+      split. 
+        split. assumption.
+        intros. apply H1. assumption.
+      assumption.
+       
         (* Jump 38 -> 40 *)
         step. step. admit.
 
