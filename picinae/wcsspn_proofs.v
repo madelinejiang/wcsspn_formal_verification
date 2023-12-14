@@ -59,16 +59,16 @@ Definition wcsspn_exit (t:trace) :=
 (* Takes param string pointer p, character c and length n as parameter *)
 (* defines character c is not contained upto index n of string p, excluding index n *)
 Definition ncontains_upto (m: addr -> N) (p: addr) (c:N) (n:N) :=
-  forall i, i< n -> m Ⓓ[p+i] <> c /\ m Ⓓ[p+i] <>0.
+  forall i, i< n -> (m Ⓓ[p+4*i] <> c /\ m Ⓓ[p+4*i] <>0).
 
 (* equivalent to ~contains we previously defined *)
 Definition ncontains (m: addr -> N) (p: addr) (c:N) :=
-exists n, ncontains_upto m p c n /\ (m Ⓓ[p + n] ) = 0.
+exists n, (ncontains_upto m p c n /\ (m Ⓓ[p + 4*n] ) = 0).
 
 (* first part: forall wcs1[i], i< return value, wcs[i] is contained in wcs2 *)
 (* second part: wcs does not contain character at wcs[return value] *)
 Definition postcondition_1 (m: addr -> N) (p1 p2: addr) (r:N): Prop :=
-(forall i, i<r -> ~ncontains m p2 (m Ⓓ[p1 + i]) ) /\ ncontains m p2 (m Ⓓ[p1 + r] ).
+forall i, i<r -> ~ncontains m p2 (m Ⓓ[p1 + 4*i])  /\ (ncontains m p2 (m Ⓓ[p1 + 4*r]) \/ m Ⓓ[p1 + 4*r] = 0 ).
 
 
 (* edi: wcs1 , ebp:wcs2 *)
@@ -79,7 +79,7 @@ Definition wcsspn_invs (m:addr->N) (esp:N) (t:trace) :=
   | 32 => Some(exists n, (s R_EAX = Ⓓn /\ forall i, i < n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i]))
                /\ s R_EDI= Ⓓ (m Ⓓ[20+esp]) /\ s R_EBP= Ⓓ (m Ⓓ[24+esp] ) )
   (* here all values are passed by parameter because registers are already popped by the retl instruction *)
-  | 65 | 86=> Some(exists n, (s R_EAX = Ⓓn /\ postcondition_1 m (m Ⓓ[24+esp]) (m Ⓓ[20+esp]) n))
+  | 65 | 86=> Some(exists n, (s R_EAX = Ⓓn /\ postcondition_1 m (m Ⓓ[20+esp]) (m Ⓓ[24+esp]) n))
   (* outer_loop_entry *)
   (* value in R_EAX is the index for outer loop *)
   (* i * 4 for indexing like the assembly code *)
@@ -89,13 +89,14 @@ Definition wcsspn_invs (m:addr->N) (esp:N) (t:trace) :=
   | 52 => Some(
       (* R_EAX is the outer_loop index, EDX is inner loop index, EBX is the character currently pointed in wcs1 *)
       exists outer_n, (s R_EAX = Ⓓouter_n /\
-      forall i, i < outer_n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[24+esp] + 4*i]) ) /\
+      forall i, i < outer_n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i]) ) /\
       exists inner_n char, (s R_EDX = Ⓓinner_n /\ s R_EBX = Ⓓchar /\ 
       ncontains_upto m (m Ⓓ[24+esp]) char inner_n )/\ 
       s R_EDI= Ⓓ (m Ⓓ[20+esp] ) /\ s R_EBP= Ⓓ ( m Ⓓ[24+esp]) 
     )
   |_ => None
   end | _ => None end.
+
 
 Theorem wcsspn_partial_correctness:
   forall s esp mem t s' x'
@@ -134,23 +135,24 @@ Proof.
       step. step. step. step.
       exists 0. split. assumption. split.
         intros. contradict H. apply N.nlt_0_r.
-        exists 0. split.
-          intros i H. contradict H. apply N.nlt_0_r.
-          apply N.eqb_eq in BC. psimpl. symmetry. assumption.
+          right. psimpl. apply N.eqb_eq in BC. symmetry. assumption.
 
-            (* Jump 18 -> 20 *)
+    (* Jump 18 -> 20 *)
       step. step. step. exists 0. split. split. reflexivity. intros. contradict H.  apply N.nlt_0_r.
       split. reflexivity.
       reflexivity.
   (*See PRE, destruct PRE*)
-    destruct PRE as [n H]. destruct H. destruct H.
+    destruct PRE as [n H]. destruct H. destruct H. destruct H0. 
     (* Address 32 *)
-    step. step. apply N.eqb_eq in BC.
 
       (* Jump 34 -> 61 *)
+      step. step. apply N.eqb_eq in BC.
       step. step. step. step. exists n. 
       split.  assumption. 
-      split. intros. admit. admit.
+        unfold postcondition_1. intros. 
+      split. apply H1. assumption.
+       left. unfold ncontains. exists 0. psimpl.
+      split.
 
       (* Jump 34 -> 36 *)
       step. step. exists n. 
@@ -158,7 +160,10 @@ Proof.
         split. assumption.
         intros. apply H1. assumption.
       assumption.
-       
+
+        (* Jump 38 -> 72 *)
+        admit.
+
         (* Jump 38 -> 40 *)
         step. step. admit.
 
