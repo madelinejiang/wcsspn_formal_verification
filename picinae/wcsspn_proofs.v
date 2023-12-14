@@ -30,8 +30,8 @@ Theorem wcsspn_preserves_memory:
   forall_endstates wcsspn_i386 (fun _ s _ s' => s V_MEM32 = s' V_MEM32).
 Proof.
   apply noassign_prog_same.
-  prove_noassign. admit. admit. admit. admit. Abort.
-(* Qed. *)
+  prove_noassign.
+Qed.
 
 (* Theorem wcsspn_preserves_ebx:
   forall_endstates wcsspn_i386 (fun _ s _ s' => s R_EBX = s' R_EBX).
@@ -70,41 +70,44 @@ exists n, ncontains_upto m p c n /\ (m Ⓓ[p + n] ) = 0.
 Definition postcondition_1 (m: addr -> N) (p1 p2: addr) (r:N): Prop :=
 (forall i, i<r -> ~ncontains m p2 (m Ⓓ[p1 + i]) ) /\ ncontains m p2 (m Ⓓ[p1 + r] ).
 
+
 (* edi: wcs1 , ebp:wcs2 *)
 (* decide if passing value to invariant via parameter or extracting values from registers? *)
-Definition wcsspn_invs (m:addr->N) (edi:N) (ebp:N) (t:trace) :=
+Definition wcsspn_invs (m:addr->N) (esp:N) (t:trace) :=
   match t with (Addr a,s)::_ => match a with
-  (* exit_condition == postcondition_1 *)
+  | 6 => Some (s R_EAX = Ⓓ0 /\ s R_ESP = Ⓓesp)
+  | 32 => Some(exists n, (s R_EAX = Ⓓn /\ forall i, i < n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i]))
+               /\ s R_EDI= Ⓓ (m Ⓓ[20+esp]) /\ s R_EBP= Ⓓ (m Ⓓ[24+esp] ) )
   (* here all values are passed by parameter because registers are already popped by the retl instruction *)
-  | 65 | 86=> Some(exists n, s R_EAX = Ⓓn /\postcondition_1 m edi ebp n)
+  | 65 | 86=> Some(exists n, (s R_EAX = Ⓓn /\ postcondition_1 m (m Ⓓ[24+esp]) (m Ⓓ[20+esp]) n))
   (* outer_loop_entry *)
   (* value in R_EAX is the index for outer loop *)
   (* i * 4 for indexing like the assembly code *)
-  | 72 => Some(forall i, exists n, s R_EAX = Ⓓn /\ i < n -> ~ncontains m ebp (m Ⓓ[edi + 4*i]))
+  | 72 => Some(exists n, (s R_EAX = Ⓓn /\ forall i, i < n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i]))
+               /\ s R_EDI= Ⓓ (m Ⓓ[20+esp]) /\ s R_EBP= Ⓓ (m Ⓓ[24+esp] ) )
   (* inner_loop_entry *)
-  | 52 => Some(forall i, exists outer_n inner_n char,
+  | 52 => Some(
       (* R_EAX is the outer_loop index, EDX is inner loop index, EBX is the character currently pointed in wcs1 *)
-      s R_EAX = Ⓓouter_n /\ s R_EDX = Ⓓinner_n /\ s R_EBX = Ⓓchar /\
-      i < outer_n -> ~ncontains m ebp (m Ⓓ[edi + 4*i]) /\ 
-      ncontains_upto m ebp char inner_n
+      exists outer_n, (s R_EAX = Ⓓouter_n /\
+      forall i, i < outer_n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[24+esp] + 4*i]) ) /\
+      exists inner_n char, (s R_EDX = Ⓓinner_n /\ s R_EBX = Ⓓchar /\ 
+      ncontains_upto m (m Ⓓ[24+esp]) char inner_n )/\ 
+      s R_EDI= Ⓓ (m Ⓓ[20+esp] ) /\ s R_EBP= Ⓓ ( m Ⓓ[24+esp]) 
     )
   |_ => None
   end | _ => None end.
 
 Theorem wcsspn_partial_correctness:
-  forall s edi ebp mem t s' x'
-         (ENTRY: startof t (x',s') = (Addr 0, s))
+  forall s esp mem t s' x'
+         (ENTRY: startof t (x',s') = (Addr 6, s))
          (MDL: models x86typctx s)
-         (EDI: s R_EDI = Ⓓ edi)(EBP: s R_EBP = Ⓓ ebp) (MEM: s V_MEM32 = Ⓜ mem),
-  satisfies_all wcsspn_i386 ( wcsspn_invs mem edi ebp) wcsspn_exit ((x',s')::t).
-  Proof.
-    intros.
-    assert (WTM0 := x86_wtm MDL MEM). simpl in WTM0.
-    eapply prove_invs. simpl. rewrite ENTRY.
-
-    (* Time how long it takes for each symbolic interpretation step to complete
-      (for profiling and to give visual cues that something is happening...). *)
+         (EAX: s R_EAX = Ⓓ0) (ESP: s R_ESP = Ⓓesp) (MEM: s V_MEM32 = Ⓜ mem),
+  satisfies_all wcsspn_i386 (wcsspn_invs mem esp) wcsspn_exit ((x',s')::t).
+Proof.
     Local Ltac step := time x86_step.
+
+    intros.
+    eapply prove_invs. simpl. rewrite ENTRY. step. split; assumption.
 
     (* Optional: The following proof ignores all flag values except CF and ZF, so
       we can make evaluation faster and shorter by telling Picinae to ignore the
@@ -114,4 +117,66 @@ Theorem wcsspn_partial_correctness:
     | _ => false end).
 
     (* Address 0 *)
-    step. step. A.
+    intros.
+    eapply startof_prefix in ENTRY; try eassumption.
+    erewrite wcsspn_preserves_memory in MEM by eassumption.
+    eapply preservation_exec_prog in MDL; try (eassumption || apply wcsspn_welltyped).
+    assert (WTM := x86_wtm MDL MEM). simpl in WTM.
+    clear - PRE MEM MDL WTM. rename t1 into t. rename s1 into s.
+
+    destruct_inv 32 PRE.
+
+    (* Address 6 *)
+    destruct PRE as [EAX ESP].
+    step. step. step. step. step.
+
+      (* Jump 18 -> 61 *)
+      step. step. step. step.
+      exists 0. split. assumption. split.
+        intros. contradict H. apply N.nlt_0_r.
+        exists 0. split.
+          intros i H. contradict H. apply N.nlt_0_r.
+          apply N.eqb_eq in BC. psimpl. symmetry. assumption.
+
+      (* Jump 18 -> 20 *)
+      step. step. step. exists 0. split. split. reflexivity. intros. contradict H.  apply N.nlt_0_r.
+      split. reflexivity.
+      reflexivity.
+    (* Address 32 *)
+    step. step.
+
+      (* Jump 34 -> 61 *)
+      step. step. step. step. admit.
+
+      (* Jump 34 -> 36 *)
+      step. step.
+
+        (* Jump 38 -> 72 *)
+        admit.
+
+        (* Jump 38 -> 40 *)
+        step. step. admit.
+
+    (* Address 52 *)
+    step. step. step. step.
+
+      (* Jump 59 -> 61 *)
+      step. step. step. step. admit.
+
+      (* Jump 59 -> 48 *)
+      step. step.
+
+        (* Jump 50 -> 72 *)
+        admit.
+
+        (* Jump 50 -> 52 *)
+        admit.
+
+    (* Address 72 *)
+    step. step. step. step.
+
+      (* Jump 80 -> 82 *)
+      step. step. step. step. admit.
+
+      (* Jump 80 -> 32 *)
+      admit.
