@@ -92,10 +92,10 @@ Definition wcsspn_invs (m:addr->N) (esp:N) (t:trace) :=
   | 52 => Some(
       (* R_EAX is the outer_loop index, EDX is inner loop index, EBX is the character currently pointed in wcs1 *)
       exists outer_n, (s R_EAX = Ⓓouter_n /\ ( s R_EBX= Ⓓ(m Ⓓ[20+esp] + 4*outer_n) \/ s R_EBX= Ⓓ (m Ⓓ[m Ⓓ[20+esp] + 4*outer_n])) /\
-      forall i, i < outer_n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i])  /\
-      exists inner_n, (s R_EDX= Ⓓ ( m Ⓓ[24+esp]+4*inner_n)  )
+      (forall i, i < outer_n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i]) ) /\
+      exists inner_n, (s R_EDX= Ⓓ ( m Ⓓ[24+esp]+4*inner_n) )
      /\ 
-      ncontains_upto m (m Ⓓ[24+esp]) ((m Ⓓ[20+esp]+4*outer_n)) inner_n )/\
+      ncontains_upto m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp]+4*outer_n]) inner_n )/\
       s R_EDI= Ⓓ (m Ⓓ[20+esp] ) /\ s R_EBP= Ⓓ ( m Ⓓ[24+esp])
     )
   |_ => None
@@ -181,33 +181,35 @@ Proof.
         (* Jump 38 -> 72 *)
         step. step. exists n. split. split. assumption. 
         split. right. reflexivity.
-          split. apply H1. assumption. exists 0. split. psimpl. reflexivity.
-            unfold ncontains_upto. intros.  apply N.nlt_0_r in H6. exfalso. contradiction. 
+          split. apply H1. exists 0.
+             split. psimpl. reflexivity. 
+             unfold ncontains_upto. intros.  apply N.nlt_0_r in H5. exfalso. contradiction. 
         split. assumption. 
         reflexivity.
         (* Jump 38 -> 40 *)
        (* step. step. admit.*)
 
-    (* Address 52 *)
-    step. step. step. step.
+      (* Address 52 *)
+      destruct PRE as (outer_n, H). destruct H. destruct H. destruct H1. destruct H2. destruct H3 as [inner_n H3']. destruct H3'. destruct H1.
+      step. step. step. step.
 
       (* Jump 59 -> 61 *)
-      step. step. step. step. destruct PRE as (outer_n & H_EAX_outer & H_outer). destruct H_EAX_outer. destruct H0. destruct H_outer.
-      exists outer_n. admit.
+      step. step. step. step. 
+      exists outer_n. split. assumption.
+      unfold postcondition_1.
       (* Jump 59 -> 48 *)
-      step. step.
-
+      intros. 
+      split. apply H2. assumption. 
+      left. unfold ncontains. exists inner_n. 
+      split. assumption. 
         (* Jump 50 -> 72 *)
         admit.
 
         (* Jump 50 -> 52 *)
-        admit.
-
-    (* Address 72 *)
-    step. step. step. step.
+      (* Address 72 *)
 
       (* Jump 80 -> 82 *)
-      step. step. step. step. admit.
+
 
       (* Jump 80 -> 32 *)
-      admit.
+        admit.
