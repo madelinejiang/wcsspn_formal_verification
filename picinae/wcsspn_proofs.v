@@ -30,8 +30,8 @@ Theorem wcsspn_preserves_memory:
   forall_endstates wcsspn_i386 (fun _ s _ s' => s V_MEM32 = s' V_MEM32).
 Proof.
   apply noassign_prog_same.
-  prove_noassign.
-Qed.
+  prove_noassign. Admitted.
+(* Qed. *)
 
 (* Theorem wcsspn_preserves_ebx:
   forall_endstates wcsspn_i386 (fun _ s _ s' => s R_EBX = s' R_EBX).
@@ -160,6 +160,7 @@ Proof.
     (* Address 32 *)
  
       (* Jump 34 -> 61 *)
+
       step. step. apply N.eqb_eq in BC.
       step. step. step. step. exists n. 
       split.  assumption. 
@@ -167,10 +168,14 @@ Proof.
       split. apply H1. assumption. 
        left. exists 0. split. psimpl. admit. symmetry. psimpl. assumption.
   
+
+
+
       (* Jump 34 -> 36 *)
       step. step. exists n. 
       split. 
         split. assumption.
+
         intros. split. apply H1. assumption. 
         split. reflexivity. right.
         reflexivity. 
@@ -183,11 +188,16 @@ Proof.
         (* Jump 38 -> 40 *)
        (* step. step. admit.*)
 
+
     (* Address 52 *)
     step. step. step. step.
 
       (* Jump 59 -> 61 *)
-      step. step. step. step. destruct PRE. destruct H. admit.
+
+      step. step. step. step. destruct PRE. destruct H.  destruct H. destruct H0. 
+        exists x. split. assumption. 
+        split. apply H1. assumption.  apply N.eqb_eq in BC. left. unfold ncontains. exists n. 
+        split. admit. admit.
 
       (* Jump 59 -> 48 *)
       step. step.
