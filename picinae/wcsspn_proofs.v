@@ -93,10 +93,10 @@ Definition wcsspn_invs (m:addr->N) (esp:N) (t:trace) :=
       (* R_EAX is the outer_loop index, EDX is inner loop index, EBX is the character currently pointed in wcs1 *)
       exists outer_n, (s R_EAX = Ⓓouter_n /\ ( s R_EBX= Ⓓ(m Ⓓ[20+esp] + 4*outer_n) \/ s R_EBX= Ⓓ (m Ⓓ[m Ⓓ[20+esp] + 4*outer_n])) /\
       (forall i, i < outer_n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i]) ) /\
-      exists inner_n, (s R_EDX= Ⓓ ( m Ⓓ[24+esp]+4*inner_n) )
+      exists inner_n, (s R_EDX= Ⓓ ( m Ⓓ[24+esp]⊕ 4*inner_n) )
      /\ 
       ncontains_upto m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp]+4*outer_n]) inner_n )/\
-      s R_EDI= Ⓓ (m Ⓓ[20+esp] ) /\ s R_EBP= Ⓓ ( m Ⓓ[24+esp])
+      s R_EDI= Ⓓ (m Ⓓ[20+esp] ) /\ s R_EBP= Ⓓ ( m Ⓓ[24+esp]) /\  s R_ESI= Ⓓ(m Ⓓ[ m Ⓓ[ 24 + esp ] ]) 
     )
   |_ => None
   end | _ => None end.
@@ -185,32 +185,54 @@ Proof.
              split. psimpl. reflexivity. 
              unfold ncontains_upto. intros.  apply N.nlt_0_r in H5. exfalso. contradiction. 
         split. assumption. 
-        reflexivity.
+        split. reflexivity. reflexivity.
         (* Jump 38 -> 40 *)
        (* step. step. admit.*)
 
       (* Address 52 *)
-      destruct PRE as (outer_n, H). destruct H. destruct H. destruct H1. destruct H2. destruct H3 as [inner_n H3']. destruct H3'. destruct H1.
+      destruct PRE as (outer_n, H). destruct H as [EAX]. destruct EAX. destruct H1 as [EBX]. destruct H1. destruct H2 as [inner_n H2']. destruct H2' as [EDX]. destruct H as [EDI [EBP ESI]]. destruct EBX. 
       step. step. step. step.
 
       (* Jump 59 -> 61 *)
       step. step. step. step. 
       exists outer_n. split. assumption.
       unfold postcondition_1.
-      (* Jump 59 -> 48 *)
-      intros. 
-      split. apply H2. assumption. 
-      left. unfold ncontains. exists inner_n. 
-      split. assumption. 
-        (* Jump 50 -> 72 *)
-        admit.
 
-        (* Jump 50 -> 52 *)
+      intros. apply N.eqb_eq in BC.
+      split. apply H1. assumption. 
+      left. unfold ncontains. exists (inner_n+1). 
+      split. unfold ncontains_upto. intros. admit.
+       symmetry. psimpl. assert( 4 * (1 + inner_n)= 4+4*inner_n). ring. rewrite H4. psimpl. assumption.     
+     (* Jump 59 -> 48 *)  
+      step. step. (*cycling-see below*) exists outer_n. 
+        split.
+          split. assumption.
+            split. apply H1. assumption.
+          split. assumption.
+          left. reflexivity. 
+          split. assumption.
+          assumption.
+        exists outer_n.
+        split.
+          split. assumption.
+            split. left. reflexivity.
+            split. assumption. 
+            apply N.eqb_neq in BC, BC0.  exists (inner_n+1).
+            split. psimpl. assert( 4 * (1 + inner_n)= 4+4*inner_n). ring.  rewrite H3. psimpl. reflexivity.
+            admit.
+        split. assumption. split. assumption. assumption.
+              
+        step. step. step. step. step. step. step. step.
+      
+      exists outer_n. split. assumption. intros. unfold postcondition_1. 
+      split. apply H1. assumption. left. unfold ncontains.  exists (inner_n+1). split. admit.
+      apply N.eqb_eq in BC. assert( 4 * (1 + inner_n)= 4+4*inner_n). ring. psimpl. rewrite H4. psimpl. symmetry. assumption.
       (* Address 72 *)
-    destruct PRE. destruct H. destruct H as [EAX]. destruct H0 as [EDI EBP].
+      step. step. (*cycling-see above*) admit. admit.
+       destruct PRE. destruct H. destruct H as [EAX]. destruct H0 as [EDI EBP].
     step. step. step. step.
-
       (* Jump 80 -> 82 *)
+
       step. step. step. step. exists (1 ⊕ x). split. reflexivity.
         split. destruct (N.lt_ge_cases i x). apply H. assumption.
         
