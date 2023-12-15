@@ -30,8 +30,8 @@ Theorem wcsspn_preserves_memory:
   forall_endstates wcsspn_i386 (fun _ s _ s' => s V_MEM32 = s' V_MEM32).
 Proof.
   apply noassign_prog_same.
-  prove_noassign. Admitted.
-(* Qed. *)
+  prove_noassign.
+Qed.
 
 (* Theorem wcsspn_preserves_ebx:
   forall_endstates wcsspn_i386 (fun _ s _ s' => s R_EBX = s' R_EBX).
@@ -91,11 +91,11 @@ Definition wcsspn_invs (m:addr->N) (esp:N) (t:trace) :=
   (* inner_loop_entry *)
   | 52 => Some(
       (* R_EAX is the outer_loop index, EDX is inner loop index, EBX is the character currently pointed in wcs1 *)
-      exists outer_n, (s R_EAX = Ⓓouter_n /\
+      exists outer_n, (s R_EAX = Ⓓouter_n /\ ( s R_EBX= Ⓓ(m Ⓓ[20+esp] + 4*outer_n) \/ s R_EBX= Ⓓ (m Ⓓ[m Ⓓ[20+esp] + 4*outer_n])) /\
       forall i, i < outer_n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i])  /\
-      exists inner_n, (s R_EDX= Ⓓ ( m Ⓓ[24+esp]+4*inner_n) /\ ( s R_EBX= Ⓓ(m Ⓓ[20+esp] + 4*outer_n) \/ s R_EBX= Ⓓ (m Ⓓ[m Ⓓ[20+esp] + 4*outer_n]) )
+      exists inner_n, (s R_EDX= Ⓓ ( m Ⓓ[24+esp]+4*inner_n)  )
      /\ 
-      ncontains_upto m (m Ⓓ[24+esp]) ((m Ⓓ[20+esp]+4*outer_n)) inner_n ))/\
+      ncontains_upto m (m Ⓓ[24+esp]) ((m Ⓓ[20+esp]+4*outer_n)) inner_n )/\
       s R_EDI= Ⓓ (m Ⓓ[20+esp] ) /\ s R_EBP= Ⓓ ( m Ⓓ[24+esp])
     )
   |_ => None
@@ -159,8 +159,8 @@ Proof.
     destruct PRE as [n H]. destruct H. destruct H. destruct H0. destruct H2. destruct H3.
     (* Address 32 *)
  
-   (* Jump 34 -> 61 *)
-   step. step. apply N.eqb_eq in BC.
+      (* Jump 34 -> 61 *)
+      step. step. apply N.eqb_eq in BC.
       step. step. step. step. exists n. 
       split.  assumption. 
         unfold postcondition_1. intros. 
@@ -173,7 +173,6 @@ Proof.
       step. step. exists n. 
       split. 
         split. assumption.
-
         intros. split. apply H1. assumption. 
         split. reflexivity. right.
         reflexivity. 
@@ -181,22 +180,20 @@ Proof.
 
         (* Jump 38 -> 72 *)
         step. step. exists n. split. split. assumption. 
-        split. apply H1. assumption. exists 0. split. psimpl. reflexivity.
-       split. right. reflexivity. admit. split. assumption. reflexivity.
+        split. right. reflexivity.
+          split. apply H1. assumption. exists 0. split. psimpl. reflexivity.
+            unfold ncontains_upto. intros.  apply N.nlt_0_r in H6. exfalso. contradiction. 
+        split. assumption. 
+        reflexivity.
         (* Jump 38 -> 40 *)
        (* step. step. admit.*)
-
 
     (* Address 52 *)
     step. step. step. step.
 
       (* Jump 59 -> 61 *)
-
-      step. step. step. step. destruct PRE. destruct H.  destruct H. destruct H0. 
-        exists x. split. assumption. 
-        split. apply H1. assumption.  apply N.eqb_eq in BC. left. unfold ncontains. exists n. 
-        split. admit. admit.
-
+      step. step. step. step. destruct PRE as (outer_n & H_EAX_outer & H_outer). destruct H_EAX_outer. destruct H0. destruct H_outer.
+      exists outer_n. admit.
       (* Jump 59 -> 48 *)
       step. step.
 
