@@ -201,10 +201,11 @@ Proof.
       intros. apply N.eqb_eq in BC.
       split. apply H1. assumption. 
       left. unfold ncontains. exists (inner_n+1). 
-      split. unfold ncontains_upto. intros. admit.
+      split. admit.
        symmetry. psimpl. assert( 4 * (1 + inner_n)= 4+4*inner_n). ring. rewrite H4. psimpl. assumption.     
      (* Jump 59 -> 48 *)  
-      step. step. (*cycling-see below*) exists outer_n. 
+      step. step. (*For s R_EBX =Ⓓ(mem Ⓓ[ 20 + esp ] + 4 * outer_n)*) 
+        exists outer_n. 
         split.
           split. assumption.
             split. apply H1. assumption.
@@ -227,8 +228,25 @@ Proof.
       exists outer_n. split. assumption. intros. unfold postcondition_1. 
       split. apply H1. assumption. left. unfold ncontains.  exists (inner_n+1). split. admit.
       apply N.eqb_eq in BC. assert( 4 * (1 + inner_n)= 4+4*inner_n). ring. psimpl. rewrite H4. psimpl. symmetry. assumption.
-      (* Address 72 *)
-      step. step. (*cycling-see above*) admit. admit.
+      step. step. (*For s R_EBX =Ⓓ(mem Ⓓ[ mem Ⓓ[ 20 + esp ] + 4 * outer_n ])*) 
+      exists outer_n.
+        split.
+          split. assumption.
+            split. apply H1. assumption.
+          split. assumption.
+          right. reflexivity. 
+          split. assumption.
+          assumption.
+        exists outer_n.
+        split.
+          split. assumption.
+            split. right. reflexivity.
+            split. assumption. 
+            apply N.eqb_neq in BC, BC0.  exists (inner_n+1).
+            split. psimpl. assert( 4 * (1 + inner_n)= 4+4*inner_n). ring.  rewrite H3. psimpl. reflexivity.
+            admit. 
+        split. assumption. split. assumption. assumption.
+(*72*)
        destruct PRE. destruct H. destruct H as [EAX]. destruct H0 as [EDI EBP].
     step. step. step. step.
       (* Jump 80 -> 82 *)
