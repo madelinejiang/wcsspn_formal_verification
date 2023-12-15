@@ -207,6 +207,22 @@ Proof.
 
         (* Jump 50 -> 52 *)
       (* Address 72 *)
+    destruct PRE. destruct H. destruct H as [EAX]. destruct H0 as [EDI EBP].
+    step. step. step. step.
+
+      (* Jump 80 -> 82 *)
+      step. step. step. step. exists (1 ⊕ x). split. reflexivity.
+        split. destruct (N.lt_ge_cases i x). apply H. assumption.
+        
+        admit. 
+          admit.
+        
+
+      (* Jump 80 -> 32 *)
+      exists (1 ⊕ x). split.
+        split. reflexivity.
+          intro. intro. apply H. admit.
+        split. reflexivity. split. apply EBP. split. admit. 
 
       (* Jump 80 -> 82 *)
 
