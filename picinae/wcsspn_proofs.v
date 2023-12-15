@@ -98,22 +98,6 @@ Definition wcsspn_invs (m:addr->N) (esp:N) (t:trace) :=
   |_ => None
   end | _ => None end.
 
-Lemma contrapositive:
- forall (p q : Prop), (p -> ~q) -> (q->~p).
-Proof.
-  intros P Q H.
-  intros H_not_Q H_not_P.
-  apply H in H_not_P.
-  contradiction.
-  
-Qed.
-
-Lemma contrapositive_prop : forall (prop : N -> Prop) (n : N),
-  (forall i : N, i < n -> ~prop i) -> (exists i, prop i -> i>=n).
-Proof. 
-  intros prop n H.
-  Admitted.
-
 Theorem wcsspn_partial_correctness:
   forall s esp mem t s' x'
          (ENTRY: startof t (x',s') = (Addr 6, s))
@@ -167,7 +151,7 @@ Proof.
       split.  assumption. 
         unfold postcondition_1. intros. 
       split. apply H1. assumption. 
-       left.  exists 0. apply contrapositive_prop in H1. unfold ncontains in H1. destruct H1. admit.
+       left.  exists 0. admit.
   
       (* Jump 34 -> 36 *)
       step. step. exists n. 
