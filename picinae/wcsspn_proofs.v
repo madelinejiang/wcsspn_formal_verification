@@ -159,18 +159,16 @@ Proof.
     destruct PRE as [n H]. destruct H. destruct H. destruct H0. destruct H2. destruct H3.
     (* Address 32 *)
  
-      (* Jump 34 -> 61 *)
-
-      step. step. apply N.eqb_eq in BC.
+   (* Jump 34 -> 61 *)
+   step. step. apply N.eqb_eq in BC.
       step. step. step. step. exists n. 
       split.  assumption. 
         unfold postcondition_1. intros. 
       split. apply H1. assumption. 
-       left. exists 0. split. psimpl. admit. symmetry. psimpl. assumption.
+       left. exists 0. 
+      split. psimpl. unfold ncontains_upto. intros.  apply N.nlt_0_r in H6. exfalso. contradiction. 
+       symmetry. psimpl. assumption.
   
-
-
-
       (* Jump 34 -> 36 *)
       step. step. exists n. 
       split. 
