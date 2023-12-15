@@ -76,27 +76,41 @@ forall i, i<r -> ~ncontains m p2 (m Ⓓ[p1 + 4*i])  /\ (ncontains m p2 (m Ⓓ[p1
 Definition wcsspn_invs (m:addr->N) (esp:N) (t:trace) :=
   match t with (Addr a,s)::_ => match a with
   | 6 => Some (s R_EAX = Ⓓ0 /\ s R_ESP = Ⓓesp)
-  | 32 => Some(exists n, (s R_EAX = Ⓓn /\ forall i, i < n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i]))
-               /\ s R_EDI= Ⓓ (m Ⓓ[20+esp]) /\ s R_EBP= Ⓓ (m Ⓓ[24+esp] )  /\ s R_ESI= Ⓓ(m Ⓓ[ m Ⓓ[ 24 + esp ] ]) )
+  | 32 => Some(exists n, (s R_EAX = Ⓓn /\ forall i, i < n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i])
+                 )
+               /\ s R_EDI= Ⓓ (m Ⓓ[20+esp]) /\ s R_EBP= Ⓓ (m Ⓓ[24+esp] )  /\ s R_ESI= Ⓓ(m Ⓓ[ m Ⓓ[ 24 + esp ] ])
+              /\ s R_EBX= Ⓓ (m Ⓓ[m Ⓓ[20+esp] + 4*n])  )
   (* here all values are passed by parameter because registers are already popped by the retl instruction *)
   | 65 | 86=> Some(exists n, (s R_EAX = Ⓓn /\ postcondition_1 m (m Ⓓ[20+esp]) (m Ⓓ[24+esp]) n))
   (* outer_loop_entry *)
   (* value in R_EAX is the index for outer loop *)
   (* i * 4 for indexing like the assembly code *)
-  | 72 => Some(exists n, (s R_EAX = Ⓓn /\ forall i, i < n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i]))
-               /\ s R_EDI= Ⓓ (m Ⓓ[20+esp]) /\ s R_EBP= Ⓓ (m Ⓓ[24+esp] ) )
+  | 72 => Some(exists n, (s R_EAX = Ⓓn /\ forall i, i < n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i])
+                /\  s R_ESI= Ⓓ(m Ⓓ[ m Ⓓ[ 24 + esp ] ])  /\( s R_EBX= Ⓓ(m Ⓓ[20+esp] + 4*n) \/ s R_EBX= Ⓓ (m Ⓓ[m Ⓓ[20+esp] + 4*n])  ) ) 
+               /\ s R_EDI= Ⓓ (m Ⓓ[20+esp]) /\ s R_EBP= Ⓓ (m Ⓓ[24+esp] )  )
   (* inner_loop_entry *)
   | 52 => Some(
       (* R_EAX is the outer_loop index, EDX is inner loop index, EBX is the character currently pointed in wcs1 *)
       exists outer_n, (s R_EAX = Ⓓouter_n /\
       forall i, i < outer_n -> ~ncontains m (m Ⓓ[24+esp]) (m Ⓓ[m Ⓓ[20+esp] + 4*i])  /\
-      exists inner_n, (s R_EDX= Ⓓ ( m Ⓓ[24+esp]+4*inner_n) /\ s R_EBX = Ⓓ (m Ⓓ[20+esp]+4*outer_n) 
-      /\ s R_ECX = Ⓓ (m Ⓓ[20+esp]+4*outer_n)/\ 
+      exists inner_n, (s R_EDX= Ⓓ ( m Ⓓ[24+esp]+4*inner_n) /\ ( s R_EBX= Ⓓ(m Ⓓ[20+esp] + 4*outer_n) \/ s R_EBX= Ⓓ (m Ⓓ[m Ⓓ[20+esp] + 4*outer_n]) )
+     /\ 
       ncontains_upto m (m Ⓓ[24+esp]) ((m Ⓓ[20+esp]+4*outer_n)) inner_n ))/\
       s R_EDI= Ⓓ (m Ⓓ[20+esp] ) /\ s R_EBP= Ⓓ ( m Ⓓ[24+esp])
     )
   |_ => None
   end | _ => None end.
+
+Lemma contrapositive:
+ forall (p q : Prop), (p -> ~q) -> (q->~p).
+Proof.
+  intros P Q H.
+  intros H_not_Q H_not_P.
+  apply H in H_not_P.
+  contradiction.
+  
+Qed.
+
 
 Theorem wcsspn_partial_correctness:
   forall s esp mem t s' x'
@@ -140,9 +154,9 @@ Proof.
     (* Jump 18 -> 20 *)
       step. step. step. exists 0. split. split. reflexivity. intros. contradict H.  apply N.nlt_0_r.
       split. reflexivity. 
-        split. reflexivity. reflexivity.
+        split. reflexivity. split. reflexivity. psimpl. reflexivity.
   (*See PRE, destruct PRE*)
-    destruct PRE as [n H]. destruct H. destruct H. destruct H0. destruct H2.
+    destruct PRE as [n H]. destruct H. destruct H. destruct H0. destruct H2. destruct H3.
     (* Address 32 *)
  
       (* Jump 34 -> 61 *)
@@ -151,17 +165,21 @@ Proof.
       split.  assumption. 
         unfold postcondition_1. intros. 
       split. apply H1. assumption. 
-       left.  exists 0. admit.
+       left. exists 0. split. psimpl. admit. symmetry. psimpl. assumption.
   
       (* Jump 34 -> 36 *)
       step. step. exists n. 
       split. 
         split. assumption.
-        intros. apply H1. assumption. split. assumption. assumption.
+        intros. split. apply H1. assumption. 
+        split. reflexivity. right.
+        reflexivity. 
+        split. assumption. assumption.
 
         (* Jump 38 -> 72 *)
-        step. step. admit.
-
+        step. step. exists n. split. split. assumption. 
+        split. apply H1. assumption. exists 0. split. psimpl. reflexivity.
+       split. right. reflexivity. admit. split. assumption. reflexivity.
         (* Jump 38 -> 40 *)
        (* step. step. admit.*)
 
@@ -169,7 +187,7 @@ Proof.
     step. step. step. step.
 
       (* Jump 59 -> 61 *)
-      step. step. step. step. admit.
+      step. step. step. step. destruct PRE. destruct H. admit.
 
       (* Jump 59 -> 48 *)
       step. step.
